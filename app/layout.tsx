@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { playfair, bebas, dmSans } from '@/lib/fonts'
+import { Header } from '@/components/layout/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
       lang="fr"
       className={`${playfair.variable} ${bebas.variable} ${dmSans.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
