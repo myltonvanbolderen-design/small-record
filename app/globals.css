@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color tokens — CLAUDE.md palette lock */
+  /* Color tokens */
   --color-noir: #0A0A0A;
   --color-blanc: #F5F0E8;
-  --color-terracotta: #C4622D;
+  --color-terracotta: #CC2936;
   --color-ambre: #D4A832;
   --color-placeholder: #1A1A1A;
 
@@ -28,7 +28,7 @@
   --spacing-2xl: 48px;
   --spacing-3xl: 64px;
 
-  /* Header height — consumed as padding-top on page shells */
+  /* Header height */
   --header-height: 56px;
 }
 
@@ -48,11 +48,56 @@ body::before {
   html {
     background-color: var(--color-noir);
     color: var(--color-blanc);
+    scroll-behavior: smooth;
   }
 
   body {
     font-family: var(--font-body);
     position: relative;
     z-index: 2;
+    overflow-x: hidden;
+  }
+
+  /* Clickable elements get pointer cursor */
+  a, button, [role="button"] {
+    cursor: pointer;
+  }
+
+  /* Touch target minimum — footer/nav links */
+  nav a, footer a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Hide scrollbar for photo slider */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Drop cap — editorial first letter */
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 3.5em;
+  line-height: 0.8;
+  font-weight: 700;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--color-blanc);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
