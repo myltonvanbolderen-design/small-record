@@ -50,7 +50,7 @@ export default function HomePage() {
               <h1 className="pointer-events-none -mb-[3vw] select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]">
                 <span className="block">Small</span>
                 <span className="block">
-                  Record<span className="text-terracotta">.</span>
+                  Records<span className="text-terracotta">.</span>
                 </span>
               </h1>
             </AnimatedSection>
