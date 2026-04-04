@@ -8,9 +8,9 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Letche — Small Record',
+  title: 'Letche — Small Records',
   description:
-    'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Record. Paris.',
+    'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
 }
 
 export default function LetchePage() {
@@ -80,7 +80,7 @@ export default function LetchePage() {
               </span>
               <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
               <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
-                Co-founder of Small Record, Letche explores the darker, more
+                Co-founder of Small Records, Letche explores the darker, more
                 textured side of electronic music. His selections weave between
                 techno, breaks, ambient, and baile funk — always searching for
                 the unexpected.
@@ -126,7 +126,7 @@ export default function LetchePage() {
         <section className="relative h-[50svh] overflow-hidden md:h-[60vh]">
           <ParallaxImage
             src="/images/duo/img_5597.jpg"
-            alt="Small Record"
+            alt="Small Records"
             className="absolute inset-0"
             speed={0.15}
           />

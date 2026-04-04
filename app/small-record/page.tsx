@@ -10,7 +10,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 
 export const metadata: Metadata = {
-  title: 'Small Record — The Label',
+  title: 'Small Records — The Label',
   description:
     'Independent music label founded by Letche & Casae. Paris.',
 }
@@ -24,7 +24,7 @@ export default function SmallRecordPage() {
           <div className="absolute inset-0">
             <Image
               src="/images/duo/img_3179.jpg"
-              alt="Small Record crew"
+              alt="Small Records crew"
               fill
               className="object-cover"
               priority
@@ -39,7 +39,7 @@ export default function SmallRecordPage() {
               <div className="relative mx-auto h-32 w-32 md:h-48 md:w-48">
                 <Image
                   src="/images/logo/logo-white.png"
-                  alt="Small Record"
+                  alt="Small Records"
                   fill
                   className="object-contain invert"
                   unoptimized
@@ -48,7 +48,7 @@ export default function SmallRecordPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.3} blur>
               <h1 className="mt-8 font-display text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.9] tracking-tight">
-                Small Record<span className="text-terracotta">.</span>
+                Small Records<span className="text-terracotta">.</span>
               </h1>
               <p className="mt-4 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/40">
                 Independent Music Label — Paris
@@ -205,7 +205,7 @@ export default function SmallRecordPage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src="/images/duo/img_5568.jpg"
-                  alt="Small Record"
+                  alt="Small Records"
                   fill
                   className="object-cover"
                   unoptimized
@@ -216,7 +216,7 @@ export default function SmallRecordPage() {
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src="/images/duo/img_5537.jpg"
-                  alt="Small Record"
+                  alt="Small Records"
                   fill
                   className="object-cover"
                   unoptimized
@@ -366,7 +366,7 @@ export default function SmallRecordPage() {
               <div className="relative h-12 w-12">
                 <Image
                   src="/images/logo/logo-white.png"
-                  alt="Small Record"
+                  alt="Small Records"
                   fill
                   className="object-contain invert"
                   unoptimized

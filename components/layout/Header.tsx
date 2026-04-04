@@ -27,7 +27,7 @@ export function Header() {
           <Link href="/" className="relative z-50 h-8 w-8 shrink-0 md:h-10 md:w-10">
             <Image
               src="/images/logo/logo-white.png"
-              alt="Small Record"
+              alt="Small Records"
               fill
               className="object-contain invert"
               unoptimized
@@ -37,7 +37,7 @@ export function Header() {
           {/* Center — Issue/brand mark (desktop) */}
           <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block">
             <span className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/30">
-              Small Record — Paris
+              Small Records — Paris
             </span>
           </div>
 

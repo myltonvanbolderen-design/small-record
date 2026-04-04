@@ -4,7 +4,7 @@ import { Header } from '@/components/layout/Header'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Small Record',
+  title: 'Small Records',
   description: 'House, Techno, Baile Funk, Afrohouse. Paris.',
 }
 

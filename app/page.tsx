@@ -10,7 +10,7 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 
 export const metadata: Metadata = {
-  title: 'Small Record',
+  title: 'Small Records',
   description:
     'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
 }
@@ -82,7 +82,7 @@ export default function HomePage() {
         <section className="relative min-h-[80svh] overflow-hidden">
           <ParallaxImage
             src="/images/duo/img_3148.jpg"
-            alt="Small Record crew"
+            alt="Small Records crew"
             className="absolute inset-0"
             speed={0.1}
           />
@@ -200,7 +200,7 @@ export default function HomePage() {
         <section className="relative h-[60svh] w-full md:h-[80vh]">
           <ParallaxImage
             src="/images/duo/img_5564.jpg"
-            alt="Small Record — on the stairs"
+            alt="Small Records — on the stairs"
             className="absolute inset-0"
             speed={0.2}
           />
@@ -335,14 +335,14 @@ export default function HomePage() {
             <div className="relative h-12 w-12">
               <Image
                 src="/images/logo/logo-white.png"
-                alt="Small Record"
+                alt="Small Records"
                 fill
                 className="object-contain invert"
                 unoptimized
               />
             </div>
             <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">
-              Small Record — Paris — 2025
+              Small Records — Paris — 2025
             </p>
             <div className="flex gap-8">
               <a
