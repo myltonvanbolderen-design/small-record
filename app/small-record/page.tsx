@@ -8,6 +8,7 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
+import { VideoLoop } from '@/components/magazine/VideoLoop'
 
 export const metadata: Metadata = {
   title: 'Small Records | The Label',
@@ -222,6 +223,92 @@ export default function SmallRecordPage() {
                   unoptimized
                 />
               </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* ═══════ LIVE - Fete de la Musique at Sornettes ═══════ */}
+        <HorizontalRule color="bg-blanc/10" />
+        <section className="px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <AnimatedSection blur>
+              <div className="mb-10 flex items-end justify-between md:mb-12">
+                <div>
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                    Live
+                  </span>
+                  <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
+                    Fete de la Musique
+                  </h2>
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                    Sornettes · Paris · June 2025
+                  </p>
+                </div>
+                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                  006
+                </span>
+              </div>
+            </AnimatedSection>
+
+            {/* Asymmetric grid: 2 vertical videos + 1 photo */}
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-5">
+              {/* Casae video */}
+              <AnimatedSection direction="left" className="md:col-span-4">
+                <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                  <VideoLoop
+                    src="/videos/casae-sornettes.mp4"
+                    poster="/images/fete-musique/casae.jpg"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                      Casae
+                    </span>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              {/* Center duo photo */}
+              <AnimatedSection direction="none" delay={0.1} scale className="md:col-span-4">
+                <div className="relative aspect-[9/16] w-full overflow-hidden">
+                  <Image
+                    src="/images/fete-musique/duo-sornettes.jpg"
+                    alt="Casae & Letche at Sornettes"
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                      The Crew
+                    </span>
+                  </div>
+                </div>
+              </AnimatedSection>
+
+              {/* Letche video */}
+              <AnimatedSection direction="right" delay={0.15} className="md:col-span-4">
+                <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                  <VideoLoop
+                    src="/videos/letche-sornettes.mp4"
+                    poster="/images/fete-musique/letche.jpg"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                      Letche
+                    </span>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection delay={0.3}>
+              <p className="mt-10 max-w-2xl font-body text-[1rem] leading-[1.9] text-blanc/50">
+                Live at Sornettes for the Fete de la Musique. A warm June evening,
+                the shopfront opened onto the street, music spilling out into
+                Paris. This is what Small Records sounds like in the wild.
+              </p>
             </AnimatedSection>
           </div>
         </section>
