@@ -272,15 +272,15 @@ export default function SmallRecordPage() {
               <AnimatedSection direction="none" delay={0.1} scale className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden">
                   <Image
-                    src="/images/fete-musique/duo-sornettes.jpg"
-                    alt="Casae & Letche at Sornettes"
+                    src="/images/fete-musique/casae-live.jpg"
+                    alt="Casae mixing at Sornettes"
                     fill
                     className="object-cover"
                     unoptimized
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                      The Crew
+                      Sornettes
                     </span>
                   </div>
                 </div>
