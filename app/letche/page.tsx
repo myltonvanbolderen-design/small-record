@@ -8,7 +8,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Letche — Small Records',
+  title: 'Letche - Small Records',
   description:
     'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
 }
@@ -17,7 +17,7 @@ export default function LetchePage() {
   return (
     <PageTransition>
       <main className="min-h-screen bg-noir text-blanc">
-        {/* ═══════ COVER — Different from Casae: title at top ═══════ */}
+        {/* ═══════ COVER - Different from Casae: title at top ═══════ */}
         <section className="relative min-h-[100svh] overflow-hidden">
           <div className="absolute inset-0">
             <Image
@@ -35,7 +35,7 @@ export default function LetchePage() {
             <div>
               <AnimatedSection delay={0.2} direction="none" blur>
                 <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
-                  Artist Profile — 04
+                  Artist Profile - 04
                 </p>
               </AnimatedSection>
               <AnimatedSection duration={1} scale>
@@ -45,7 +45,7 @@ export default function LetchePage() {
               </AnimatedSection>
             </div>
 
-            {/* Genre tags — vertical on desktop, horizontal on mobile */}
+            {/* Genre tags - vertical on desktop, horizontal on mobile */}
             <AnimatedSection delay={0.3} direction="right">
               <div className="flex flex-wrap gap-3 md:flex-col md:items-end md:gap-2">
                 {['Techno', 'Breaks', 'Ambient', 'Baile Funk'].map((tag) => (
@@ -63,7 +63,7 @@ export default function LetchePage() {
 
         <Marquee items={['Techno', 'Breaks', 'Ambient', 'Baile Funk', 'Curiosity', 'Energy']} speed={20} />
 
-        {/* ═══════ BIO — Photo left, text right (opposite of Casae) ═══════ */}
+        {/* ═══════ BIO - Photo left, text right (opposite of Casae) ═══════ */}
         <section className="grid grid-cols-1 md:grid-cols-12">
           <div className="relative min-h-[60svh] md:col-span-7 md:min-h-0">
             <ParallaxImage
@@ -82,19 +82,19 @@ export default function LetchePage() {
               <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
                 Co-founder of Small Records, Letche explores the darker, more
                 textured side of electronic music. His selections weave between
-                techno, breaks, ambient, and baile funk — always searching for
+                techno, breaks, ambient, and baile funk - always searching for
                 the unexpected.
               </p>
               <p className="mt-5 font-body text-[1.05rem] leading-[2] text-blanc/65">
                 A true digger at heart, he listens before he judges, explores
-                before he defines. His sets are journeys — built on curiosity,
+                before he defines. His sets are journeys - built on curiosity,
                 not convention.
               </p>
             </AnimatedSection>
           </div>
         </section>
 
-        {/* ═══════ PHOTO GRID — Different from Casae's slider ═══════ */}
+        {/* ═══════ PHOTO GRID - Different from Casae's slider ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
             <AnimatedSection className="col-span-12 md:col-span-4">

@@ -10,7 +10,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 
 export const metadata: Metadata = {
-  title: 'Small Records — The Label',
+  title: 'Small Records - The Label',
   description:
     'Independent music label founded by Letche & Casae. Paris.',
 }
@@ -19,7 +19,7 @@ export default function SmallRecordPage() {
   return (
     <PageTransition>
       <main className="min-h-screen bg-noir text-blanc">
-        {/* ═══════ COVER — Logo-centered, different from home ═══════ */}
+        {/* ═══════ COVER - Logo-centered, different from home ═══════ */}
         <section className="relative min-h-[100svh] overflow-hidden">
           <div className="absolute inset-0">
             <Image
@@ -51,7 +51,7 @@ export default function SmallRecordPage() {
                 Small Records<span className="text-terracotta">.</span>
               </h1>
               <p className="mt-4 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/40">
-                Independent Music Label — Paris
+                Independent Music Label - Paris
               </p>
             </AnimatedSection>
           </div>
@@ -59,7 +59,7 @@ export default function SmallRecordPage() {
 
         <Marquee items={['Independent', 'Passionate', 'Curious', 'Free', 'Authentic', 'United']} speed={25} />
 
-        {/* ═══════ THE STORY — Origin + manifesto fused ═══════ */}
+        {/* ═══════ THE STORY - Origin + manifesto fused ═══════ */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
@@ -102,10 +102,10 @@ export default function SmallRecordPage() {
                     <p className="font-body text-[1.1rem] leading-[2] text-blanc/60">
                       We select music not by genre, but by emotion. We don&apos;t
                       belong to one sound. House, disco, techno, ambient, grooves,
-                      breaks — if it moves us, it lives with us.
+                      breaks - if it moves us, it lives with us.
                     </p>
                     <p className="font-display text-[1.3rem] font-bold leading-[1.4] text-blanc/80">
-                      Born from friendship and passion — never from strategy.
+                      Born from friendship and passion - never from strategy.
                     </p>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function SmallRecordPage() {
                 },
                 {
                   title: 'A space for creative experiments',
-                  desc: 'Where ideas become records. No format, no formula — just the freedom to try something new.',
+                  desc: 'Where ideas become records. No format, no formula - just the freedom to try something new.',
                 },
               ].map((item, i) => (
                 <AnimatedSection key={item.title} delay={i * 0.1} direction={i % 2 === 0 ? 'left' : 'right'}>
@@ -191,14 +191,14 @@ export default function SmallRecordPage() {
             <AnimatedSection delay={0.4}>
               <p className="mt-16 font-body text-[1.05rem] leading-[2] text-blanc/45 md:w-2/3">
                 We create and curate original music beyond borders. We share
-                everything that came before us — because music is transmission.
+                everything that came before us - because music is transmission.
                 We don&apos;t chase trends. We document energy.
               </p>
             </AnimatedSection>
           </div>
         </section>
 
-        {/* ═══════ PHOTO EDITORIAL — Bigger, 7/5 split ═══════ */}
+        {/* ═══════ PHOTO EDITORIAL - Bigger, 7/5 split ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
             <AnimatedSection className="col-span-12 md:col-span-7">
@@ -226,7 +226,7 @@ export default function SmallRecordPage() {
           </div>
         </section>
 
-        {/* ═══════ MANIFESTO — Full width over photo ═══════ */}
+        {/* ═══════ MANIFESTO - Full width over photo ═══════ */}
         <section className="relative overflow-hidden py-24 md:py-32">
           <ParallaxImage
             src="/images/duo/img_5597.jpg"
@@ -279,7 +279,7 @@ export default function SmallRecordPage() {
                     Featured Mix
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
-                    House Mix — Pool Party
+                    House Mix - Pool Party
                   </h2>
                   <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
                     Summer DJ Set · South of France
@@ -294,7 +294,7 @@ export default function SmallRecordPage() {
           </AnimatedSection>
         </section>
 
-        {/* ═══════ ARTIST TEASE — Portrait ratio ═══════ */}
+        {/* ═══════ ARTIST TEASE - Portrait ratio ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
         <section className="px-5 py-20 md:px-8">
           <div className="mx-auto max-w-5xl">

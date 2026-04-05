@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <>
-      {/* Masthead — thin magazine bar */}
+      {/* Masthead - thin magazine bar */}
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center justify-between px-5 py-4 md:px-8">
           {/* Logo */}
@@ -34,10 +34,10 @@ export function Header() {
             />
           </Link>
 
-          {/* Center — Issue/brand mark (desktop) */}
+          {/* Center - Issue/brand mark (desktop) */}
           <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block">
             <span className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/30">
-              Small Records — Paris
+              Small Records - Paris
             </span>
           </div>
 
