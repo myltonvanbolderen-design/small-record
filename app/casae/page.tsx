@@ -9,7 +9,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Casae - Small Records',
+  title: 'Casae | Small Records',
   description:
     'House, Disco, Grooves, Afrohouse. Co-founder of Small Records. Paris.',
 }
@@ -36,7 +36,7 @@ export default function CasaePage() {
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-10 pt-20 md:px-8">
             <AnimatedSection delay={0.2} direction="none" blur>
               <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
-                Artist Profile - 03
+                Artist Profile · 03
               </p>
             </AnimatedSection>
 
@@ -74,7 +74,7 @@ export default function CasaePage() {
               <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
                 Co-founder of Small Records, Casae is driven by a deep love for
                 vinyl digging and warm, groove-heavy sounds. His sets move
-                between house, disco, and afrohouse - always with a focus on
+                between house, disco, and afrohouse. Always with a focus on
                 rhythm and emotion over formula.
               </p>
               <p className="mt-5 font-body text-[1.05rem] leading-[2] text-blanc/65">

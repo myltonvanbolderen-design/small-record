@@ -41,7 +41,7 @@ export default function HomePage() {
                   Issue N&deg;01
                 </p>
                 <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
-                  Paris - 2025
+                  Paris · 2025
                 </p>
               </div>
             </AnimatedSection>
@@ -62,7 +62,7 @@ export default function HomePage() {
                 {' '}We listen. We feel.
               </p>
               <p className="mt-4 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30">
-                Casae & Letche - Paris
+                Casae & Letche · Paris
               </p>
             </AnimatedSection>
           </div>
@@ -106,10 +106,10 @@ export default function HomePage() {
               <HorizontalRule color="bg-terracotta" className="mt-10 !w-16" delay={0.3} />
               <AnimatedSection delay={0.3}>
                 <p className="drop-cap mt-10 font-body text-[1.1rem] leading-[2] text-blanc/60 md:w-2/3">
-                  Small Records was born from friendship and passion - not from
+                  Small Records was born from friendship and passion. Not from
                   strategy. It started with conversations. Long nights. Vinyl
                   records. Shared discoveries. We don&apos;t belong to one sound.
-                  House, disco, techno, ambient, grooves, breaks - if it moves us,
+                  House, disco, techno, ambient, grooves, breaks. If it moves us,
                   it lives with us.
                 </p>
               </AnimatedSection>
@@ -155,7 +155,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-10">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
-                      03 - Artist
+                      03 · Artist
                     </span>
                     <h3 className="mt-2 font-display text-[clamp(3rem,8vw,5rem)] font-bold leading-[0.85]">
                       Casae
@@ -181,7 +181,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
-                      04 - Artist
+                      04 · Artist
                     </span>
                     <h3 className="mt-2 font-display text-[clamp(3rem,8vw,5rem)] font-bold leading-[0.85]">
                       Letche
@@ -200,7 +200,7 @@ export default function HomePage() {
         <section className="relative h-[60svh] w-full md:h-[80vh]">
           <ParallaxImage
             src="/images/duo/img_5564.jpg"
-            alt="Small Records - on the stairs"
+            alt="Small Records on the stairs"
             className="absolute inset-0"
             speed={0.2}
           />
@@ -232,7 +232,7 @@ export default function HomePage() {
                     Featured Mix
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
-                    House Mix - Pool Party
+                    House Mix · Pool Party
                   </h2>
                   <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
                     Summer DJ Set · South of France
@@ -269,7 +269,7 @@ export default function HomePage() {
                 {[
                   {
                     title: 'Eclecticism',
-                    text: "We don't belong to one sound. House, disco, techno, ambient, grooves, breaks - if it moves us, it lives with us.",
+                    text: "We don't belong to one sound. House, disco, techno, ambient, grooves, breaks. If it moves us, it lives with us.",
                   },
                   {
                     title: 'Freedom',
@@ -342,7 +342,7 @@ export default function HomePage() {
               />
             </div>
             <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">
-              Small Records - Paris - 2025
+              Small Records · Paris · 2025
             </p>
             <div className="flex gap-8">
               <a
