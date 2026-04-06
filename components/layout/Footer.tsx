@@ -12,7 +12,7 @@ export function Footer() {
               src="/images/logo/logo-white.png"
               alt="Small Records"
               fill
-              className="object-contain invert"
+              className="object-contain" style={{ filter: 'brightness(0) invert(1)' }}
               unoptimized
             />
           </div>

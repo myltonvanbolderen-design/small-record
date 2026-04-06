@@ -42,7 +42,7 @@ export default function SmallRecordPage() {
                   src="/images/logo/logo-white.png"
                   alt="Small Records"
                   fill
-                  className="object-contain invert"
+                  className="object-contain" style={{ filter: 'brightness(0) invert(1)' }}
                   unoptimized
                 />
               </div>
@@ -388,7 +388,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-noir/50 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         03
@@ -413,7 +413,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-noir/50 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         04
