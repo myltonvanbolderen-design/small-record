@@ -115,27 +115,14 @@ export default function SmallRecordPage() {
           </div>
         </section>
 
-        {/* ═══════ FULL BLEED PHOTO + pull quote ═══════ */}
-        <section className="relative h-[50svh] w-full md:h-[70vh]">
+        {/* ═══════ FULL BLEED PHOTO ═══════ */}
+        <section className="relative h-[35svh] w-full md:h-[60vh]">
           <ParallaxImage
             src="/images/duo/img_3277.jpg"
             alt="Casae & Letche"
             className="absolute inset-0"
             speed={0.15}
           />
-          <div className="absolute inset-0 bg-noir/20" />
-          <div className="absolute inset-0 z-10 flex items-end px-5 pb-8 md:px-8 md:pb-12">
-            <AnimatedSection blur>
-              <p className="font-display text-[clamp(1.3rem,3vw,2.2rem)] font-bold leading-[1.3] drop-shadow-lg">
-                &ldquo;We don&apos;t chase trends.
-                <br />
-                We document energy.&rdquo;
-              </p>
-            </AnimatedSection>
-          </div>
-          <span className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/15 md:right-8">
-            003
-          </span>
         </section>
 
         <Marquee items={['House', 'Techno', 'Disco', 'Ambient', 'Baile Funk', 'Grooves', 'Breaks']} speed={20} />
