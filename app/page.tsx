@@ -45,7 +45,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             <AnimatedSection duration={1} scale>
-              <h1 className="pointer-events-none -mb-[3vw] select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]">
+              <h1 className="pointer-events-none -mb-[3vw] select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">
                   Records<span className="text-terracotta">.</span>
