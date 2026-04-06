@@ -269,8 +269,8 @@ export default function SmallRecordPage() {
               <div className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden">
                   <Image
-                    src="/images/fete-musique/duo-sornettes.jpg"
-                    alt="Casae & Letche at Sornettes"
+                    src="/images/fete-musique/casae-live.jpg"
+                    alt="Casae mixing at Sornettes"
                     fill
                     className="object-cover"
                     unoptimized
