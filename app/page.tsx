@@ -8,6 +8,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
+import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
 
 export const metadata: Metadata = {
   title: 'Small Records',
@@ -44,14 +45,14 @@ export default function HomePage() {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection duration={1} scale>
+            <ParallaxTitle speed={0.3}>
               <h1 className="pointer-events-none -mb-[3vw] select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">
                   Records<span className="text-terracotta">.</span>
                 </span>
               </h1>
-            </AnimatedSection>
+            </ParallaxTitle>
 
             <AnimatedSection delay={0.4} blur className="mt-12">
               <p className="font-display text-[clamp(1.1rem,2.5vw,1.6rem)] font-bold leading-[1.4] text-blanc/70">
