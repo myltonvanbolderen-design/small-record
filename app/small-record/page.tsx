@@ -9,6 +9,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
+import { FadingOverlay } from '@/components/animation/FadingOverlay'
 
 export const metadata: Metadata = {
   title: 'The Label',
@@ -388,7 +389,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
+                    <FadingOverlay className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         03
@@ -413,7 +414,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
+                    <FadingOverlay className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         04
