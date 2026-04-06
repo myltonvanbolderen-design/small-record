@@ -63,34 +63,39 @@ export default function CasaePage() {
 
         <Marquee items={['House', 'Disco', 'Grooves', 'Afrohouse', 'Vinyl', 'Emotion']} speed={20} />
 
-        {/* ═══════ BIO - Text left, photo right ═══════ */}
-        <section className="grid grid-cols-1 md:grid-cols-12">
-          <div className="order-2 flex flex-col justify-center px-5 py-16 md:order-1 md:col-span-5 md:px-10 md:py-24">
-            <AnimatedSection direction="left">
-              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
-                Bio
-              </span>
-              <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
-              <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
-                Co-founder of Small Records, Casae is driven by a deep love for
-                vinyl digging and warm, groove-heavy sounds. His sets move
-                between house, disco, and afrohouse. Always with a focus on
-                rhythm and emotion over formula.
-              </p>
-              <p className="mt-5 font-body text-[1.05rem] leading-[2] text-blanc/65">
-                Whether behind the decks or in the studio, he searches for the
-                sounds that make people move without thinking. Music as instinct,
-                not calculation.
-              </p>
-            </AnimatedSection>
-          </div>
-          <div className="relative order-1 min-h-[60svh] md:order-2 md:col-span-7 md:min-h-0">
-            <ParallaxImage
-              src="/images/casae/img_5694.jpg"
-              alt="Casae portrait"
-              className="absolute inset-0"
-              speed={0.1}
-            />
+        {/* ═══════ BIO - Over photo background ═══════ */}
+        <section className="relative overflow-hidden py-20 md:py-28">
+          <ParallaxImage
+            src="/images/casae/img_5694.jpg"
+            alt="Casae portrait"
+            className="absolute inset-0"
+            speed={0.1}
+          />
+          <div className="absolute inset-0 bg-noir/40" />
+          <div className="relative z-10 px-5 md:px-8">
+            <div className="mx-auto max-w-5xl">
+              <AnimatedSection>
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  Bio
+                </span>
+                <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
+              </AnimatedSection>
+              <AnimatedSection delay={0.1}>
+                <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-12">
+                  <p className="drop-cap font-body text-[1.1rem] leading-[2] text-blanc/65">
+                    Co-founder of Small Records, Casae is driven by a deep love for
+                    vinyl digging and warm, groove-heavy sounds. His sets move
+                    between house, disco, and afrohouse. Always with a focus on
+                    rhythm and emotion over formula.
+                  </p>
+                  <p className="font-body text-[1.1rem] leading-[2] text-blanc/65">
+                    Whether behind the decks or in the studio, he searches for the
+                    sounds that make people move without thinking. Music as instinct,
+                    not calculation.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
 

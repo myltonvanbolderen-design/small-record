@@ -63,34 +63,39 @@ export default function LetchePage() {
 
         <Marquee items={['Techno', 'Breaks', 'Ambient', 'Baile Funk', 'Curiosity', 'Energy']} speed={20} />
 
-        {/* ═══════ BIO - Photo left, text right (opposite of Casae) ═══════ */}
-        <section className="grid grid-cols-1 md:grid-cols-12">
-          <div className="relative min-h-[60svh] md:col-span-7 md:min-h-0">
-            <ParallaxImage
-              src="/images/letech/img_5659.jpg"
-              alt="Letche portrait"
-              className="absolute inset-0"
-              speed={0.1}
-            />
-          </div>
-          <div className="flex flex-col justify-center px-5 py-16 md:col-span-5 md:px-10 md:py-24">
-            <AnimatedSection direction="right">
-              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
-                Bio
-              </span>
-              <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
-              <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
-                Co-founder of Small Records, Letche explores the darker, more
-                textured side of electronic music. His selections weave between
-                techno, breaks, ambient, and baile funk. Always searching for
-                the unexpected.
-              </p>
-              <p className="mt-5 font-body text-[1.05rem] leading-[2] text-blanc/65">
-                A true digger at heart, he listens before he judges, explores
-                before he defines. His sets are journeys, built on curiosity,
-                not convention.
-              </p>
-            </AnimatedSection>
+        {/* ═══════ BIO - Over photo background ═══════ */}
+        <section className="relative overflow-hidden py-20 md:py-28">
+          <ParallaxImage
+            src="/images/letech/img_5659.jpg"
+            alt="Letche portrait"
+            className="absolute inset-0"
+            speed={0.1}
+          />
+          <div className="absolute inset-0 bg-noir/40" />
+          <div className="relative z-10 px-5 md:px-8">
+            <div className="mx-auto max-w-5xl">
+              <AnimatedSection>
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  Bio
+                </span>
+                <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
+              </AnimatedSection>
+              <AnimatedSection delay={0.1}>
+                <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-12">
+                  <p className="drop-cap font-body text-[1.1rem] leading-[2] text-blanc/65">
+                    Co-founder of Small Records, Letche explores the darker, more
+                    textured side of electronic music. His selections weave between
+                    techno, breaks, ambient, and baile funk. Always searching for
+                    the unexpected.
+                  </p>
+                  <p className="font-body text-[1.1rem] leading-[2] text-blanc/65">
+                    A true digger at heart, he listens before he judges, explores
+                    before he defines. His sets are journeys, built on curiosity,
+                    not convention.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
 

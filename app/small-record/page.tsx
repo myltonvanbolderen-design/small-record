@@ -303,7 +303,7 @@ export default function SmallRecordPage() {
             </div>
 
             <AnimatedSection delay={0.3}>
-              <p className="mt-10 max-w-2xl font-body text-[1rem] leading-[1.9] text-blanc/50">
+              <p className="mt-10 font-body text-[1.05rem] leading-[1.9] text-blanc/50 md:w-3/4">
                 Live at Sornettes for the Fete de la Musique. A warm June evening,
                 the shopfront opened onto the street, music spilling out into
                 Paris. This is what Small Records sounds like in the wild.
