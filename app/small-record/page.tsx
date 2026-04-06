@@ -37,13 +37,12 @@ export default function SmallRecordPage() {
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
             {/* Big gnome logo as cover centerpiece */}
             <AnimatedSection scale blur duration={1.2}>
-              <div className="relative mx-auto h-32 w-32 md:h-48 md:w-48">
-                <Image
+              <div className="mx-auto h-32 w-32 md:h-48 md:w-48">
+                <img
                   src="/images/logo/logo-white.png"
                   alt="Small Records"
-                  fill
-                  className="object-contain invert"
-                  unoptimized
+                  className="h-full w-full object-contain"
+                  style={{ filter: 'invert(1)' }}
                 />
               </div>
             </AnimatedSection>
@@ -450,13 +449,12 @@ export default function SmallRecordPage() {
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
             <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-              <div className="relative h-12 w-12">
-                <Image
+              <div className="h-12 w-12">
+                <img
                   src="/images/logo/logo-white.png"
                   alt="Small Records"
-                  fill
-                  className="object-contain invert"
-                  unoptimized
+                  className="h-full w-full object-contain"
+                  style={{ filter: 'invert(1)' }}
                 />
               </div>
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
