@@ -9,6 +9,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
+import { FlipImage } from '@/components/magazine/FlipImage'
 
 export const metadata: Metadata = {
   title: 'Small Records',
@@ -122,6 +123,16 @@ export default function HomePage() {
           <span className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/15 md:right-8">
             002
           </span>
+        </section>
+
+        {/* ═══════ FLIP IMAGE ═══════ */}
+        <section className="px-5 md:px-8">
+          <FlipImage
+            images={['/images/duo/img_5564.jpg', '/images/duo/img_5568.jpg']}
+            alt="Small Records"
+            interval={500}
+            className="aspect-[16/9] w-full"
+          />
         </section>
 
         {/* ═══════ ARTIST SPREAD - Asymmetric ═══════ */}

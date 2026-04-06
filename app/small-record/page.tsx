@@ -9,6 +9,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
+import { FlipImage } from '@/components/magazine/FlipImage'
 
 export const metadata: Metadata = {
   title: 'Small Records | The Label',
@@ -222,6 +223,16 @@ export default function SmallRecordPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* ═══════ FLIP IMAGE ═══════ */}
+        <section className="px-5 py-4 md:px-8">
+          <FlipImage
+            images={['/images/duo/img_3234.jpg', '/images/duo/img_3235.jpg']}
+            alt="Small Records"
+            interval={500}
+            className="aspect-[9/16] w-full max-w-md mx-auto md:aspect-[3/4] md:max-w-lg"
+          />
         </section>
 
         {/* ═══════ LIVE - Fete de la Musique at Sornettes ═══════ */}
