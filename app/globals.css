@@ -80,11 +80,6 @@ body::before {
   scrollbar-width: none;
 }
 
-/* Force white logo — inverts black PNG to white */
-.logo-white img {
-  filter: brightness(0) invert(1) !important;
-}
-
 /* Drop cap — editorial first letter */
 .drop-cap::first-letter {
   float: left;

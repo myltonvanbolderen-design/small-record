@@ -7,12 +7,12 @@ export function Footer() {
       <HorizontalRule color="bg-blanc/10" />
       <footer className="px-5 py-12 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8">
-          <div className="logo-white relative h-12 w-12">
+          <div className="relative h-12 w-12">
             <Image
               src="/images/logo/logo-white.png"
               alt="Small Records"
               fill
-              className="object-contain"
+              className="object-contain invert"
               unoptimized
             />
           </div>
