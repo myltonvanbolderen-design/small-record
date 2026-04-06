@@ -38,12 +38,12 @@ export default function SmallRecordPage() {
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
             {/* Big gnome logo as cover centerpiece */}
             <AnimatedSection scale blur duration={1.2}>
-              <div className="relative mx-auto h-32 w-32 md:h-48 md:w-48">
+              <div className="logo-white relative mx-auto h-32 w-32 md:h-48 md:w-48">
                 <Image
                   src="/images/logo/logo-white.png"
                   alt="Small Records"
                   fill
-                  className="object-contain" style={{ filter: 'brightness(0) invert(1)' }}
+                  className="object-contain"
                   unoptimized
                 />
               </div>
