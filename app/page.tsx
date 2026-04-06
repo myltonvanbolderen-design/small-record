@@ -30,8 +30,7 @@ export default function HomePage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/40 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-noir/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-noir/20 to-transparent" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-8 pt-20 md:px-8">
@@ -86,7 +85,7 @@ export default function HomePage() {
             className="absolute inset-0"
             speed={0.1}
           />
-          <div className="absolute inset-0 bg-noir/60" />
+          <div className="absolute inset-0 bg-noir/40" />
           <div className="relative z-10 flex min-h-[80svh] flex-col justify-center px-5 py-20 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
@@ -152,7 +151,7 @@ export default function HomePage() {
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-noir/40 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-10">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
                       03 · Artist
@@ -178,7 +177,7 @@ export default function HomePage() {
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-noir/40 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
                       04 · Artist
@@ -204,7 +203,6 @@ export default function HomePage() {
             className="absolute inset-0"
             speed={0.2}
           />
-          <div className="absolute inset-0 bg-noir/30" />
           <div className="absolute inset-0 z-10 flex items-center justify-center px-5 text-center">
             <AnimatedSection scale blur>
               <p className="font-display text-[clamp(1.6rem,4vw,3.5rem)] font-bold leading-[1.2] drop-shadow-lg">

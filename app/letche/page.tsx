@@ -28,7 +28,7 @@ export default function LetchePage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-noir/60 via-transparent to-noir/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-noir/30 via-transparent to-noir/20" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-10 pt-20 md:px-8">
@@ -71,7 +71,7 @@ export default function LetchePage() {
             className="absolute inset-0"
             speed={0.1}
           />
-          <div className="absolute inset-0 bg-noir/70" />
+          <div className="absolute inset-0 bg-noir/40" />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
             <AnimatedSection>
