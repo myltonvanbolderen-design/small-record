@@ -24,7 +24,7 @@ export default function LetchePage() {
               src="/images/letech/img_5611.jpg"
               alt="DJ Letche"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               priority
               unoptimized
             />

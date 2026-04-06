@@ -25,7 +25,7 @@ export default function CasaePage() {
               src="/images/casae/img_5547.jpg"
               alt="DJ Casae"
               fill
-              className="object-cover object-top"
+              className="object-cover object-center"
               priority
               unoptimized
             />
