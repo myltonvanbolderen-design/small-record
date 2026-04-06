@@ -24,13 +24,12 @@ export function Header() {
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center justify-between px-5 py-4 md:px-8">
           {/* Logo */}
-          <Link href="/" className="relative z-50 h-8 w-8 shrink-0 md:h-10 md:w-10">
-            <Image
+          <Link href="/" className="relative z-50 block h-8 w-8 shrink-0 md:h-10 md:w-10">
+            <img
               src="/images/logo/logo-white.png"
               alt="Small Records"
-              fill
-              className="object-contain invert"
-              unoptimized
+              className="h-full w-full object-contain"
+              style={{ filter: 'invert(1)' }}
             />
           </Link>
 

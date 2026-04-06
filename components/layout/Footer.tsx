@@ -7,13 +7,12 @@ export function Footer() {
       <HorizontalRule color="bg-blanc/10" />
       <footer className="px-5 py-12 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8">
-          <div className="relative h-12 w-12">
-            <Image
+          <div className="h-12 w-12">
+            <img
               src="/images/logo/logo-white.png"
               alt="Small Records"
-              fill
-              className="object-contain invert"
-              unoptimized
+              className="h-full w-full object-contain"
+              style={{ filter: 'invert(1)' }}
             />
           </div>
           <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">
