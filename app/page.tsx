@@ -33,7 +33,8 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-8 pt-20 md:px-8">
+          {/* Issue info - top */}
+          <div className="absolute top-20 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.3} direction="none" blur>
               <div className="flex items-start justify-between">
                 <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
@@ -44,17 +45,23 @@ export default function HomePage() {
                 </p>
               </div>
             </AnimatedSection>
+          </div>
 
+          {/* Title - centered, parallax, independent of flow */}
+          <div className="absolute inset-0 z-10 flex items-center px-5 md:px-8">
             <ParallaxTitle speed={0.3}>
-              <h1 className="pointer-events-none -mb-[3vw] select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
+              <h1 className="pointer-events-none select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">
                   Records<span className="text-terracotta">.</span>
                 </span>
               </h1>
             </ParallaxTitle>
+          </div>
 
-            <AnimatedSection delay={0.4} blur className="mt-12">
+          {/* Tagline - bottom */}
+          <div className="absolute bottom-8 left-5 right-5 z-10 md:left-8 md:right-8">
+            <AnimatedSection delay={0.4} blur>
               <p className="font-display text-[clamp(1.1rem,2.5vw,1.6rem)] font-bold leading-[1.4] text-blanc/70">
                 We are diggers. We search.
                 <br className="hidden md:block" />
@@ -64,11 +71,10 @@ export default function HomePage() {
                 Casae & Letche · Paris
               </p>
             </AnimatedSection>
+            <span className="mt-4 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/20">
+              001
+            </span>
           </div>
-
-          <span className="absolute bottom-8 left-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/20 md:left-8">
-            001
-          </span>
         </section>
 
         {/* ═══════ MARQUEE ═══════ */}
