@@ -63,19 +63,17 @@ export default function LetchePage() {
 
         <Marquee items={['Techno', 'Breaks', 'Ambient', 'Baile Funk', 'Curiosity', 'Energy']} speed={20} />
 
-        {/* ═══════ PHOTO FULL BLEED ═══════ */}
-        <section className="relative h-[50svh] w-full md:h-[70vh]">
+        {/* ═══════ BIO - Over photo background ═══════ */}
+        <section className="relative overflow-hidden py-20 md:py-28">
           <ParallaxImage
             src="/images/letech/img_5659.jpg"
             alt="Letche portrait"
             className="absolute inset-0"
             speed={0.1}
           />
-        </section>
-
-        {/* ═══════ BIO - Full width horizontal ═══════ */}
-        <section className="px-5 py-20 md:px-8 md:py-28">
-          <div className="mx-auto max-w-5xl">
+          <div className="absolute inset-0 bg-noir/70" />
+          <div className="relative z-10 px-5 md:px-8">
+            <div className="mx-auto max-w-5xl">
             <AnimatedSection>
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Bio
@@ -97,6 +95,7 @@ export default function LetchePage() {
                 </p>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
