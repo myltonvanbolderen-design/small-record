@@ -8,7 +8,6 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
-import { FadingOverlay } from '@/components/animation/FadingOverlay'
 
 export const metadata: Metadata = {
   title: 'Small Records | Independent Music Label',
@@ -153,7 +152,7 @@ export default function HomePage() {
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
                     unoptimized
                   />
-                  <FadingOverlay className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-10">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
                       03 · Artist
@@ -179,7 +178,7 @@ export default function HomePage() {
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
                     unoptimized
                   />
-                  <FadingOverlay className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-noir/70 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
                       04 · Artist
