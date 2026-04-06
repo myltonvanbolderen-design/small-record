@@ -31,7 +31,6 @@ export default function SmallRecordPage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-noir/60" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
@@ -122,7 +121,6 @@ export default function SmallRecordPage() {
             className="absolute inset-0"
             speed={0.15}
           />
-          <div className="absolute inset-0 bg-noir/20" />
           <div className="absolute inset-0 z-10 flex items-end px-5 pb-8 md:px-8 md:pb-12">
             <AnimatedSection blur>
               <p className="font-display text-[clamp(1.3rem,3vw,2.2rem)] font-bold leading-[1.3] drop-shadow-lg">
@@ -201,7 +199,7 @@ export default function SmallRecordPage() {
         {/* ═══════ PHOTO EDITORIAL - Bigger, 7/5 split ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
-            <AnimatedSection className="col-span-12 md:col-span-7">
+            <div className="col-span-12 md:col-span-7">
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src="/images/duo/img_5568.jpg"
@@ -211,8 +209,8 @@ export default function SmallRecordPage() {
                   unoptimized
                 />
               </div>
-            </AnimatedSection>
-            <AnimatedSection className="col-span-12 md:col-span-5" delay={0.1}>
+            </div>
+            <div className="col-span-12 md:col-span-5">
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src="/images/duo/img_5537.jpg"
@@ -222,7 +220,7 @@ export default function SmallRecordPage() {
                   unoptimized
                 />
               </div>
-            </AnimatedSection>
+            </div>
           </div>
         </section>
 
@@ -252,7 +250,7 @@ export default function SmallRecordPage() {
             {/* Asymmetric grid: 2 vertical videos + 1 photo */}
             <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-5">
               {/* Casae video */}
-              <AnimatedSection direction="left" className="md:col-span-4">
+              <div className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
                   <VideoLoop
                     src="/videos/casae-sornettes.mp4"
@@ -265,10 +263,10 @@ export default function SmallRecordPage() {
                     </span>
                   </div>
                 </div>
-              </AnimatedSection>
+              </div>
 
               {/* Center duo photo */}
-              <AnimatedSection direction="none" delay={0.1} scale className="md:col-span-4">
+              <div className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden">
                   <Image
                     src="/images/fete-musique/duo-sornettes.jpg"
@@ -283,10 +281,10 @@ export default function SmallRecordPage() {
                     </span>
                   </div>
                 </div>
-              </AnimatedSection>
+              </div>
 
               {/* Letche video */}
-              <AnimatedSection direction="right" delay={0.15} className="md:col-span-4">
+              <div className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
                   <VideoLoop
                     src="/videos/letche-sornettes.mp4"
@@ -299,7 +297,7 @@ export default function SmallRecordPage() {
                     </span>
                   </div>
                 </div>
-              </AnimatedSection>
+              </div>
             </div>
 
             <AnimatedSection delay={0.3}>
@@ -320,7 +318,6 @@ export default function SmallRecordPage() {
             className="absolute inset-0"
             speed={0.1}
           />
-          <div className="absolute inset-0 bg-noir/70" />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
@@ -390,7 +387,7 @@ export default function SmallRecordPage() {
               </span>
             </AnimatedSection>
             <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-              <AnimatedSection direction="left">
+              <div>
                 <Link href="/casae" className="group relative block overflow-hidden">
                   <div className="relative aspect-[3/4] w-full">
                     <Image
@@ -400,7 +397,6 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         03
@@ -414,8 +410,8 @@ export default function SmallRecordPage() {
                     </div>
                   </div>
                 </Link>
-              </AnimatedSection>
-              <AnimatedSection direction="right" delay={0.1}>
+              </div>
+              <div>
                 <Link href="/letche" className="group relative block overflow-hidden">
                   <div className="relative aspect-[3/4] w-full">
                     <Image
@@ -425,7 +421,6 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         04
@@ -439,7 +434,7 @@ export default function SmallRecordPage() {
                     </div>
                   </div>
                 </Link>
-              </AnimatedSection>
+              </div>
             </div>
           </div>
         </section>

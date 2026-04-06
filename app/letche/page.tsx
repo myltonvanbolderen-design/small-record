@@ -28,7 +28,6 @@ export default function LetchePage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-noir/60 via-transparent to-noir/40" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-10 pt-20 md:px-8">
@@ -71,7 +70,6 @@ export default function LetchePage() {
             className="absolute inset-0"
             speed={0.1}
           />
-          <div className="absolute inset-0 bg-noir/40" />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection>
@@ -102,7 +100,7 @@ export default function LetchePage() {
         {/* ═══════ PHOTO GRID - Different from Casae's slider ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
-            <AnimatedSection className="col-span-12 md:col-span-4">
+            <div className="col-span-12 md:col-span-4">
               <div className="relative aspect-[3/4] w-full overflow-hidden">
                 <Image
                   src="/images/letech/img_5604.jpg"
@@ -112,8 +110,8 @@ export default function LetchePage() {
                   unoptimized
                 />
               </div>
-            </AnimatedSection>
-            <AnimatedSection className="col-span-12 md:col-span-8" delay={0.1}>
+            </div>
+            <div className="col-span-12 md:col-span-8">
               <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src="/images/letech/img_5615.jpg"
@@ -123,7 +121,7 @@ export default function LetchePage() {
                   unoptimized
                 />
               </div>
-            </AnimatedSection>
+            </div>
           </div>
         </section>
 
@@ -135,7 +133,6 @@ export default function LetchePage() {
             className="absolute inset-0"
             speed={0.15}
           />
-          <div className="absolute inset-0 bg-noir/50" />
           <div className="absolute inset-0 z-10 flex items-center justify-center px-5 text-center">
             <AnimatedSection blur scale>
               <p className="font-display text-[clamp(1.4rem,3.5vw,2.5rem)] font-bold leading-[1.3] drop-shadow-lg">
