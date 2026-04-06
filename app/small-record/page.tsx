@@ -11,9 +11,9 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
 
 export const metadata: Metadata = {
-  title: 'The Label',
+  title: 'Small Records | The Label',
   description:
-    'Small Records is an independent music label founded by Letche & Casae. Born from friendship, vinyl, and late nights. Paris.',
+    'Independent music label founded by Letche & Casae. Paris.',
 }
 
 export default function SmallRecordPage() {
@@ -31,18 +31,19 @@ export default function SmallRecordPage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir/50 to-transparent" />
+            <div className="absolute inset-0 bg-noir/60" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
             {/* Big gnome logo as cover centerpiece */}
             <AnimatedSection scale blur duration={1.2}>
-              <div className="mx-auto h-32 w-32 md:h-48 md:w-48">
-                <img
+              <div className="relative mx-auto h-32 w-32 md:h-48 md:w-48">
+                <Image
                   src="/images/logo/logo-white.png"
                   alt="Small Records"
-                  className="h-full w-full object-contain"
-                  style={{ filter: 'invert(1)' }}
+                  fill
+                  className="object-contain invert"
+                  unoptimized
                 />
               </div>
             </AnimatedSection>
@@ -114,14 +115,27 @@ export default function SmallRecordPage() {
           </div>
         </section>
 
-        {/* ═══════ FULL BLEED PHOTO ═══════ */}
-        <section className="relative h-[35svh] w-full md:h-[60vh]">
+        {/* ═══════ FULL BLEED PHOTO + pull quote ═══════ */}
+        <section className="relative h-[50svh] w-full md:h-[70vh]">
           <ParallaxImage
             src="/images/duo/img_3277.jpg"
             alt="Casae & Letche"
             className="absolute inset-0"
             speed={0.15}
           />
+          <div className="absolute inset-0 bg-noir/20" />
+          <div className="absolute inset-0 z-10 flex items-end px-5 pb-8 md:px-8 md:pb-12">
+            <AnimatedSection blur>
+              <p className="font-display text-[clamp(1.3rem,3vw,2.2rem)] font-bold leading-[1.3] drop-shadow-lg">
+                &ldquo;We don&apos;t chase trends.
+                <br />
+                We document energy.&rdquo;
+              </p>
+            </AnimatedSection>
+          </div>
+          <span className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/15 md:right-8">
+            003
+          </span>
         </section>
 
         <Marquee items={['House', 'Techno', 'Disco', 'Ambient', 'Baile Funk', 'Grooves', 'Breaks']} speed={20} />
@@ -258,15 +272,15 @@ export default function SmallRecordPage() {
               <AnimatedSection direction="none" delay={0.1} scale className="md:col-span-4">
                 <div className="relative aspect-[9/16] w-full overflow-hidden">
                   <Image
-                    src="/images/fete-musique/casae-live.jpg"
-                    alt="Casae mixing at Sornettes"
+                    src="/images/fete-musique/duo-sornettes.jpg"
+                    alt="Casae & Letche at Sornettes"
                     fill
                     className="object-cover"
                     unoptimized
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                      Sornettes
+                      The Crew
                     </span>
                   </div>
                 </div>
@@ -290,7 +304,7 @@ export default function SmallRecordPage() {
             </div>
 
             <AnimatedSection delay={0.3}>
-              <p className="mt-10 font-body text-[1.05rem] leading-[1.9] text-blanc/50 md:w-3/4">
+              <p className="mt-10 max-w-2xl font-body text-[1rem] leading-[1.9] text-blanc/50">
                 Live at Sornettes for the Fete de la Musique. A warm June evening,
                 the shopfront opened onto the street, music spilling out into
                 Paris. This is what Small Records sounds like in the wild.
@@ -307,6 +321,7 @@ export default function SmallRecordPage() {
             className="absolute inset-0"
             speed={0.1}
           />
+          <div className="absolute inset-0 bg-noir/70" />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
@@ -386,7 +401,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/40 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         03
@@ -411,7 +426,7 @@ export default function SmallRecordPage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-noir/40 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-noir/80 via-transparent to-transparent" />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
                         04
@@ -434,7 +449,16 @@ export default function SmallRecordPage() {
         <HorizontalRule color="bg-blanc/10" />
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
-            <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
+              <div className="relative h-12 w-12">
+                <Image
+                  src="/images/logo/logo-white.png"
+                  alt="Small Records"
+                  fill
+                  className="object-contain invert"
+                  unoptimized
+                />
+              </div>
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
@@ -444,6 +468,24 @@ export default function SmallRecordPage() {
               <p className="font-body text-[0.95rem] text-blanc/40">
                 For bookings, collaborations, and press inquiries.
               </p>
+              <div className="flex gap-8">
+                <a
+                  href="https://www.instagram.com/smallmusics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://linktr.ee/smallrecords_music"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                >
+                  Linktree
+                </a>
+              </div>
             </div>
           </section>
         </AnimatedSection>

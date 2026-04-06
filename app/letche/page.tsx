@@ -8,9 +8,9 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Letche',
+  title: 'Letche | Small Records',
   description:
-    'DJ Letche. Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Curious digger, set builder. Paris.',
+    'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
 }
 
 export default function LetchePage() {
@@ -28,7 +28,7 @@ export default function LetchePage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-noir/60 via-transparent to-noir/40" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-10 pt-20 md:px-8">
@@ -63,46 +63,53 @@ export default function LetchePage() {
 
         <Marquee items={['Techno', 'Breaks', 'Ambient', 'Baile Funk', 'Curiosity', 'Energy']} speed={20} />
 
-        {/* ═══════ BIO - Over photo background ═══════ */}
-        <section className="relative overflow-hidden py-20 md:py-28">
-          <ParallaxImage
-            src="/images/letech/img_5659.jpg"
-            alt="Letche portrait"
-            className="absolute inset-0"
-            speed={0.1}
-          />
-          <div className="relative z-10 px-5 md:px-8">
-            <div className="mx-auto max-w-5xl">
-            <AnimatedSection>
+        {/* ═══════ BIO - Photo left, text right (opposite of Casae) ═══════ */}
+        <section className="grid grid-cols-1 md:grid-cols-12">
+          <div className="relative min-h-[60svh] md:col-span-7 md:min-h-0">
+            <ParallaxImage
+              src="/images/letech/img_5659.jpg"
+              alt="Letche portrait"
+              className="absolute inset-0"
+              speed={0.1}
+            />
+          </div>
+          <div className="flex flex-col justify-center px-5 py-16 md:col-span-5 md:px-10 md:py-24">
+            <AnimatedSection direction="right">
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Bio
               </span>
               <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
+              <p className="drop-cap mt-8 font-body text-[1.05rem] leading-[2] text-blanc/65">
+                Co-founder of Small Records, Letche explores the darker, more
+                textured side of electronic music. His selections weave between
+                techno, breaks, ambient, and baile funk. Always searching for
+                the unexpected.
+              </p>
+              <p className="mt-5 font-body text-[1.05rem] leading-[2] text-blanc/65">
+                A true digger at heart, he listens before he judges, explores
+                before he defines. His sets are journeys, built on curiosity,
+                not convention.
+              </p>
             </AnimatedSection>
-            <AnimatedSection delay={0.1}>
-              <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-12">
-                <p className="drop-cap font-body text-[1.1rem] leading-[2] text-blanc/65">
-                  Co-founder of Small Records, Letche explores the darker, more
-                  textured side of electronic music. His selections weave between
-                  techno, breaks, ambient, and baile funk. Always searching for
-                  the unexpected.
-                </p>
-                <p className="font-body text-[1.1rem] leading-[2] text-blanc/65">
-                  A true digger at heart, he listens before he judges, explores
-                  before he defines. His sets are journeys, built on curiosity,
-                  not convention.
-                </p>
-              </div>
-            </AnimatedSection>
-            </div>
           </div>
         </section>
 
-        {/* ═══════ PHOTO STRIP ═══════ */}
+        {/* ═══════ PHOTO GRID - Different from Casae's slider ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
-            <AnimatedSection className="col-span-6 md:col-span-7">
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+            <AnimatedSection className="col-span-12 md:col-span-4">
+              <div className="relative aspect-[3/4] w-full overflow-hidden">
+                <Image
+                  src="/images/letech/img_5604.jpg"
+                  alt="Letche"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection className="col-span-12 md:col-span-8" delay={0.1}>
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src="/images/letech/img_5615.jpg"
                   alt="Letche"
@@ -112,16 +119,25 @@ export default function LetchePage() {
                 />
               </div>
             </AnimatedSection>
-            <AnimatedSection className="col-span-6 md:col-span-5" delay={0.1}>
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
-                <Image
-                  src="/images/letech/img_5604.jpg"
-                  alt="Letche"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
+          </div>
+        </section>
+
+        {/* ═══════ PULL QUOTE over photo ═══════ */}
+        <section className="relative h-[50svh] overflow-hidden md:h-[60vh]">
+          <ParallaxImage
+            src="/images/duo/img_5597.jpg"
+            alt="Small Records"
+            className="absolute inset-0"
+            speed={0.15}
+          />
+          <div className="absolute inset-0 bg-noir/50" />
+          <div className="absolute inset-0 z-10 flex items-center justify-center px-5 text-center">
+            <AnimatedSection blur scale>
+              <p className="font-display text-[clamp(1.4rem,3.5vw,2.5rem)] font-bold leading-[1.3] drop-shadow-lg">
+                &ldquo;We listen before we judge.
+                <br />
+                We explore before we define.&rdquo;
+              </p>
             </AnimatedSection>
           </div>
         </section>
@@ -153,13 +169,31 @@ export default function LetchePage() {
         <HorizontalRule color="bg-blanc/10" />
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
-            <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
               <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
                 letche@smallrecords.com
               </p>
+              <div className="flex gap-8">
+                <a
+                  href="https://www.instagram.com/smallmusics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://soundcloud.com/letchetony"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                >
+                  SoundCloud
+                </a>
+              </div>
             </div>
           </section>
         </AnimatedSection>
