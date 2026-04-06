@@ -6,6 +6,7 @@ import { ScrollToTop } from '@/components/layout/ScrollToTop'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://smallrecords.com'),
   title: {
     default: 'Small Records',
     template: '%s | Small Records',
