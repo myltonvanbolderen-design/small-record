@@ -11,9 +11,9 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
 
 export const metadata: Metadata = {
-  title: 'Small Records | The Label',
+  title: 'The Label',
   description:
-    'Independent music label founded by Letche & Casae. Paris.',
+    'Small Records is an independent music label founded by Letche & Casae. Born from friendship, vinyl, and late nights. Paris.',
 }
 
 export default function SmallRecordPage() {
@@ -436,16 +436,7 @@ export default function SmallRecordPage() {
         <HorizontalRule color="bg-blanc/10" />
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
-            <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-              <div className="relative h-12 w-12">
-                <Image
-                  src="/images/logo/logo-white.png"
-                  alt="Small Records"
-                  fill
-                  className="object-contain invert"
-                  unoptimized
-                />
-              </div>
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
@@ -455,24 +446,6 @@ export default function SmallRecordPage() {
               <p className="font-body text-[0.95rem] text-blanc/40">
                 For bookings, collaborations, and press inquiries.
               </p>
-              <div className="flex gap-8">
-                <a
-                  href="https://www.instagram.com/smallmusics"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://linktr.ee/smallrecords_music"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
-                >
-                  Linktree
-                </a>
-              </div>
             </div>
           </section>
         </AnimatedSection>

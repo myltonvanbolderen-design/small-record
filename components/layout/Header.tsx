@@ -61,15 +61,16 @@ export function Header() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
             className="fixed inset-0 z-40 flex items-center justify-center bg-noir/98 backdrop-blur-md"
+            onClick={() => setMenuOpen(false)}
           >
-            <nav className="flex flex-col items-center gap-2">
+            <nav className="flex flex-col items-center gap-2" onClick={(e) => e.stopPropagation()}>
               {/* Sommaire title */}
               <span className="mb-8 font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-terracotta">
                 Sommaire
               </span>
 
               {navItems.map((item, i) => {
-                const isActive = pathname === item.href
+                const isActive = pathname === item.href || pathname === item.href + '/'
                 return (
                   <motion.div
                     key={item.href}

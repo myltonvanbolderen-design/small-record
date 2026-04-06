@@ -8,9 +8,9 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Letche | Small Records',
+  title: 'Letche',
   description:
-    'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
+    'DJ Letche. Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Curious digger, set builder. Paris.',
 }
 
 export default function LetchePage() {
@@ -154,31 +154,13 @@ export default function LetchePage() {
         <HorizontalRule color="bg-blanc/10" />
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
-            <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
               <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
                 letche@smallrecords.com
               </p>
-              <div className="flex gap-8">
-                <a
-                  href="https://www.instagram.com/smallmusics"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://soundcloud.com/letchetony"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
-                >
-                  SoundCloud
-                </a>
-              </div>
             </div>
           </section>
         </AnimatedSection>

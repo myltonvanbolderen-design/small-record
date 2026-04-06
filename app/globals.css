@@ -92,6 +92,18 @@ body::before {
   color: var(--color-blanc);
 }
 
+/* Image loading skeleton pulse */
+@keyframes shimmer {
+  0% { opacity: 0.05; }
+  50% { opacity: 0.1; }
+  100% { opacity: 0.05; }
+}
+
+img[loading="lazy"] {
+  background-color: var(--color-placeholder);
+  animation: shimmer 2s ease-in-out infinite;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
