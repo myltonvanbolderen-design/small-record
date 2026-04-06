@@ -31,7 +31,7 @@ export default function SmallRecordPage() {
               priority
               unoptimized
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-noir/60 via-noir/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-noir/50 to-transparent" />
           </div>
 
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
@@ -307,7 +307,6 @@ export default function SmallRecordPage() {
             className="absolute inset-0"
             speed={0.1}
           />
-          <div className="absolute inset-0 bg-noir/40" />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
