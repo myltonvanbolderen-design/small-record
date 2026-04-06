@@ -231,7 +231,7 @@ export default function SmallRecordPage() {
             images={['/images/duo/img_3234.jpg', '/images/duo/img_3235.jpg']}
             alt="Small Records"
             interval={500}
-            className="aspect-[9/16] w-full max-w-md mx-auto md:aspect-[3/4] md:max-w-lg"
+            className="aspect-[3/4] w-full"
           />
         </section>
 

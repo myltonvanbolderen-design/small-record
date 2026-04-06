@@ -28,7 +28,8 @@ export function FlipImage({ images, alt, interval = 500, className }: FlipImageP
           src={src}
           alt={alt}
           fill
-          className={`object-cover transition-opacity duration-100 ${i === index ? 'opacity-100' : 'opacity-0'}`}
+          className="object-cover"
+          style={{ visibility: i === index ? 'visible' : 'hidden' }}
           unoptimized
         />
       ))}
