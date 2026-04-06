@@ -100,22 +100,11 @@ export default function LetchePage() {
           </div>
         </section>
 
-        {/* ═══════ PHOTO GRID - Different from Casae's slider ═══════ */}
+        {/* ═══════ PHOTO STRIP ═══════ */}
         <section className="px-5 py-4 md:px-8">
           <div className="grid grid-cols-12 gap-3">
-            <AnimatedSection className="col-span-12 md:col-span-4">
-              <div className="relative aspect-[3/4] w-full overflow-hidden">
-                <Image
-                  src="/images/letech/img_5604.jpg"
-                  alt="Letche"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            </AnimatedSection>
-            <AnimatedSection className="col-span-12 md:col-span-8" delay={0.1}>
-              <div className="relative aspect-[16/9] w-full overflow-hidden">
+            <AnimatedSection className="col-span-6 md:col-span-7">
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src="/images/letech/img_5615.jpg"
                   alt="Letche"
@@ -125,25 +114,16 @@ export default function LetchePage() {
                 />
               </div>
             </AnimatedSection>
-          </div>
-        </section>
-
-        {/* ═══════ PULL QUOTE over photo ═══════ */}
-        <section className="relative h-[50svh] overflow-hidden md:h-[60vh]">
-          <ParallaxImage
-            src="/images/duo/img_5597.jpg"
-            alt="Small Records"
-            className="absolute inset-0"
-            speed={0.15}
-          />
-          <div className="absolute inset-0 bg-noir/50" />
-          <div className="absolute inset-0 z-10 flex items-center justify-center px-5 text-center">
-            <AnimatedSection blur scale>
-              <p className="font-display text-[clamp(1.4rem,3.5vw,2.5rem)] font-bold leading-[1.3] drop-shadow-lg">
-                &ldquo;We listen before we judge.
-                <br />
-                We explore before we define.&rdquo;
-              </p>
+            <AnimatedSection className="col-span-6 md:col-span-5" delay={0.1}>
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src="/images/letech/img_5604.jpg"
+                  alt="Letche"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
             </AnimatedSection>
           </div>
         </section>
