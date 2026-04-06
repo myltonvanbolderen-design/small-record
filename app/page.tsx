@@ -26,7 +26,7 @@ export default function HomePage() {
               src="/images/duo/img_5717.jpg"
               alt="Casae & Letche"
               fill
-              className="object-cover"
+              className="object-cover object-bottom"
               priority
               unoptimized
             />
