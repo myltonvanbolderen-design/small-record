@@ -141,7 +141,7 @@ export default function CasaePage() {
                 Booking & Contact
               </span>
               <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
-                casae@smallrecords.com
+                casae@small-records.com
               </p>
               <div className="flex gap-8">
                 <a

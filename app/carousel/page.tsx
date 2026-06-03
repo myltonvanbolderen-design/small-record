@@ -402,8 +402,8 @@ export default function CarouselPage() {
                   <p className="font-condensed text-[0.65rem] uppercase tracking-[0.4em] text-blanc/40">
                     Booking
                   </p>
-                  <p className="mt-2">casae@smallrecords.com</p>
-                  <p>letche@smallrecords.com</p>
+                  <p className="mt-2">casae@small-records.com</p>
+                  <p>letche@small-records.com</p>
                 </div>
                 <div>
                   <p className="font-condensed text-[0.65rem] uppercase tracking-[0.4em] text-blanc/40">

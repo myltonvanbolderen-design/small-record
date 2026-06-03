@@ -6,7 +6,7 @@ import { ScrollToTop } from '@/components/layout/ScrollToTop'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://smallrecords.com'),
+  metadataBase: new URL('https://small-records.com'),
   title: {
     default: 'Small Records',
     template: '%s | Small Records',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Small Records',
     description: 'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
-    url: 'https://smallrecords.com',
+    url: 'https://small-records.com',
     siteName: 'Small Records',
     images: [{ url: '/og-image.jpg', width: 1200, height: 800 }],
     locale: 'fr_FR',
@@ -48,7 +48,7 @@ export default function RootLayout({
               '@type': 'MusicGroup',
               name: 'Small Records',
               description: 'Independent music label. House, Techno, Baile Funk, Afrohouse.',
-              url: 'https://smallrecords.com',
+              url: 'https://small-records.com',
               genre: ['House', 'Techno', 'Baile Funk', 'Afrohouse', 'Disco', 'Ambient'],
               foundingLocation: { '@type': 'Place', name: 'Paris, France' },
               member: [

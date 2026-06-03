@@ -176,7 +176,7 @@ export default function LetchePage() {
                 Booking & Contact
               </span>
               <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
-                letche@smallrecords.com
+                letche@small-records.com
               </p>
               <div className="flex gap-8">
                 <a

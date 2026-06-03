@@ -445,10 +445,10 @@ export default function EventsPage() {
                   </div>
                   <div className="flex flex-col gap-3">
                     <a
-                      href="mailto:contact@smallrecords.com"
+                      href="mailto:contact@small-records.com"
                       className="font-display text-[1.1rem] font-bold transition-colors hover:text-terracotta"
                     >
-                      contact@smallrecords.com
+                      contact@small-records.com
                     </a>
                     <div className="flex gap-6">
                       <a
