@@ -8,11 +8,10 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
-import { VideoLoop } from '@/components/magazine/VideoLoop'
 import { FlipImage } from '@/components/magazine/FlipImage'
 
 export const metadata: Metadata = {
-  title: 'Small Records | The Label',
+  title: 'The Label',
   description:
     'Independent music label founded by Letche & Casae. Paris.',
 }
@@ -37,20 +36,18 @@ export default function SmallRecordPage() {
           <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-5 text-center md:px-8">
             {/* Big gnome logo as cover centerpiece */}
             <AnimatedSection scale blur duration={1.2}>
-              <div className="mx-auto h-32 w-32 md:h-48 md:w-48">
+              <div className="mx-auto w-64 md:w-96">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/logo/logo-white.png"
+                  src="/images/logo/logo-wordmark-white.png"
                   alt="Small Records"
-                  className="h-full w-full object-contain"
-                  style={{ filter: 'invert(1)' }}
+                  className="h-auto w-full object-contain"
                 />
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.3} blur>
-              <h1 className="mt-8 font-display text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.9] tracking-tight">
-                Small Records<span className="text-terracotta">.</span>
-              </h1>
-              <p className="mt-4 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/40">
+              <h1 className="sr-only">Small Records</h1>
+              <p className="mt-6 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/40">
                 Independent Music Label · Paris
               </p>
             </AnimatedSection>
@@ -233,7 +230,7 @@ export default function SmallRecordPage() {
           </div>
         </section>
 
-        {/* ═══════ LIVE - Fete de la Musique at Sornettes ═══════ */}
+        {/* ═══════ LIVE - Past events (compact teaser → /events) ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
@@ -244,78 +241,77 @@ export default function SmallRecordPage() {
                     Live
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
-                    Fete de la Musique
+                    On the floor
                   </h2>
                   <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
-                    Sornettes · Paris · June 2025
+                    Where Small Records plays out loud
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
-                  006
-                </span>
+                <Link
+                  href="/events"
+                  className="group hidden items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta md:flex"
+                >
+                  All events
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </Link>
               </div>
             </AnimatedSection>
 
-            {/* Asymmetric grid: 2 vertical videos + 1 photo */}
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-5">
-              {/* Casae video */}
-              <div className="md:col-span-4">
-                <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
-                  <VideoLoop
-                    src="/videos/casae-sornettes.mp4"
-                    poster="/images/fete-musique/casae.jpg"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                      Casae
-                    </span>
+            {/* Two compact past-event cards */}
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
+              {[
+                {
+                  img: '/images/early-reflection/packed-room.jpg',
+                  tag: 'Club Night',
+                  title: 'Gambetta Club',
+                  meta: 'Early Reflections × SR · Paris · Apr 2026',
+                },
+                {
+                  img: '/images/fete-musique/casae-live.jpg',
+                  tag: 'Festival',
+                  title: 'Fête de la Musique',
+                  meta: 'Sornettes · Paris · Jun 2025',
+                },
+              ].map((ev, i) => (
+                <Link key={ev.title} href="/events" className="group relative block overflow-hidden">
+                  <div className="relative aspect-[16/10] w-full overflow-hidden">
+                    <Image
+                      src={ev.img}
+                      alt={ev.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 md:p-6">
+                      <div>
+                        <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                          {ev.tag}
+                        </span>
+                        <h3 className="mt-1 font-display text-[clamp(1.4rem,3vw,2rem)] font-bold leading-none">
+                          {ev.title}
+                        </h3>
+                        <p className="mt-2 font-body text-[0.8rem] text-blanc/50">
+                          {ev.meta}
+                        </p>
+                      </div>
+                      <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/30">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Center duo photo */}
-              <div className="md:col-span-4">
-                <div className="relative aspect-[9/16] w-full overflow-hidden">
-                  <Image
-                    src="/images/fete-musique/casae-live.jpg"
-                    alt="Casae mixing at Sornettes"
-                    fill
-                    className="object-cover"
-                    unoptimized
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                      The Crew
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Letche video */}
-              <div className="md:col-span-4">
-                <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
-                  <VideoLoop
-                    src="/videos/letche-sornettes.mp4"
-                    poster="/images/fete-musique/letche.jpg"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                      Letche
-                    </span>
-                  </div>
-                </div>
-              </div>
+                </Link>
+              ))}
             </div>
 
-            <AnimatedSection delay={0.3}>
-              <p className="mt-10 font-body text-[1.05rem] leading-[1.9] text-blanc/50 md:w-3/4">
-                Live at Sornettes for the Fete de la Musique. A warm June evening,
-                the shopfront opened onto the street, music spilling out into
-                Paris. This is what Small Records sounds like in the wild.
-              </p>
-            </AnimatedSection>
+            {/* Mobile link */}
+            <Link
+              href="/events"
+              className="group mt-6 flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta md:hidden"
+            >
+              All events
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
           </div>
         </section>
 
@@ -453,12 +449,12 @@ export default function SmallRecordPage() {
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
             <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-              <div className="h-12 w-12">
+              <div className="w-40">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/logo/logo-white.png"
+                  src="/images/logo/logo-wordmark-white.png"
                   alt="Small Records"
-                  className="h-full w-full object-contain"
-                  style={{ filter: 'invert(1)' }}
+                  className="h-auto w-full object-contain"
                 />
               </div>
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">

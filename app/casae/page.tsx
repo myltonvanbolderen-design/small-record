@@ -9,7 +9,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Casae | Small Records',
+  title: 'Casae',
   description:
     'House, Disco, Grooves, Afrohouse. Co-founder of Small Records. Paris.',
 }

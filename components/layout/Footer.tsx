@@ -7,12 +7,12 @@ export function Footer() {
       <HorizontalRule color="bg-blanc/10" />
       <footer className="px-5 py-12 md:px-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8">
-          <div className="h-12 w-12">
+          <div className="w-36">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/logo/logo-white.png"
+              src="/images/logo/logo-wordmark-white.png"
               alt="Small Records"
-              className="h-full w-full object-contain"
-              style={{ filter: 'invert(1)' }}
+              className="h-auto w-full object-contain"
             />
           </div>
           <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">

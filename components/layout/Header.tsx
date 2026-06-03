@@ -12,6 +12,7 @@ const navItems = [
   { href: '/small-record', label: 'The Label', num: '02' },
   { href: '/casae', label: 'Casae', num: '03' },
   { href: '/letche', label: 'Letche', num: '04' },
+  { href: '/events', label: 'Events', num: '05' },
 ]
 
 export function Header() {

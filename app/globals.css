@@ -12,21 +12,14 @@
   --font-display: var(--font-playfair);
   --font-condensed: var(--font-bebas);
   --font-body: var(--font-dm-sans);
+  --font-pig: var(--font-petit-cochon);
+  --font-dog: var(--font-lazy-dog);
 
   /* Type scale — all display sizes use clamp(), never bare vw */
   --text-body: 1rem;
   --text-label: clamp(0.75rem, 1.5vw, 1rem);
   --text-section: clamp(1.75rem, 4vw, 3.5rem);
   --text-hero: clamp(3rem, 12vw, 10rem);
-
-  /* Spacing scale — multiples of 4 */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
 
   /* Header height */
   --header-height: 56px;

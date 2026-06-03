@@ -50,7 +50,7 @@ export default function HomePage() {
 
           {/* Title - centered, parallax, independent of flow */}
           <div className="absolute inset-0 z-10 flex items-center px-5 md:px-8">
-            <ParallaxTitle speed={0.3}>
+            <ParallaxTitle speed={0.22}>
               <h1 className="pointer-events-none select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">

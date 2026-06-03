@@ -1,0 +1,22 @@
+# Build artifacts (Vercel rebuilds remotely)
+node_modules
+.next
+out
+*.tsbuildinfo
+
+# Secrets / local
+.env*
+.DS_Store
+
+# Raw source media — NOT for public (originals, ~180MB)
+public/asset
+
+# Tooling / planning — not part of the site
+.planning
+.claude
+scripts
+
+# Experimental / internal routes — kept local, not shipped to prod
+app/v2
+app/carousel
+public/carousel-export

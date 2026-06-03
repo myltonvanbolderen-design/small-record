@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { playfair, bebas, dmSans } from '@/lib/fonts'
+import { playfair, bebas, dmSans, petitCochon, lazyDog } from '@/lib/fonts'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ScrollToTop } from '@/components/layout/ScrollToTop'
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${playfair.variable} ${bebas.variable} ${dmSans.variable}`}
+      className={`${playfair.variable} ${bebas.variable} ${dmSans.variable} ${petitCochon.variable} ${lazyDog.variable}`}
     >
       <body>
         <script

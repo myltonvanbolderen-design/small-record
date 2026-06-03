@@ -16,8 +16,10 @@ export function ParallaxTitle({ children, className, speed = 0.3 }: ParallaxTitl
     offset: ['start start', 'end start'],
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', `${speed * 100}%`])
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
+  // Drift upward as the user scrolls so the title floats out of frame
+  // instead of descending onto the content below it.
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', `-${speed * 100}%`])
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95])
 
   return (

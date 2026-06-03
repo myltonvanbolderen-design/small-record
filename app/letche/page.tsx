@@ -8,7 +8,7 @@ import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 
 export const metadata: Metadata = {
-  title: 'Letche | Small Records',
+  title: 'Letche',
   description:
     'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
 }
