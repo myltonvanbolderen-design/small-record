@@ -6,6 +6,7 @@ import { PhotoSlider } from '@/components/magazine/PhotoSlider'
 import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 import { SectionHeader } from '@/components/magazine/SectionHeader'
+import { ArtistLive } from '@/components/magazine/ArtistLive'
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
@@ -111,6 +112,19 @@ export default function CasaePage() {
             ]}
           />
         </section>
+
+        {/* ═══════ ON STAGE - Panic Room ═══════ */}
+        <HorizontalRule color="bg-blanc/10" />
+        <ArtistLive
+          title="Small Party @ Panic Room"
+          meta="Paris 11 · September 11, 2026"
+          hero={{ src: '/images/panic-room/casae-pro.jpg', alt: 'Casæ at the decks under the Panic Room lights' }}
+          video={{ src: '/videos/panic-casae.mp4', poster: '/images/panic-room/poster-panic-casae.jpg', caption: 'Casæ · live' }}
+          photos={[
+            { src: '/images/panic-room/casae-prime.jpg', alt: 'Casæ, arms up behind the decks', mobilePosition: 'object-[63%_center]' },
+            { src: '/images/panic-room/cover.jpg', alt: 'Casæ focused on the mix' },
+          ]}
+        />
 
         {/* ═══════ SOUNDCLOUD ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
