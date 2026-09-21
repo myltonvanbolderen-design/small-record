@@ -8,6 +8,8 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
+import { CountUp } from '@/components/animation/CountUp'
+import { cn } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Events',
@@ -397,6 +399,39 @@ export default function EventsPage() {
               </p>
             </AnimatedSection>
 
+            {/* By the numbers — 711 leads full-width on mobile */}
+            <div className="mb-10 grid grid-cols-2 gap-px border-y border-blanc/10 bg-blanc/10 md:mb-12 md:grid-cols-5">
+              {[
+                { value: '711', label: 'People' },
+                { value: '7h', label: 'Of music' },
+                { value: '4', label: 'DJs' },
+                { value: '5', label: 'Sets' },
+                { value: '7', label: 'Genres' },
+              ].map((stat, i) => (
+                <div
+                  key={stat.label}
+                  className={cn(
+                    'bg-noir px-4 py-5 md:px-6 md:py-8',
+                    i === 0 && 'col-span-2 md:col-span-1',
+                  )}
+                >
+                  <CountUp
+                    value={stat.value}
+                    delay={i * 0.12}
+                    className={cn(
+                      'block font-display font-bold leading-none',
+                      i === 0
+                        ? 'text-[4.5rem] text-terracotta md:text-[clamp(2.8rem,5vw,4.5rem)]'
+                        : 'text-[3rem] text-blanc/90 md:text-[clamp(2.8rem,5vw,4.5rem)]',
+                    )}
+                  />
+                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
             {/* Hero — behind the decks (full-bleed square on mobile) */}
             <div className="relative -mx-5 aspect-square overflow-hidden md:mx-0 md:aspect-[3/2]">
               <Image
@@ -543,7 +578,7 @@ export default function EventsPage() {
               <AnimatedSection delay={0.1}>
                 <p className="font-body text-[1.05rem] leading-[1.9] text-blanc/55">
                   Our first night under our own name. Panic Room opened its
-                  basement to Small Party: free entry, 9pm to 5am, five sets
+                  basement to Small Party: free entry, 10pm to 5am, five sets
                   back to back. From Lessovik&apos;s vinyl house opening to
                   Letché&apos;s latin-tech closing, through a Letché × Casæ
                   tech-house B2B, Casæ&apos;s UK garage into techno and
@@ -609,7 +644,7 @@ export default function EventsPage() {
                         <br />
                         September 11, 2026
                         <br />
-                        21:00 — 05:00
+                        22:00 — 05:00
                       </p>
                     </div>
                   </div>

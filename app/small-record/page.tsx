@@ -264,7 +264,7 @@ export default function SmallRecordPage() {
                   img: '/images/panic-room/trio.jpg',
                   tag: 'Club Night',
                   title: 'Panic Room',
-                  meta: 'Small Party · Paris 11 · Sep 2026',
+                  meta: 'Small Party · 711 people · Sep 2026',
                 },
                 {
                   img: '/images/early-reflection/packed-room.jpg',
