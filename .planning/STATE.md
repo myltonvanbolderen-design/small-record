@@ -40,6 +40,7 @@ None yet.
 | fast | Panic Room hero: photo instead of crowd video | 2026-09-21 | 88702c6 | — |
 | fast | Remove poster from Panic Room strip | 2026-09-21 | 9e939a1 | — |
 | fast | Swap two Panic Room grid photos | 2026-09-21 | ea6f718 | — |
+| fast | Mobile layout for Panic Room section | 2026-09-21 | d9c8a1d | — |
 
 ## Session Continuity
 
