@@ -397,16 +397,18 @@ export default function EventsPage() {
               </p>
             </AnimatedSection>
 
-            {/* Hero — crowd video */}
-            <div className="relative aspect-video w-full overflow-hidden bg-placeholder">
-              <VideoLoop
-                src="/videos/panic-crowd.mp4"
-                poster="/images/panic-room/poster-panic-crowd.jpg"
-                className="h-full w-full object-cover"
+            {/* Hero — behind the decks */}
+            <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <Image
+                src="/images/panic-room/trio.jpg"
+                alt="Letché, Casæ and Lessovik behind the decks at Panic Room"
+                fill
+                className="object-cover"
+                unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
                 <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
-                  The room, around 1am
+                  Behind the decks · around 1am
                 </span>
               </div>
             </div>
@@ -512,8 +514,8 @@ export default function EventsPage() {
               </div>
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
-                  src="/images/panic-room/trio.jpg"
-                  alt="The crowd and the DJs at Panic Room"
+                  src="/images/panic-room/faces.jpg"
+                  alt="Friends in the crowd at Panic Room"
                   fill
                   className="object-cover"
                   unoptimized
