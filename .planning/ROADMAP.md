@@ -9,6 +9,9 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 - [ ] **Phase 1: Panic Room recap** — Ajouter la Small Party du 11.09.26 sur `/events` et `/small-record`
 - [ ] **Phase 2: Coming soon** — Remplacer les placeholders par les vraies prochaines dates
 - [ ] **Phase 3: Infra & QA** — Redirections email du domaine et test sur vrai device
+- [ ] **Phase 4: Perf & sécu (audit lot A)** — /events léger sur mobile, Next patché
+- [ ] **Phase 5: SEO & partage (audit lot B)** — Aperçus de partage par page, sitemap, liens, emails cliquables
+- [ ] **Phase 6: Events & home (audit lot C)** — Events du plus récent au plus ancien, mobile, home qui montre le live
 
 ## Phase Details
 
@@ -39,6 +42,34 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 1. Un mail envoyé à contact@small-records.com arrive dans une boîte du crew
 2. Les pages publiques s'affichent et les vidéos se lancent sur un vrai iPhone
 
+### Phase 4: Perf & sécu (audit lot A)
+**Goal**: /events s'affiche vite sur mobile 4G; plus de faille connue
+**Depends on**: Nothing
+**Success Criteria**:
+1. Aucune vidéo hors écran téléchargée au chargement de /events
+2. Vidéos réencodées (Sornettes H.264 sans audio, autres ≤720p)
+3. next@15.5.25, npm audit sans critique
+4. Iframes YouTube/SoundCloud en lazy, polices v2 hors du layout racine, pages visibles sans JS
+
+### Phase 5: SEO & partage (audit lot B)
+**Goal**: Chaque page a son aperçu de partage et est découvrable
+**Depends on**: Phase 4
+**Success Criteria**:
+1. og:title/url/description propres à chaque page + canonical
+2. sitemap.xml et robots.txt en ligne
+3. /small-record/ lié dans le footer; emails en mailto partout; lang="en"
+4. JSON-LD MusicEvent pour Panic Room et Gambetta
+
+### Phase 6: Events & home (audit lot C)
+**Goal**: Le live le plus récent est ce qu'on voit en premier
+**Depends on**: Phase 5
+**Success Criteria**:
+1. /events du plus récent au plus ancien, cover Panic Room
+2. Fête de la Musique compacte sur mobile
+3. Coming soon sans date périmée
+4. La home montre le dernier event (711 people)
+5. Plus de scroll horizontal sur /casae desktop
+
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
@@ -46,3 +77,6 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 | 1. Panic Room recap | 0/1 | Not started | - |
 | 2. Coming soon | 0/1 | Not started | - |
 | 3. Infra & QA | 0/1 | Not started | - |
+| 4. Perf & sécu | 0/1 | Not started | - |
+| 5. SEO & partage | 0/1 | Not started | - |
+| 6. Events & home | 0/1 | Not started | - |
