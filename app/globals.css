@@ -12,8 +12,6 @@
   --font-display: var(--font-playfair);
   --font-condensed: var(--font-bebas);
   --font-body: var(--font-dm-sans);
-  --font-pig: var(--font-petit-cochon);
-  --font-dog: var(--font-lazy-dog);
 
   /* Type scale — all display sizes use clamp(), never bare vw */
   --text-body: 1rem;
@@ -23,6 +21,13 @@
 
   /* Header height */
   --header-height: 56px;
+}
+
+/* v2-scoped doodle fonts — variables are only defined inside app/v2/layout.tsx's
+   wrapper div, so these must resolve at the element (theme inline), not at :root */
+@theme inline {
+  --font-pig: var(--font-petit-cochon);
+  --font-dog: var(--font-lazy-dog);
 }
 
 
