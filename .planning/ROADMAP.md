@@ -12,6 +12,8 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 - [x] **Phase 4: Perf & sécu (audit lot A)** — /events léger sur mobile, Next patché
 - [x] **Phase 5: SEO & partage (audit lot B)** — Aperçus de partage par page, sitemap, liens, emails cliquables
 - [x] **Phase 6: Events & home (audit lot C)** — Events du plus récent au plus ancien, mobile, home qui montre le live
+- [ ] **Phase 7: Accessibilité (audit lot D)** — Contrastes AA, menu clavier, reduced-motion, focus
+- [ ] **Phase 8: Images, cache & code (audit lot E)** — WebP responsive, cache long, composants partagés, code mort, lint
 
 ## Phase Details
 
@@ -70,6 +72,24 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 4. La home montre le dernier event (711 people)
 5. Plus de scroll horizontal sur /casae desktop
 
+### Phase 7: Accessibilité (audit lot D)
+**Goal**: Le site passe axe-core (WCAG 2.2 AA) sans échec de contraste et se pilote au clavier
+**Depends on**: Phase 6
+**Success Criteria**:
+1. 0 violation color-contrast axe sur les 5 pages (desktop + mobile), petits labels en #E0525E, rouge #CC2936 gardé pour les grands éléments
+2. Menu overlay : aria-expanded, Échap, focus géré, fond inert
+3. prefers-reduced-motion respecté par motion, Marquee, FlipImage, CountUp, VideoLoop
+4. focus-visible visible partout, skip link vers le vrai <main>
+
+### Phase 8: Images, cache & code (audit lot E)
+**Goal**: Pages 3-5× plus légères en images, assets cachés, code plus simple
+**Depends on**: Phase 7
+**Success Criteria**:
+1. Images servies en WebP responsive (srcset) — /events et /small-record < 2 Mo d'images en mobile
+2. Cache long sur /images, /videos, /og, /fonts
+3. events/page.tsx refactoré (MediaTile, SectionHeader) sans régression visuelle
+4. Code mort supprimé, ESLint en place sans erreur
+
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
@@ -80,3 +100,5 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 | 4. Perf & sécu | quick 260921-odr | Complete | 2026-09-21 |
 | 5. SEO & partage | quick 260921-on4 | Complete | 2026-09-21 |
 | 6. Events & home | quick 260921-oti | Complete | 2026-09-21 |
+| 7. Accessibilité | 0/1 | Not started | - |
+| 8. Images, cache & code | 0/2 | Not started | - |
