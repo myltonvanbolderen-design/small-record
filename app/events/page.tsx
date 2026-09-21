@@ -366,6 +366,254 @@ export default function EventsPage() {
           </div>
         </section>
 
+        {/* ═══════ 004 · SMALL PARTY × PANIC ROOM ═══════ */}
+        <HorizontalRule color="bg-blanc/10" />
+        <section className="px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <AnimatedSection blur>
+              <div className="mb-3 flex items-end justify-between">
+                <div>
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                    Past · Club Night
+                  </span>
+                  <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
+                    Small Party
+                  </h2>
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                    Small Records × Panic Room · Paris 11 · September 2026
+                  </p>
+                </div>
+                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                  004
+                </span>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.1}>
+              <p className="mb-10 font-display text-[clamp(1.2rem,3vw,1.9rem)] font-bold leading-[1.2] text-blanc/80 md:mb-12">
+                Our night. Our name on the door.
+                <br />
+                <span className="text-terracotta">Five sets, one basement.</span>
+              </p>
+            </AnimatedSection>
+
+            {/* Hero — crowd video */}
+            <div className="relative aspect-video w-full overflow-hidden bg-placeholder">
+              <VideoLoop
+                src="/videos/panic-crowd.mp4"
+                poster="/images/panic-room/poster-panic-crowd.jpg"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  The room, around 1am
+                </span>
+              </div>
+            </div>
+
+            {/* Set-order strip — poster + loops */}
+            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
+              <div className="relative aspect-[9/16] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/affiche.jpg"
+                  alt="Small Party × Panic Room poster, September 11, 2026"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                <VideoLoop
+                  src="/videos/panic-lessovik.mp4"
+                  poster="/images/panic-room/poster-panic-lessovik.jpg"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    Lessovik
+                  </span>
+                </div>
+              </div>
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                <VideoLoop
+                  src="/videos/panic-momal.mp4"
+                  poster="/images/panic-room/poster-panic-momal.jpg"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    Momal
+                  </span>
+                </div>
+              </div>
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                <VideoLoop
+                  src="/videos/panic-letche.mp4"
+                  poster="/images/panic-room/poster-panic-letche.jpg"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    Letché
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Photo grid */}
+            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-3">
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/casae-prime.jpg"
+                  alt="Casæ arms up at the decks with Lessovik"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/neon-sign.jpg"
+                  alt="Panic Room red neon sign"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/letche-casae.jpg"
+                  alt="Letché and Casæ behind the decks"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/decks-blue.jpg"
+                  alt="DJ under blue light at Panic Room"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/trio.jpg"
+                  alt="The crowd and the DJs at Panic Room"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <Image
+                  src="/images/panic-room/turntable.jpg"
+                  alt="Panic Room slipmat on the turntable"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            </div>
+
+            {/* Wide closer — crowd */}
+            <div className="relative mt-3 aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
+              <Image
+                src="/images/panic-room/crowd.jpg"
+                alt="The crowd smiling at the end of the night"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  The crowd, 4:45am
+                </span>
+              </div>
+            </div>
+
+            <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-16">
+              <AnimatedSection delay={0.1}>
+                <p className="font-body text-[1.05rem] leading-[1.9] text-blanc/55">
+                  Our first night under our own name. Panic Room opened its
+                  basement to Small Party: free entry, 9pm to 5am, five sets
+                  back to back. From Lessovik&apos;s vinyl house opening to
+                  Letché&apos;s latin-tech closing, through a Letché × Casæ
+                  tech-house B2B, Casæ&apos;s UK garage into techno and
+                  Momal&apos;s trance, the room never emptied.
+                </p>
+                <p className="mt-6 font-display text-[1.2rem] font-bold leading-[1.4] text-blanc/80">
+                  Thank you to everyone who came. We&apos;ll do it again soon.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <div className="space-y-8">
+                  <div>
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                      Time table
+                    </span>
+                    <div className="mt-3 border-t border-blanc/10">
+                      {[
+                        { name: 'Lessovik', genre: 'House · Vinyl / CDJ' },
+                        { name: 'Letché b2b Casæ', genre: 'Tech House' },
+                        { name: 'Casæ', genre: 'UK Garage · Techno' },
+                        { name: 'Momal', genre: 'Trance' },
+                        { name: 'Letché', genre: 'Latin Tech · Bounce' },
+                      ].map((slot, i) => (
+                        <div
+                          key={`${i}-${slot.name}`}
+                          className="flex items-baseline justify-between gap-4 border-b border-blanc/10 py-3"
+                        >
+                          <div className="flex items-baseline gap-4">
+                            <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-terracotta/70">
+                              {String(i + 1).padStart(2, '0')}
+                            </span>
+                            <span className="font-display text-[1rem] font-bold leading-none text-blanc/70 md:text-[1.15rem]">
+                              {slot.name}
+                            </span>
+                          </div>
+                          <span className="shrink-0 text-right font-condensed text-[0.55rem] uppercase tracking-[0.25em] text-blanc/35">
+                            {slot.genre}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-6 border-t border-blanc/10 pt-6">
+                    <div>
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                        Venue
+                      </span>
+                      <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
+                        Panic Room
+                        <br />
+                        101 rue Amelot
+                        <br />
+                        Paris 11
+                      </p>
+                    </div>
+                    <div>
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                        Date
+                      </span>
+                      <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
+                        Friday
+                        <br />
+                        September 11, 2026
+                        <br />
+                        21:00 — 05:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
         {/* ═══════ COMING SOON ═══════ */}
         <section className="relative overflow-hidden py-24 md:py-32">
           <ParallaxImage
@@ -388,7 +636,7 @@ export default function EventsPage() {
                     </h2>
                   </div>
                   <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
-                    004
+                    005
                   </span>
                 </div>
               </AnimatedSection>

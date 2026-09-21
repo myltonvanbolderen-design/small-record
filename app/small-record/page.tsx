@@ -257,9 +257,15 @@ export default function SmallRecordPage() {
               </div>
             </AnimatedSection>
 
-            {/* Two compact past-event cards */}
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
+            {/* Three compact past-event cards (most recent first) */}
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5">
               {[
+                {
+                  img: '/images/panic-room/trio.jpg',
+                  tag: 'Club Night',
+                  title: 'Panic Room',
+                  meta: 'Small Party · Paris 11 · Sep 2026',
+                },
                 {
                   img: '/images/early-reflection/packed-room.jpg',
                   tag: 'Club Night',
