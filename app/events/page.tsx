@@ -399,39 +399,6 @@ export default function EventsPage() {
               </p>
             </AnimatedSection>
 
-            {/* By the numbers — 711 leads full-width on mobile */}
-            <div className="mb-10 grid grid-cols-2 gap-px border-y border-blanc/10 bg-blanc/10 md:mb-12 md:grid-cols-5">
-              {[
-                { value: '711', label: 'People' },
-                { value: '7h', label: 'Of music' },
-                { value: '4', label: 'DJs' },
-                { value: '5', label: 'Sets' },
-                { value: '7', label: 'Genres' },
-              ].map((stat, i) => (
-                <div
-                  key={stat.label}
-                  className={cn(
-                    'bg-noir px-4 py-5 md:px-6 md:py-8',
-                    i === 0 && 'col-span-2 md:col-span-1',
-                  )}
-                >
-                  <CountUp
-                    value={stat.value}
-                    delay={i * 0.12}
-                    className={cn(
-                      'block font-display font-bold leading-none',
-                      i === 0
-                        ? 'text-[4.5rem] text-terracotta md:text-[clamp(2.8rem,5vw,4.5rem)]'
-                        : 'text-[3rem] text-blanc/90 md:text-[clamp(2.8rem,5vw,4.5rem)]',
-                    )}
-                  />
-                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
-                    {stat.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-
             {/* Hero — behind the decks (full-bleed square on mobile) */}
             <div className="relative -mx-5 aspect-square overflow-hidden md:mx-0 md:aspect-[3/2]">
               <Image
@@ -572,6 +539,39 @@ export default function EventsPage() {
                   The crowd, 4:45am
                 </span>
               </div>
+            </div>
+
+            {/* By the numbers — 711 leads full-width on mobile */}
+            <div className="mt-12 grid grid-cols-2 gap-px border-y border-blanc/10 bg-blanc/10 md:grid-cols-5">
+              {[
+                { value: '711', label: 'People' },
+                { value: '7h', label: 'Of music' },
+                { value: '4', label: 'DJs' },
+                { value: '5', label: 'Sets' },
+                { value: '7', label: 'Genres' },
+              ].map((stat, i) => (
+                <div
+                  key={stat.label}
+                  className={cn(
+                    'bg-noir px-4 py-5 md:px-6 md:py-8',
+                    i === 0 && 'col-span-2 md:col-span-1',
+                  )}
+                >
+                  <CountUp
+                    value={stat.value}
+                    delay={i * 0.12}
+                    className={cn(
+                      'block font-display font-bold leading-none',
+                      i === 0
+                        ? 'text-[4.5rem] text-terracotta md:text-[clamp(2.8rem,5vw,4.5rem)]'
+                        : 'text-[3rem] text-blanc/90 md:text-[clamp(2.8rem,5vw,4.5rem)]',
+                    )}
+                  />
+                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
             </div>
 
             <div className="mt-12 grid gap-10 md:grid-cols-2 md:gap-16">
