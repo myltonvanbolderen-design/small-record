@@ -13,7 +13,7 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 - [x] **Phase 5: SEO & partage (audit lot B)** — Aperçus de partage par page, sitemap, liens, emails cliquables
 - [x] **Phase 6: Events & home (audit lot C)** — Events du plus récent au plus ancien, mobile, home qui montre le live
 - [x] **Phase 7: Accessibilité (audit lot D)** — Contrastes AA, menu clavier, reduced-motion, focus
-- [ ] **Phase 8: Images, cache & code (audit lot E)** — WebP responsive, cache long, composants partagés, code mort, lint
+- [x] **Phase 8: Images, cache & code (audit lot E)** — WebP responsive, cache long, composants partagés, code mort, lint
 
 ## Phase Details
 
@@ -101,4 +101,4 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 | 5. SEO & partage | quick 260921-on4 | Complete | 2026-09-21 |
 | 6. Events & home | quick 260921-oti | Complete | 2026-09-21 |
 | 7. Accessibilité | quick 260921-qp5 | Complete | 2026-09-21 |
-| 8. Images, cache & code | 1/2 (quick 260921-rwt) | In progress | - |
+| 8. Images, cache & code | quick 260921-rwt + 260921-sqn | Complete | 2026-09-21 |

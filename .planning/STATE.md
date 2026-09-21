@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-21 - Completed quick task 260921-rwt: Audit lot E1 images & cache
+Last activity: 2026-09-21 - Completed quick task 260921-sqn: Audit lot E2 composants & lint
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -48,6 +48,7 @@ None yet.
 | 260921-oti | Audit lot C: events newest-first, Panic Room cover, home latest live, casae overflow | 2026-09-21 | 5860b26 | [260921-oti-audit-lot-c-events-and-home](./quick/260921-oti-audit-lot-c-events-and-home/) |
 | 260921-qp5 | Audit lot D: accessibilité (contrastes AA, menu clavier, reduced-motion, focus) | 2026-09-21 | daf457b | [260921-qp5-audit-lot-d-accessibility](./quick/260921-qp5-audit-lot-d-accessibility/) |
 | 260921-rwt | Audit lot E1: WebP responsive (loader + variants au build), cache long, gnome 96px | 2026-09-21 | cfa94c2 | [260921-rwt-audit-lot-e1-responsive-images-and-cache](./quick/260921-rwt-audit-lot-e1-responsive-images-and-cache/) |
+| 260921-sqn | Audit lot E2: SectionHeader/MediaTile/EventFacts, code mort, ESLint | 2026-09-21 | 441fd59 | [260921-sqn-audit-lot-e2-shared-components-dead-code](./quick/260921-sqn-audit-lot-e2-shared-components-dead-code/) |
 
 ## Session Continuity
 
