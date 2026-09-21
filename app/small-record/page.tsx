@@ -474,9 +474,12 @@ export default function SmallRecordPage() {
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
-              <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
+              <a
+                href="mailto:contact@small-records.com"
+                className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold transition-colors hover:text-terracotta"
+              >
                 contact@small-records.com
-              </p>
+              </a>
               <p className="font-body text-[0.95rem] text-blanc/40">
                 For bookings, collaborations, and press inquiries.
               </p>

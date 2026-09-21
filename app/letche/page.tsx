@@ -183,9 +183,12 @@ export default function LetchePage() {
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
                 Booking & Contact
               </span>
-              <p className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold">
+              <a
+                href="mailto:letche@small-records.com"
+                className="font-display text-[clamp(1.2rem,3vw,2rem)] font-bold transition-colors hover:text-terracotta"
+              >
                 letche@small-records.com
-              </p>
+              </a>
               <div className="flex gap-8">
                 <a
                   href="https://www.instagram.com/smallmusics"

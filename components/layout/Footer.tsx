@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import { HorizontalRule } from '@/components/animation/HorizontalRule'
 
 export function Footer() {
@@ -15,6 +15,41 @@ export function Footer() {
               className="h-auto w-full object-contain"
             />
           </div>
+          <nav
+            aria-label="Footer"
+            className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3"
+          >
+            <Link
+              href="/"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
+            >
+              Home
+            </Link>
+            <Link
+              href="/small-record/"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
+            >
+              The Label
+            </Link>
+            <Link
+              href="/casae/"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
+            >
+              Casae
+            </Link>
+            <Link
+              href="/letche/"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
+            >
+              Letche
+            </Link>
+            <Link
+              href="/events/"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
+            >
+              Events
+            </Link>
+          </nav>
           <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">
             Small Records · Paris · 2025
           </p>
@@ -23,7 +58,7 @@ export function Footer() {
               href="https://www.instagram.com/smallmusics"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
             >
               Instagram
             </a>
@@ -31,7 +66,7 @@ export function Footer() {
               href="https://soundcloud.com/casae"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
             >
               SoundCloud
             </a>
@@ -39,7 +74,7 @@ export function Footer() {
               href="https://linktr.ee/smallrecords_music"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+              className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/50 transition-colors hover:text-terracotta"
             >
               Linktree
             </a>
