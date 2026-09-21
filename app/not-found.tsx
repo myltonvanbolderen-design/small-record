@@ -16,7 +16,7 @@ export default function NotFound() {
       </div>
 
       <div className="relative z-10">
-        <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+        <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
           404
         </span>
         <h1 className="mt-4 font-display text-[clamp(3rem,10vw,8rem)] font-bold leading-[0.85]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5)' }}>

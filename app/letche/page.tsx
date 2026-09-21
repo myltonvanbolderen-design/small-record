@@ -41,7 +41,7 @@ export default function LetchePage() {
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-between px-5 pb-10 pt-20 md:px-8">
             <div>
               <AnimatedSection delay={0.2} direction="none" blur>
-                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
+                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
                   Artist Profile · 04
                 </p>
               </AnimatedSection>
@@ -81,7 +81,7 @@ export default function LetchePage() {
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   Bio
                 </span>
                 <HorizontalRule color="bg-blanc/20" className="mt-4 !w-10" />
@@ -159,14 +159,14 @@ export default function LetchePage() {
             <div className="mx-auto max-w-4xl">
               <div className="mb-8 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Listen
                   </span>
                   <h2 className="mt-2 font-display text-section font-bold">
                     Selected Mixes
                   </h2>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   006
                 </span>
               </div>
@@ -180,7 +180,7 @@ export default function LetchePage() {
         <AnimatedSection>
           <section className="px-5 py-16 md:px-8">
             <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                 Booking & Contact
               </span>
               <a
@@ -194,7 +194,7 @@ export default function LetchePage() {
                   href="https://www.instagram.com/smallmusics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   Instagram
                 </a>
@@ -202,7 +202,7 @@ export default function LetchePage() {
                   href="https://soundcloud.com/letchetony"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   SoundCloud
                 </a>

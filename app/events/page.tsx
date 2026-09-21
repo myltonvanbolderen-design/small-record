@@ -118,10 +118,10 @@ export default function EventsPage() {
           <div className="absolute top-20 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.3} direction="none" blur>
               <div className="flex items-start justify-between">
-                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
+                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
                   Live & Booking
                 </p>
-                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
+                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
                   Paris · 2026
                 </p>
               </div>
@@ -130,7 +130,7 @@ export default function EventsPage() {
 
           <div className="relative z-10 flex min-h-[100svh] flex-col justify-end px-5 pb-20 md:px-8 md:pb-24">
             <AnimatedSection blur>
-              <span className="font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-terracotta">
+              <span className="font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-terracotta-light">
                 Small Records · On Stage
               </span>
             </AnimatedSection>
@@ -145,7 +145,7 @@ export default function EventsPage() {
                 Records sounds like in the wild — and where we&apos;re headed next.
               </p>
             </AnimatedSection>
-            <span className="mt-8 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/20">
+            <span aria-hidden="true" className="mt-8 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55">
               000
             </span>
           </div>
@@ -162,17 +162,17 @@ export default function EventsPage() {
             <AnimatedSection blur>
               <div className="mb-3 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Past · Club Night
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
                     Small Party
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Small Records × Panic Room · Paris 11 · September 2026
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   001
                 </span>
               </div>
@@ -196,7 +196,7 @@ export default function EventsPage() {
                 unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                   Behind the decks · around 1am
                 </span>
               </div>
@@ -211,7 +211,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     Lessovik
                   </span>
                 </div>
@@ -223,7 +223,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     Casæ
                   </span>
                 </div>
@@ -235,7 +235,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     Momal
                   </span>
                 </div>
@@ -247,7 +247,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     Letché
                   </span>
                 </div>
@@ -322,7 +322,7 @@ export default function EventsPage() {
                 unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                   The crowd, 4:45am
                 </span>
               </div>
@@ -354,7 +354,7 @@ export default function EventsPage() {
                         : 'text-[3rem] text-blanc/90 md:text-[clamp(2.8rem,5vw,4.5rem)]',
                     )}
                   />
-                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
+                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55">
                     {stat.label}
                   </span>
                 </div>
@@ -379,7 +379,7 @@ export default function EventsPage() {
               <AnimatedSection delay={0.2}>
                 <div className="space-y-8">
                   <div>
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
                       Time table
                     </span>
                     <div className="mt-3 border-t border-blanc/10">
@@ -395,14 +395,14 @@ export default function EventsPage() {
                           className="flex items-baseline justify-between gap-4 border-b border-blanc/10 py-3"
                         >
                           <div className="flex items-baseline gap-4">
-                            <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-terracotta/70">
+                            <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-terracotta-light">
                               {String(i + 1).padStart(2, '0')}
                             </span>
                             <span className="font-display text-[1rem] font-bold leading-none text-blanc/70 md:text-[1.15rem]">
                               {slot.name}
                             </span>
                           </div>
-                          <span className="shrink-0 text-right font-condensed text-[0.7rem] uppercase tracking-[0.15em] text-blanc/45 md:text-[0.55rem] md:tracking-[0.25em] md:text-blanc/35">
+                          <span className="shrink-0 text-right font-condensed text-[0.7rem] uppercase tracking-[0.15em] text-blanc/55 md:text-[0.55rem] md:tracking-[0.25em] md:text-blanc/55">
                             {slot.genre}
                           </span>
                         </div>
@@ -411,7 +411,7 @@ export default function EventsPage() {
                   </div>
                   <div className="grid grid-cols-2 gap-6 border-t border-blanc/10 pt-6">
                     <div>
-                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/55">
                         Venue
                       </span>
                       <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
@@ -423,7 +423,7 @@ export default function EventsPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/55">
                         Date
                       </span>
                       <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
@@ -448,17 +448,17 @@ export default function EventsPage() {
             <AnimatedSection blur>
               <div className="mb-3 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Past · Club Night
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
                     Gambetta Club
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Early Reflections × Small Records · Paris · April 2026
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   002
                 </span>
               </div>
@@ -482,7 +482,7 @@ export default function EventsPage() {
                 unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                   A packed room · 22:00 — 06:00
                 </span>
               </div>
@@ -497,7 +497,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     B2B · Letche × Casæ
                   </span>
                 </div>
@@ -518,7 +518,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     Casæ
                   </span>
                 </div>
@@ -539,7 +539,7 @@ export default function EventsPage() {
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                     3615 Radio
                   </span>
                 </div>
@@ -580,7 +580,7 @@ export default function EventsPage() {
               <AnimatedSection delay={0.2}>
                 <div className="space-y-8">
                   <div>
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
                       Line-up
                     </span>
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -598,7 +598,7 @@ export default function EventsPage() {
                   </div>
                   <div className="grid grid-cols-2 gap-6 border-t border-blanc/10 pt-6">
                     <div>
-                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/55">
                         Venue
                       </span>
                       <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
@@ -610,7 +610,7 @@ export default function EventsPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/30">
+                      <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-blanc/55">
                         Date
                       </span>
                       <p className="mt-2 font-body text-[0.95rem] leading-[1.6] text-blanc/55">
@@ -635,17 +635,17 @@ export default function EventsPage() {
             <div className="mx-auto max-w-5xl">
               <div className="mb-8 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Featured Mix
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
                     House Mix · Pool Party
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Summer DJ Set · South of France
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   003
                 </span>
               </div>
@@ -661,17 +661,17 @@ export default function EventsPage() {
             <AnimatedSection blur>
               <div className="mb-3 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Past · Festival
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
                     Fête de la Musique
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Sornettes · Paris · June 2025
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   004
                 </span>
               </div>
@@ -686,7 +686,7 @@ export default function EventsPage() {
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                       Casae
                     </span>
                   </div>
@@ -702,7 +702,7 @@ export default function EventsPage() {
                     unoptimized
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                       The Crew
                     </span>
                   </div>
@@ -716,7 +716,7 @@ export default function EventsPage() {
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                       Letche
                     </span>
                   </div>
@@ -748,14 +748,14 @@ export default function EventsPage() {
               <AnimatedSection blur>
                 <div className="flex items-end justify-between">
                   <div>
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                       What&apos;s next
                     </span>
                     <h2 className="mt-3 font-display text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.9]">
                       Coming soon<span className="text-terracotta">.</span>
                     </h2>
                   </div>
-                  <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                  <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                     005
                   </span>
                 </div>
@@ -778,17 +778,17 @@ export default function EventsPage() {
                   <AnimatedSection key={slot.tag} delay={i * 0.08}>
                     <div className="group flex items-center justify-between gap-4 border-b border-blanc/10 py-4 transition-colors hover:bg-blanc/[0.02]">
                       <div className="flex items-baseline gap-4 md:gap-6">
-                        <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-terracotta/70">
+                        <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-terracotta-light">
                           {String(i + 1).padStart(2, '0')}
                         </span>
-                        <span className="w-16 shrink-0 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-terracotta md:w-24">
+                        <span className="w-16 shrink-0 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-terracotta-light md:w-24">
                           {slot.tag}
                         </span>
                         <span className="font-display text-[1.1rem] font-bold leading-none text-blanc/70 md:text-[1.4rem]">
                           {slot.city}
                         </span>
                       </div>
-                      <span className="shrink-0 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/35">
+                      <span className="shrink-0 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55">
                         {slot.when}
                       </span>
                     </div>
@@ -807,7 +807,7 @@ export default function EventsPage() {
                         at your event?
                       </p>
                     </ScrollRevealText>
-                    <p className="mt-4 font-body text-[0.95rem] text-blanc/45">
+                    <p className="mt-4 font-body text-[0.95rem] text-blanc/55">
                       Bookings, festivals, collaborations — let&apos;s talk.
                     </p>
                   </div>
@@ -823,7 +823,7 @@ export default function EventsPage() {
                         href="https://www.instagram.com/smallmusics"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                        className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                       >
                         Instagram
                       </a>
@@ -831,7 +831,7 @@ export default function EventsPage() {
                         href="https://linktr.ee/smallrecords_music"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+                        className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                       >
                         Linktree
                       </a>

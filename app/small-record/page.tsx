@@ -55,7 +55,7 @@ export default function SmallRecordPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.3} blur>
               <h1 className="sr-only">Small Records</h1>
-              <p className="mt-6 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/40">
+              <p className="mt-6 font-condensed text-[0.65rem] uppercase tracking-[0.5em] text-blanc/55">
                 Independent Music Label · Paris
               </p>
             </AnimatedSection>
@@ -78,7 +78,7 @@ export default function SmallRecordPage() {
           <div className="relative z-10 px-5 py-24 md:px-8 md:py-32">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   The Story
                 </span>
                 <h2 className="mt-6 font-display text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[1.05]">
@@ -136,7 +136,7 @@ export default function SmallRecordPage() {
               </p>
             </AnimatedSection>
           </div>
-          <span className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/15 md:right-8">
+          <span aria-hidden="true" className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55 md:right-8">
             003
           </span>
         </section>
@@ -148,10 +148,10 @@ export default function SmallRecordPage() {
           <div className="mx-auto max-w-5xl">
             <AnimatedSection blur>
               <div className="flex items-end justify-between">
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   What We Do
                 </span>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   004
                 </span>
               </div>
@@ -178,7 +178,7 @@ export default function SmallRecordPage() {
               ].map((item, i) => (
                 <AnimatedSection key={item.title} delay={i * 0.1} direction={i % 2 === 0 ? 'left' : 'right'}>
                   <div className="border-l-2 border-terracotta/30 py-3 pl-6">
-                    <span className="font-condensed text-[0.5rem] tracking-[0.2em] text-terracotta/50">
+                    <span className="font-condensed text-[0.5rem] tracking-[0.2em] text-terracotta-light">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <h3 className="mt-1 font-display text-[1.4rem] font-bold">
@@ -193,7 +193,7 @@ export default function SmallRecordPage() {
             </div>
 
             <AnimatedSection delay={0.4}>
-              <p className="mt-16 font-body text-[1.05rem] leading-[2] text-blanc/45 md:w-2/3">
+              <p className="mt-16 font-body text-[1.05rem] leading-[2] text-blanc/55 md:w-2/3">
                 We create and curate original music beyond borders. We share
                 everything that came before us. Music is transmission.
                 We don&apos;t chase trends. We document energy.
@@ -245,19 +245,19 @@ export default function SmallRecordPage() {
             <AnimatedSection blur>
               <div className="mb-10 flex items-end justify-between md:mb-12">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Live
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
                     On the floor
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Where Small Records plays out loud
                   </p>
                 </div>
                 <Link
                   href="/events"
-                  className="group hidden items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta md:flex"
+                  className="group hidden items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta md:flex"
                 >
                   All events
                   <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -299,7 +299,7 @@ export default function SmallRecordPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 md:p-6">
                       <div>
-                        <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                        <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
                           {ev.tag}
                         </span>
                         <h3 className="mt-1 font-display text-[clamp(1.4rem,3vw,2rem)] font-bold leading-none">
@@ -309,7 +309,7 @@ export default function SmallRecordPage() {
                           {ev.meta}
                         </p>
                       </div>
-                      <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/30">
+                      <span className="font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55">
                         {String(i + 1).padStart(2, '0')}
                       </span>
                     </div>
@@ -321,7 +321,7 @@ export default function SmallRecordPage() {
             {/* Mobile link */}
             <Link
               href="/events"
-              className="group mt-6 flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta md:hidden"
+              className="group mt-6 flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta md:hidden"
             >
               All events
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -340,7 +340,7 @@ export default function SmallRecordPage() {
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   Manifesto
                 </span>
               </AnimatedSection>
@@ -377,17 +377,17 @@ export default function SmallRecordPage() {
             <div className="mx-auto max-w-5xl">
               <div className="mb-8 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Featured Mix
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
                     House Mix · Pool Party
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Summer DJ Set · South of France
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   005
                 </span>
               </div>
@@ -401,7 +401,7 @@ export default function SmallRecordPage() {
         <section className="px-5 py-20 md:px-8">
           <div className="mx-auto max-w-5xl">
             <AnimatedSection blur>
-              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                 The Artists
               </span>
             </AnimatedSection>
@@ -417,13 +417,13 @@ export default function SmallRecordPage() {
                       unoptimized
                     />
                     <div className="absolute bottom-6 left-6">
-                      <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
+                      <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta-light">
                         03
                       </span>
                       <p className="font-display text-[clamp(2rem,5vw,3rem)] font-bold leading-none">
                         Casae
                       </p>
-                      <p className="mt-2 font-body text-[0.85rem] text-blanc/40">
+                      <p className="mt-2 font-body text-[0.85rem] text-blanc/55">
                         House · Disco · Grooves
                       </p>
                     </div>
@@ -441,13 +441,13 @@ export default function SmallRecordPage() {
                       unoptimized
                     />
                     <div className="absolute bottom-6 left-6">
-                      <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta">
+                      <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta-light">
                         04
                       </span>
                       <p className="font-display text-[clamp(2rem,5vw,3rem)] font-bold leading-none">
                         Letche
                       </p>
-                      <p className="mt-2 font-body text-[0.85rem] text-blanc/40">
+                      <p className="mt-2 font-body text-[0.85rem] text-blanc/55">
                         Techno · Breaks · Ambient
                       </p>
                     </div>
@@ -471,7 +471,7 @@ export default function SmallRecordPage() {
                   className="h-auto w-full object-contain"
                 />
               </div>
-              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+              <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                 Booking & Contact
               </span>
               <a
@@ -480,7 +480,7 @@ export default function SmallRecordPage() {
               >
                 contact@small-records.com
               </a>
-              <p className="font-body text-[0.95rem] text-blanc/40">
+              <p className="font-body text-[0.95rem] text-blanc/55">
                 For bookings, collaborations, and press inquiries.
               </p>
               <div className="flex gap-8">
@@ -488,7 +488,7 @@ export default function SmallRecordPage() {
                   href="https://www.instagram.com/smallmusics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   Instagram
                 </a>
@@ -496,7 +496,7 @@ export default function SmallRecordPage() {
                   href="https://linktr.ee/smallrecords_music"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   Linktree
                 </a>

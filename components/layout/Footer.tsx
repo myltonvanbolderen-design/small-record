@@ -50,7 +50,7 @@ export function Footer() {
               Events
             </Link>
           </nav>
-          <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/25">
+          <p className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/55">
             Small Records · Paris · 2025
           </p>
           <div className="flex gap-8">

@@ -48,10 +48,10 @@ export default function HomePage() {
           <div className="absolute top-20 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.3} direction="none" blur>
               <div className="flex items-start justify-between">
-                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
+                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
                   Issue N&deg;01
                 </p>
-                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/40">
+                <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
                   Paris · 2025
                 </p>
               </div>
@@ -78,11 +78,11 @@ export default function HomePage() {
                 <br className="hidden md:block" />
                 {' '}We listen. We feel.
               </p>
-              <p className="mt-4 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30">
+              <p className="mt-4 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55">
                 Casae & Letche · Paris
               </p>
             </AnimatedSection>
-            <span className="mt-4 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/20">
+            <span aria-hidden="true" className="mt-4 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55">
               001
             </span>
           </div>
@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="relative z-10 flex min-h-[80svh] flex-col justify-center px-5 py-20 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   The Manifesto
                 </span>
               </AnimatedSection>
@@ -130,7 +130,7 @@ export default function HomePage() {
               </AnimatedSection>
             </div>
           </div>
-          <span className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/15 md:right-8">
+          <span aria-hidden="true" className="absolute bottom-6 right-5 z-10 font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55 md:right-8">
             002
           </span>
         </section>
@@ -152,14 +152,14 @@ export default function HomePage() {
           <AnimatedSection blur>
             <div className="mb-10 flex items-end justify-between md:mb-16">
               <div>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   The Artists
                 </span>
                 <h2 className="mt-2 font-display text-section font-bold">
                   Meet the crew
                 </h2>
               </div>
-              <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+              <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                 003
               </span>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                     unoptimized
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-10">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
                       03 · Artist
                     </span>
                     <h3 className="mt-2 font-display text-[clamp(3rem,8vw,5rem)] font-bold leading-[0.85]">
@@ -203,7 +203,7 @@ export default function HomePage() {
                     unoptimized
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
-                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta">
+                    <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
                       04 · Artist
                     </span>
                     <h3 className="mt-2 font-display text-[clamp(3rem,8vw,5rem)] font-bold leading-[0.85]">
@@ -226,13 +226,13 @@ export default function HomePage() {
             <AnimatedSection blur>
               <div className="mb-10 flex items-end justify-between md:mb-12">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Latest · Live
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
                     Small Party @ Panic Room
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Paris 11 · September 11, 2026
                   </p>
                 </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
                 unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
                   Behind the decks · around 1am
                 </span>
               </div>
@@ -269,7 +269,7 @@ export default function HomePage() {
                       i === 0 ? 'text-terracotta' : 'text-blanc/90',
                     )}
                   />
-                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
+                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/55">
                     {stat.label}
                   </span>
                 </div>
@@ -277,7 +277,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/events/"
-              className="group mt-10 inline-flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+              className="group mt-10 inline-flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
             >
               See the full recap
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -316,17 +316,17 @@ export default function HomePage() {
             <div className="mx-auto max-w-5xl">
               <div className="mb-8 flex items-end justify-between">
                 <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                     Featured Mix
                   </span>
                   <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
                     House Mix · Pool Party
                   </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
                     Summer DJ Set · South of France
                   </p>
                 </div>
-                <span className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/20 md:block">
+                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
                   004
                 </span>
               </div>
@@ -349,7 +349,7 @@ export default function HomePage() {
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
                   Our DNA
                 </span>
               </AnimatedSection>
@@ -377,7 +377,7 @@ export default function HomePage() {
                     direction={i % 2 === 0 ? 'left' : 'right'}
                     delay={i * 0.1}
                   >
-                    <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta/60">
+                    <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta-light">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <h3 className="mt-2 font-display text-[1.4rem] font-bold">

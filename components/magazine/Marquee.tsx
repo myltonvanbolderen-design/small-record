@@ -25,7 +25,7 @@ export function Marquee({
       className={`overflow-hidden whitespace-nowrap border-y border-blanc/10 py-4 ${className ?? ''}`}
     >
       {reduce ? (
-        <div className="inline-block font-condensed text-[clamp(0.7rem,1.5vw,0.9rem)] uppercase tracking-[0.3em] text-blanc/20">
+        <div className="inline-block font-condensed text-[clamp(0.7rem,1.5vw,0.9rem)] uppercase tracking-[0.3em] text-blanc/55">
           {text}
         </div>
       ) : (
@@ -39,7 +39,7 @@ export function Marquee({
               ease: 'linear',
             },
           }}
-          className="inline-block font-condensed text-[clamp(0.7rem,1.5vw,0.9rem)] uppercase tracking-[0.3em] text-blanc/20"
+          className="inline-block font-condensed text-[clamp(0.7rem,1.5vw,0.9rem)] uppercase tracking-[0.3em] text-blanc/55"
         >
           {doubled}
         </motion.div>
