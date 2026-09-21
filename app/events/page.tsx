@@ -397,13 +397,13 @@ export default function EventsPage() {
               </p>
             </AnimatedSection>
 
-            {/* Hero — behind the decks */}
-            <div className="relative aspect-[3/2] w-full overflow-hidden">
+            {/* Hero — behind the decks (full-bleed square on mobile) */}
+            <div className="relative -mx-5 aspect-square overflow-hidden md:mx-0 md:aspect-[3/2]">
               <Image
                 src="/images/panic-room/trio.jpg"
                 alt="Letché, Casæ and Lessovik behind the decks at Panic Room"
                 fill
-                className="object-cover"
+                className="object-cover object-[40%_center] md:object-center"
                 unoptimized
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
@@ -465,9 +465,9 @@ export default function EventsPage() {
               </div>
             </div>
 
-            {/* Photo grid */}
+            {/* Photo grid — mobile: full, pair, full, pair */}
             <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-3">
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative col-span-2 aspect-[4/3] w-full overflow-hidden md:col-span-1 md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/casae-prime.jpg"
                   alt="Casæ arms up at the decks with Lessovik"
@@ -476,7 +476,7 @@ export default function EventsPage() {
                   unoptimized
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/neon-sign.jpg"
                   alt="Panic Room red neon sign"
@@ -485,16 +485,16 @@ export default function EventsPage() {
                   unoptimized
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/letche-decks.jpg"
                   alt="Letché at the decks, the crowd leaning in"
                   fill
-                  className="object-cover"
+                  className="object-cover object-[65%_center] md:object-center"
                   unoptimized
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative col-span-2 aspect-[4/3] w-full overflow-hidden md:col-span-1 md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/decks-blue.jpg"
                   alt="DJ under blue light at Panic Room"
@@ -503,7 +503,7 @@ export default function EventsPage() {
                   unoptimized
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/dream-crowd.jpg"
                   alt="A crew of friends on the Panic Room floor"
@@ -512,7 +512,7 @@ export default function EventsPage() {
                   unoptimized
                 />
               </div>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
                 <Image
                   src="/images/panic-room/turntable.jpg"
                   alt="Panic Room slipmat on the turntable"
@@ -524,7 +524,7 @@ export default function EventsPage() {
             </div>
 
             {/* Wide closer — crowd */}
-            <div className="relative mt-3 aspect-[16/9] w-full overflow-hidden md:aspect-[21/9]">
+            <div className="relative -mx-5 mt-3 aspect-[4/3] overflow-hidden md:mx-0 md:aspect-[21/9]">
               <Image
                 src="/images/panic-room/crowd.jpg"
                 alt="The crowd smiling at the end of the night"
@@ -580,7 +580,7 @@ export default function EventsPage() {
                               {slot.name}
                             </span>
                           </div>
-                          <span className="shrink-0 text-right font-condensed text-[0.55rem] uppercase tracking-[0.25em] text-blanc/35">
+                          <span className="shrink-0 text-right font-condensed text-[0.7rem] uppercase tracking-[0.15em] text-blanc/45 md:text-[0.55rem] md:tracking-[0.25em] md:text-blanc/35">
                             {slot.genre}
                           </span>
                         </div>
