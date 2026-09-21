@@ -9,6 +9,8 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
 import { FlipImage } from '@/components/magazine/FlipImage'
+import { CountUp } from '@/components/animation/CountUp'
+import { cn } from '@/lib/utils'
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
@@ -214,6 +216,72 @@ export default function HomePage() {
                 </div>
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* ═══════ LATEST LIVE - Panic Room ═══════ */}
+        <HorizontalRule color="bg-blanc/10" />
+        <section className="px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <AnimatedSection blur>
+              <div className="mb-10 flex items-end justify-between md:mb-12">
+                <div>
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta">
+                    Latest · Live
+                  </span>
+                  <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
+                    Small Party @ Panic Room
+                  </h2>
+                  <p className="mt-2 font-body text-[0.95rem] text-blanc/40">
+                    Paris 11 · September 11, 2026
+                  </p>
+                </div>
+              </div>
+            </AnimatedSection>
+            {/* photo: NOT wrapped in AnimatedSection */}
+            <div className="relative -mx-5 aspect-square overflow-hidden md:mx-0 md:aspect-[3/2]">
+              <Image
+                src="/images/panic-room/trio.jpg"
+                alt="Letché, Casæ and Lessovik behind the decks at Panic Room"
+                fill
+                className="object-cover object-[40%_center] md:object-center"
+                unoptimized
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
+                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                  Behind the decks · around 1am
+                </span>
+              </div>
+            </div>
+            {/* numbers band — same style as /events, 3 cells */}
+            <div className="mt-12 grid grid-cols-3 gap-px border-y border-blanc/10 bg-blanc/10">
+              {[
+                { value: '711', label: 'People' },
+                { value: '7h', label: 'Of music' },
+                { value: '4', label: 'DJs' },
+              ].map((stat, i) => (
+                <div key={stat.label} className="bg-noir px-4 py-5 md:px-6 md:py-8">
+                  <CountUp
+                    value={stat.value}
+                    delay={i * 0.12}
+                    className={cn(
+                      'block font-display font-bold leading-none text-[clamp(2.4rem,11vw,4.5rem)] md:text-[clamp(2.8rem,5vw,4.5rem)]',
+                      i === 0 ? 'text-terracotta' : 'text-blanc/90',
+                    )}
+                  />
+                  <span className="mt-3 block font-condensed text-[0.65rem] uppercase tracking-[0.3em] text-blanc/45">
+                    {stat.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <Link
+              href="/events/"
+              className="group mt-10 inline-flex items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/40 transition-colors hover:text-terracotta"
+            >
+              See the full recap
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
           </div>
         </section>
 
