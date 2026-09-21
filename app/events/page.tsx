@@ -413,17 +413,8 @@ export default function EventsPage() {
               </div>
             </div>
 
-            {/* Set-order strip — poster + loops */}
-            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-5">
-              <div className="relative col-span-2 aspect-[9/16] w-full overflow-hidden md:col-span-1">
-                <Image
-                  src="/images/panic-room/affiche.jpg"
-                  alt="Small Party × Panic Room poster, September 11, 2026"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
+            {/* Set-order strip — one loop per DJ */}
+            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
               <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
                 <VideoLoop
                   src="/videos/panic-lessovik.mp4"
