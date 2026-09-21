@@ -11,7 +11,7 @@ export default function NotFound() {
           alt=""
           fill
           className="object-cover opacity-30"
-          unoptimized
+          sizes="100vw"
         />
       </div>
 

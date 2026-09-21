@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'motion/react'
 import { cn } from '@/lib/utils'
@@ -58,8 +57,10 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="relative z-50 block h-8 w-8 shrink-0 md:h-10 md:w-10">
             <img
-              src="/images/logo/logo-white.png"
+              src="/images/logo/logo-white-96.png"
               alt="Small Records"
+              width={96}
+              height={96}
               className="h-full w-full object-contain"
               style={{ filter: 'invert(1)' }}
             />

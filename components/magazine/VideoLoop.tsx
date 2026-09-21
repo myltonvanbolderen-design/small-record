@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { useReducedMotion } from 'motion/react'
+import { webpVariant } from '@/lib/image-loader'
 
 interface VideoLoopProps {
   src: string
@@ -60,7 +61,7 @@ export function VideoLoop({ src, poster, className }: VideoLoopProps) {
       loop
       playsInline
       preload="none"
-      poster={poster}
+      poster={poster ? webpVariant(poster, 1080) : undefined}
       aria-hidden="true"
       className={className ?? 'h-full w-full object-cover'}
     />

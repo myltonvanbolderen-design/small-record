@@ -37,7 +37,7 @@ export default function SmallRecordPage() {
               fill
               className="object-cover"
               priority
-              unoptimized
+              sizes="100vw"
             />
           </div>
 
@@ -72,7 +72,7 @@ export default function SmallRecordPage() {
               alt=""
               fill
               className="object-cover opacity-10"
-              unoptimized
+              sizes="100vw"
             />
           </div>
           <div className="relative z-10 px-5 py-24 md:px-8 md:py-32">
@@ -212,7 +212,7 @@ export default function SmallRecordPage() {
                   alt="Small Records"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 768px) 42vw, 100vw"
                 />
               </div>
             </div>
@@ -222,6 +222,7 @@ export default function SmallRecordPage() {
                 alt="Small Records"
                 interval={500}
                 className="aspect-[4/3] w-full md:aspect-[3/4]"
+                sizes="(min-width: 768px) 25vw, 100vw"
               />
             </div>
             <div className="col-span-12 md:col-span-4">
@@ -231,7 +232,7 @@ export default function SmallRecordPage() {
                   alt="Small Records"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
             </div>
@@ -294,7 +295,7 @@ export default function SmallRecordPage() {
                       alt={ev.title}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                      unoptimized
+                      sizes="(min-width: 768px) 33vw, 100vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5 md:p-6">
@@ -414,7 +415,7 @@ export default function SmallRecordPage() {
                       alt="Casae"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                      unoptimized
+                      sizes="(min-width: 768px) 50vw, 100vw"
                     />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -438,7 +439,7 @@ export default function SmallRecordPage() {
                       alt="Letche"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                      unoptimized
+                      sizes="(min-width: 768px) 50vw, 100vw"
                     />
                     <div className="absolute bottom-6 left-6">
                       <span className="font-condensed text-[0.5rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -469,6 +470,8 @@ export default function SmallRecordPage() {
                   src="/images/logo/logo-wordmark-white.png"
                   alt="Small Records"
                   className="h-auto w-full object-contain"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">

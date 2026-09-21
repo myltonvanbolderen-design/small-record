@@ -40,7 +40,7 @@ export function PhotoSlider({ photos, className, label = 'Photo gallery' }: Phot
               alt={photo.alt}
               fill
               className="object-cover"
-              unoptimized
+              sizes="(min-width: 768px) 40vw, 75vw"
             />
           </motion.div>
         ))}

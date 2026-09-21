@@ -10,6 +10,7 @@ interface ParallaxImageProps {
   className?: string
   speed?: number
   priority?: boolean
+  sizes?: string
 }
 
 export function ParallaxImage({
@@ -18,6 +19,7 @@ export function ParallaxImage({
   className,
   speed = 0.15,
   priority = false,
+  sizes = '130vw',
 }: ParallaxImageProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -36,7 +38,7 @@ export function ParallaxImage({
           fill
           className="object-cover"
           priority={priority}
-          unoptimized
+          sizes={sizes}
         />
       </motion.div>
     </div>

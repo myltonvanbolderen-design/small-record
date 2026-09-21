@@ -35,7 +35,7 @@ export default function CasaePage() {
               fill
               className="object-cover object-center"
               priority
-              unoptimized
+              sizes="100vw"
             />
           </div>
 

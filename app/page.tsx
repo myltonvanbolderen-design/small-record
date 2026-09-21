@@ -40,7 +40,7 @@ export default function HomePage() {
               fill
               className="object-cover"
               priority
-              unoptimized
+              sizes="100vw"
             />
           </div>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
                     alt="DJ Casae"
                     fill
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
-                    unoptimized
+                    sizes="(min-width: 768px) 58vw, 100vw"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-10">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
@@ -200,7 +200,7 @@ export default function HomePage() {
                     alt="DJ Letche"
                     fill
                     className="object-cover object-top transition-transform duration-1000 group-hover:scale-[1.03]"
-                    unoptimized
+                    sizes="(min-width: 768px) 42vw, 100vw"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-5 md:p-8">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.4em] text-terracotta-light">
@@ -245,7 +245,7 @@ export default function HomePage() {
                 alt="Letché, Casæ and Lessovik behind the decks at Panic Room"
                 fill
                 className="object-cover object-[40%_center] md:object-center"
-                unoptimized
+                sizes="(min-width: 1200px) 1152px, 100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
                 <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -343,7 +343,7 @@ export default function HomePage() {
               alt=""
               fill
               className="object-cover opacity-20"
-              unoptimized
+              sizes="100vw"
             />
           </div>
           <div className="relative z-10 px-5 md:px-8">

@@ -9,9 +9,10 @@ interface FlipImageProps {
   alt: string
   interval?: number
   className?: string
+  sizes?: string
 }
 
-export function FlipImage({ images, alt, interval = 500, className }: FlipImageProps) {
+export function FlipImage({ images, alt, interval = 500, className, sizes = '100vw' }: FlipImageProps) {
   const [index, setIndex] = useState(0)
   const reduce = useReducedMotion()
 
@@ -36,7 +37,7 @@ export function FlipImage({ images, alt, interval = 500, className }: FlipImageP
           fill
           className="object-cover"
           style={{ visibility: i === index ? 'visible' : 'hidden' }}
-          unoptimized
+          sizes={sizes}
         />
       ))}
     </div>

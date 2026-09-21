@@ -34,7 +34,7 @@ export default function LetchePage() {
               fill
               className="object-cover object-center"
               priority
-              unoptimized
+              sizes="100vw"
             />
           </div>
 
@@ -115,7 +115,7 @@ export default function LetchePage() {
                   alt="Letche"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function LetchePage() {
                   alt="Letche"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 768px) 67vw, 100vw"
                 />
               </div>
             </div>

@@ -13,6 +13,8 @@ export function Footer() {
               src="/images/logo/logo-wordmark-white.png"
               alt="Small Records"
               className="h-auto w-full object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <nav

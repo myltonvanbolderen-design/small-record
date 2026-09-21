@@ -110,7 +110,7 @@ export default function EventsPage() {
               fill
               className="object-cover object-[58%_center] md:object-center"
               priority
-              unoptimized
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-noir/70 via-noir/30 to-noir" />
           </div>
@@ -193,7 +193,7 @@ export default function EventsPage() {
                 alt="Letché, Casæ and Lessovik behind the decks at Panic Room"
                 fill
                 className="object-cover object-[40%_center] md:object-center"
-                unoptimized
+                sizes="(min-width: 1200px) 1152px, 100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
                 <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -262,7 +262,7 @@ export default function EventsPage() {
                   alt="Casæ arms up at the decks with Lessovik"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 100vw"
                 />
               </div>
               <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
@@ -271,7 +271,7 @@ export default function EventsPage() {
                   alt="Panic Room red neon sign"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
               <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
@@ -280,7 +280,7 @@ export default function EventsPage() {
                   alt="Letché at the decks, the crowd leaning in"
                   fill
                   className="object-cover object-[65%_center] md:object-center"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
               <div className="relative col-span-2 aspect-[4/3] w-full overflow-hidden md:col-span-1 md:aspect-[3/2]">
@@ -289,7 +289,7 @@ export default function EventsPage() {
                   alt="DJ under blue light at Panic Room"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 100vw"
                 />
               </div>
               <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
@@ -298,7 +298,7 @@ export default function EventsPage() {
                   alt="A crew of friends on the Panic Room floor"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
               <div className="relative aspect-square w-full overflow-hidden md:aspect-[3/2]">
@@ -307,7 +307,7 @@ export default function EventsPage() {
                   alt="Panic Room slipmat on the turntable"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
             </div>
@@ -319,7 +319,7 @@ export default function EventsPage() {
                 alt="The crowd smiling at the end of the night"
                 fill
                 className="object-cover"
-                unoptimized
+                sizes="(min-width: 1200px) 1152px, 100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
                 <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -479,7 +479,7 @@ export default function EventsPage() {
                 alt="Packed room at Gambetta Club"
                 fill
                 className="object-cover"
-                unoptimized
+                sizes="(min-width: 1200px) 1152px, 100vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-5 md:p-6">
                 <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
@@ -508,7 +508,7 @@ export default function EventsPage() {
                   alt="Casae and Letche"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
               <div className="relative aspect-[3/4] w-full overflow-hidden bg-placeholder">
@@ -529,7 +529,7 @@ export default function EventsPage() {
                   alt="Letche and Casae B2B at the decks"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
               <div className="relative aspect-[3/4] w-full overflow-hidden bg-placeholder">
@@ -550,7 +550,7 @@ export default function EventsPage() {
                   alt="Small Records gnome trophy"
                   fill
                   className="object-cover"
-                  unoptimized
+                  sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 50vw"
                 />
               </div>
             </div>
@@ -699,7 +699,7 @@ export default function EventsPage() {
                     alt="Small Records at Sornettes"
                     fill
                     className="object-cover"
-                    unoptimized
+                    sizes="(min-width: 1200px) 384px, (min-width: 768px) 33vw, 100vw"
                   />
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
                     <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta-light">
