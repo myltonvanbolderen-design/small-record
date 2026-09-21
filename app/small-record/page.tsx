@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
@@ -9,12 +8,21 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { FlipImage } from '@/components/magazine/FlipImage'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'The Label',
+  ogTitle: 'The Label | Small Records',
   description:
-    'Independent music label founded by Letche & Casae. Paris.',
-}
+    'The Label: Small Records is an independent Paris music label and DJ crew founded by Casae & Letche. House, techno, baile funk, afrohouse. Booking and press.',
+  path: '/small-record/',
+  image: {
+    url: '/og/og-label.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'Casae and Letche, Small Records',
+  },
+})
 
 export default function SmallRecordPage() {
   return (

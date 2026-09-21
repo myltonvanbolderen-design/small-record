@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
 import { ParallaxImage } from '@/components/animation/ParallaxImage'
@@ -6,12 +5,21 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Letche',
+  ogTitle: 'Letche | Small Records',
   description:
-    'Techno, Breaks, Ambient, Baile Funk. Co-founder of Small Records. Paris.',
-}
+    'DJ Letche, co-founder of Small Records in Paris. Techno, breaks, baile funk and ambient for clubs, festivals and raves. SoundCloud mixes, photos and booking.',
+  path: '/letche/',
+  image: {
+    url: '/og/og-letche.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'DJ Letche',
+  },
+})
 
 export default function LetchePage() {
   return (

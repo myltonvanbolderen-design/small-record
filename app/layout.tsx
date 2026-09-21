@@ -14,17 +14,19 @@ export const metadata: Metadata = {
   description: 'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
   openGraph: {
     title: 'Small Records',
-    description: 'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
-    url: 'https://small-records.com',
+    description:
+      'Small Records is a Paris DJ crew and independent label: DJ Casae & DJ Letche. House, techno, baile funk, afrohouse, disco. Open for club and festival booking.',
+    url: '/',
     siteName: 'Small Records',
     images: [{ url: '/og-image.jpg', width: 1200, height: 800 }],
-    locale: 'fr_FR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Small Records',
-    description: 'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
+    description:
+      'Small Records is a Paris DJ crew and independent label: DJ Casae & DJ Letche. House, techno, baile funk, afrohouse, disco. Open for club and festival booking.',
     images: ['/og-image.jpg'],
   },
 }
@@ -36,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="fr"
+      lang="en"
       className={`${playfair.variable} ${bebas.variable} ${dmSans.variable}`}
     >
       <body>

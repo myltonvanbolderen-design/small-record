@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
@@ -10,12 +9,21 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
 import { FlipImage } from '@/components/magazine/FlipImage'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Small Records',
+export const metadata = pageMetadata({
+  title: { absolute: 'Small Records — DJ crew & label, Paris' },
+  ogTitle: 'Small Records — DJ crew & label, Paris',
   description:
-    'Independent music label. House, Techno, Baile Funk, Afrohouse. Paris.',
-}
+    'Small Records is a Paris DJ crew and independent label: DJ Casae & DJ Letche. House, techno, baile funk, afrohouse, disco. Open for club and festival booking.',
+  path: '/',
+  image: {
+    url: '/og-image.jpg',
+    width: 1200,
+    height: 800,
+    alt: 'DJ Casae and DJ Letche of Small Records',
+  },
+})
 
 export default function HomePage() {
   return (

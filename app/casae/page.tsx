@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
 import { ParallaxImage } from '@/components/animation/ParallaxImage'
@@ -7,12 +6,21 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { PhotoSlider } from '@/components/magazine/PhotoSlider'
 import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Casae',
+  ogTitle: 'Casae | Small Records',
   description:
-    'House, Disco, Grooves, Afrohouse. Co-founder of Small Records. Paris.',
-}
+    'DJ Casae, co-founder of Small Records in Paris. House, disco, grooves and afrohouse sets for clubs, festivals and private events. Mixes, photos and booking.',
+  path: '/casae/',
+  image: {
+    url: '/og/og-casae.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'DJ Casae',
+  },
+})
 
 export default function CasaePage() {
   return (

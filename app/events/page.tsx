@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import Image from 'next/image'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
 import { ParallaxImage } from '@/components/animation/ParallaxImage'
@@ -10,12 +9,21 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { VideoLoop } from '@/components/magazine/VideoLoop'
 import { CountUp } from '@/components/animation/CountUp'
 import { cn } from '@/lib/utils'
+import { pageMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Events',
+  ogTitle: 'Events | Small Records',
   description:
-    'Small Records live — club nights, festivals and B2B sets. Paris and beyond.',
-}
+    'Small Records live in Paris: Small Party at Panic Room, Gambetta Club with Early Reflections, Fête de la Musique. Club nights, recaps, videos and booking.',
+  path: '/events/',
+  image: {
+    url: '/og/og-events.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'Letché, Casæ and Lessovik at Panic Room',
+  },
+})
 
 export default function EventsPage() {
   return (
