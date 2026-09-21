@@ -9,6 +9,7 @@ import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
 import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
+import { ScrollFadeOut } from '@/components/animation/ScrollFadeOut'
 import { FlipImage } from '@/components/magazine/FlipImage'
 import { CountUp } from '@/components/animation/CountUp'
 import { cn } from '@/lib/utils'
@@ -27,6 +28,8 @@ export const metadata = pageMetadata({
     alt: 'DJ Casae and DJ Letche of Small Records',
   },
 })
+
+const COVER_TAGLINE = { id: 'cover-tagline', fadeDistance: 120 }
 
 export default function HomePage() {
   return (
@@ -61,8 +64,8 @@ export default function HomePage() {
 
           {/* Title - centered, parallax, independent of flow */}
           <div className="absolute inset-0 z-10 flex items-center px-5 md:px-8">
-            <ParallaxTitle speed={0.22}>
-              <h1 className="pointer-events-none select-none font-display text-[clamp(4rem,18vw,16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
+            <ParallaxTitle avoid={COVER_TAGLINE}>
+              <h1 className="pointer-events-none select-none font-display text-[clamp(4rem,min(18vw,28svh),16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">
                   Records<span className="text-terracotta">.</span>
@@ -71,8 +74,8 @@ export default function HomePage() {
             </ParallaxTitle>
           </div>
 
-          {/* Tagline - bottom */}
-          <div className="absolute bottom-8 left-5 right-5 z-10 md:left-8 md:right-8">
+          {/* Tagline - bottom (fades out early: the lagging title drifts toward it) */}
+          <ScrollFadeOut id={COVER_TAGLINE.id} distance={COVER_TAGLINE.fadeDistance} className="absolute bottom-8 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.4} blur>
               <p className="font-display text-[clamp(1.1rem,2.5vw,1.6rem)] font-bold leading-[1.4] text-blanc/70">
                 We are diggers. We search.
@@ -86,7 +89,7 @@ export default function HomePage() {
             <span aria-hidden="true" className="mt-4 block font-condensed text-[0.55rem] tracking-[0.3em] text-blanc/55">
               001
             </span>
-          </div>
+          </ScrollFadeOut>
         </section>
 
         {/* ═══════ MARQUEE ═══════ */}
