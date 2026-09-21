@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-21 - Completed quick task 260921-oti: Audit lot C events & home
+Last activity: 2026-09-21 - Completed quick task 260921-qp5: Audit lot D accessibilité
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -46,6 +46,7 @@ None yet.
 | 260921-odr | Audit lot A: perf & sécu (lazy videos, re-encode, next 15.5.25) | 2026-09-21 | 9549c6b | [260921-odr-audit-lot-a-perf-and-security](./quick/260921-odr-audit-lot-a-perf-and-security/) |
 | 260921-on4 | Audit lot B: SEO & partage (OG par page, sitemap, footer nav, JSON-LD events) | 2026-09-21 | 9bbb4d8 | [260921-on4-audit-lot-b-seo-and-sharing](./quick/260921-on4-audit-lot-b-seo-and-sharing/) |
 | 260921-oti | Audit lot C: events newest-first, Panic Room cover, home latest live, casae overflow | 2026-09-21 | 5860b26 | [260921-oti-audit-lot-c-events-and-home](./quick/260921-oti-audit-lot-c-events-and-home/) |
+| 260921-qp5 | Audit lot D: accessibilité (contrastes AA, menu clavier, reduced-motion, focus) | 2026-09-21 | daf457b | [260921-qp5-audit-lot-d-accessibility](./quick/260921-qp5-audit-lot-d-accessibility/) |
 
 ## Session Continuity
 
