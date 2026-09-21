@@ -41,6 +41,7 @@ None yet.
 | fast | Remove poster from Panic Room strip | 2026-09-21 | 9e939a1 | — |
 | fast | Swap two Panic Room grid photos | 2026-09-21 | ea6f718 | — |
 | fast | Mobile layout for Panic Room section | 2026-09-21 | d9c8a1d | — |
+| fast | Panic Room by-the-numbers band + 22h–5h fix | 2026-09-21 | 2d76229 | — |
 
 ## Session Continuity
 
