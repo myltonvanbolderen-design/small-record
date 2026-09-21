@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -18,6 +18,37 @@ const navItems = [
 export function Header() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  const menuRef = useRef<HTMLElement>(null)
+  const wasOpen = useRef(false)
+
+  useEffect(() => {
+    const main = document.getElementById('main')
+    if (main) main.inert = menuOpen
+
+    if (menuOpen) {
+      wasOpen.current = true
+      const onKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') setMenuOpen(false)
+      }
+      document.addEventListener('keydown', onKeyDown)
+      const raf = requestAnimationFrame(() => {
+        menuRef.current?.querySelector<HTMLElement>('a')?.focus()
+      })
+      return () => {
+        document.removeEventListener('keydown', onKeyDown)
+        cancelAnimationFrame(raf)
+        if (main) main.inert = false
+      }
+    } else if (wasOpen.current) {
+      wasOpen.current = false
+      toggleRef.current?.focus()
+    }
+
+    return () => {
+      if (main) main.inert = false
+    }
+  }, [menuOpen])
 
   return (
     <>
@@ -36,16 +67,19 @@ export function Header() {
 
           {/* Center - Issue/brand mark (desktop) */}
           <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:block">
-            <span className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/30">
+            <span aria-hidden="true" className="font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-blanc/30">
               Small Records · Paris
             </span>
           </div>
 
           {/* Menu toggle */}
           <button
+            ref={toggleRef}
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
             className="relative z-50 font-condensed text-[0.7rem] uppercase tracking-[0.25em] text-blanc/70 transition-colors hover:text-blanc"
-            aria-label="Menu"
+            aria-expanded={menuOpen}
+            aria-controls="site-menu"
           >
             {menuOpen ? 'Close' : 'Menu'}
           </button>
@@ -60,12 +94,13 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
+            id="site-menu"
             className="fixed inset-0 z-40 flex items-center justify-center bg-noir/98 backdrop-blur-md"
             onClick={() => setMenuOpen(false)}
           >
-            <nav className="flex flex-col items-center gap-2" onClick={(e) => e.stopPropagation()}>
+            <nav ref={menuRef} aria-label="Main" className="flex flex-col items-center gap-2" onClick={(e) => e.stopPropagation()}>
               {/* Sommaire title */}
-              <span className="mb-8 font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-terracotta">
+              <span className="mb-8 font-condensed text-[0.6rem] uppercase tracking-[0.4em] text-terracotta-light">
                 Sommaire
               </span>
 
@@ -88,7 +123,7 @@ export function Header() {
                           : 'text-blanc/40 hover:text-blanc'
                       )}
                     >
-                      <span className="font-condensed text-[0.7rem] tracking-[0.2em] text-terracotta/70">
+                      <span className="font-condensed text-[0.7rem] tracking-[0.2em] text-terracotta-light">
                         {item.num}
                       </span>
                       <span className="font-display text-[clamp(2rem,6vw,4.5rem)] font-bold leading-none tracking-tight">
@@ -110,7 +145,7 @@ export function Header() {
                   href="https://www.instagram.com/smallmusics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   Instagram
                 </a>
@@ -118,7 +153,7 @@ export function Header() {
                   href="https://soundcloud.com/casae"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   SoundCloud
                 </a>
@@ -126,7 +161,7 @@ export function Header() {
                   href="https://linktr.ee/smallrecords_music"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/30 transition-colors hover:text-terracotta"
+                  className="font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta"
                 >
                   Linktree
                 </a>

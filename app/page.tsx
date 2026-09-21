@@ -30,7 +30,7 @@ export const metadata = pageMetadata({
 export default function HomePage() {
   return (
     <PageTransition>
-      <main className="min-h-screen bg-noir text-blanc">
+      <main id="main-content" tabIndex={-1} className="min-h-screen bg-noir text-blanc outline-none">
         {/* ═══════ COVER ═══════ */}
         <section className="relative min-h-[100svh] overflow-hidden">
           <div className="absolute inset-0">

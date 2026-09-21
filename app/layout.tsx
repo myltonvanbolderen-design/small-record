@@ -81,8 +81,8 @@ export default function RootLayout({
           }}
         />
         <a
-          href="#main"
-          className="sr-only focus:not-sr-only fixed left-4 top-4 z-[100] rounded bg-terracotta px-4 py-2 font-condensed text-sm text-blanc focus:outline-none"
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] rounded bg-terracotta px-4 py-2 font-condensed text-sm text-blanc"
         >
           Skip to content
         </a>

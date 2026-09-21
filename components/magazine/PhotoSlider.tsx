@@ -7,14 +7,18 @@ import Image from 'next/image'
 interface PhotoSliderProps {
   photos: { src: string; alt: string }[]
   className?: string
+  label?: string
 }
 
-export function PhotoSlider({ photos, className }: PhotoSliderProps) {
+export function PhotoSlider({ photos, className, label = 'Photo gallery' }: PhotoSliderProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
   return (
     <div
       ref={containerRef}
+      tabIndex={0}
+      role="region"
+      aria-label={label}
       className={`overflow-x-auto scrollbar-hide ${className ?? ''}`}
     >
       <motion.div

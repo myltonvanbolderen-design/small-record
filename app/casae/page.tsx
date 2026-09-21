@@ -25,7 +25,7 @@ export const metadata = pageMetadata({
 export default function CasaePage() {
   return (
     <PageTransition>
-      <main className="min-h-screen bg-noir text-blanc">
+      <main id="main-content" tabIndex={-1} className="min-h-screen bg-noir text-blanc outline-none">
         {/* ═══════ COVER ═══════ */}
         <section className="relative min-h-[100svh] overflow-hidden">
           <div className="absolute inset-0">
@@ -107,6 +107,7 @@ export default function CasaePage() {
         {/* ═══════ PHOTO SLIDER ═══════ */}
         <section className="py-8">
           <PhotoSlider
+            label="Photos of Casae"
             photos={[
               { src: '/images/casae/img_5542.jpg', alt: 'Casae' },
               { src: '/images/casae/img_5625.jpg', alt: 'Casae' },

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function NotFound() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center bg-noir px-5 text-center text-blanc">
+    <main id="main-content" tabIndex={-1} className="relative flex min-h-screen flex-col items-center justify-center bg-noir px-5 text-center text-blanc outline-none">
       {/* Background photo */}
       <div className="absolute inset-0">
         <Image

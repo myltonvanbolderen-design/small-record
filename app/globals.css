@@ -5,6 +5,8 @@
   --color-noir: #0A0A0A;
   --color-blanc: #F5F0E8;
   --color-terracotta: #CC2936;
+  /* small red text (5.22:1 on noir); #CC2936 only for large display */
+  --color-terracotta-light: #E0525E;
   --color-ambre: #D4A832;
   --color-placeholder: #1A1A1A;
 
@@ -53,6 +55,11 @@
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blanc);
+    outline-offset: 3px;
   }
 }
 

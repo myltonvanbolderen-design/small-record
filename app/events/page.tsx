@@ -96,7 +96,7 @@ const eventsJsonLd = [
 export default function EventsPage() {
   return (
     <PageTransition>
-      <main className="min-h-screen bg-noir text-blanc">
+      <main id="main-content" tabIndex={-1} className="min-h-screen bg-noir text-blanc outline-none">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsJsonLd) }}
