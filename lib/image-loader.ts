@@ -1,7 +1,7 @@
 'use client'
 
 // keep in sync with tools/image-variants.mjs WIDTHS and next.config.ts deviceSizes
-export const IMAGE_WIDTHS = [640, 1080, 1920] as const
+export const IMAGE_WIDTHS = [640, 1080, 1280, 1920] as const
 
 export function pickWidth(w: number): number {
   for (const width of IMAGE_WIDTHS) {

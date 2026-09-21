@@ -17,7 +17,7 @@ try {
 }
 
 // keep in sync with lib/image-loader.ts IMAGE_WIDTHS and next.config.ts deviceSizes
-const WIDTHS = [640, 1080, 1920]
+const WIDTHS = [640, 1080, 1280, 1920]
 
 const ROOT = path.join(process.cwd(), 'public/images')
 const OUT_ROOT = path.join(ROOT, '_w')
@@ -82,7 +82,7 @@ async function generateVariants() {
         await sharp(file)
           .rotate()
           .resize({ width, withoutEnlargement: true })
-          .webp({ quality: 72 })
+          .webp({ quality: 65 })
           .toFile(outPath)
 
         generated++
