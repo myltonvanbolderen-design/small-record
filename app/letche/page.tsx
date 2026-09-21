@@ -5,6 +5,7 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
+import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
@@ -157,19 +158,13 @@ export default function LetchePage() {
         <section className="px-5 py-20 md:px-8">
           <AnimatedSection>
             <div className="mx-auto max-w-4xl">
-              <div className="mb-8 flex items-end justify-between">
-                <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                    Listen
-                  </span>
-                  <h2 className="mt-2 font-display text-section font-bold">
-                    Selected Mixes
-                  </h2>
-                </div>
-                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
-                  006
-                </span>
-              </div>
+              <SectionHeader
+                kicker="Listen"
+                title="Selected Mixes"
+                folio="006"
+                className="mb-8 flex items-end justify-between"
+                titleClassName="mt-2 font-display text-section font-bold"
+              />
               <SoundCloudEmbed url="https://soundcloud.com/letchetony" height={300} />
             </div>
           </AnimatedSection>

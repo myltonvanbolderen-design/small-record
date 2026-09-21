@@ -7,6 +7,7 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
+import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { FlipImage } from '@/components/magazine/FlipImage'
 import { pageMetadata } from '@/lib/seo'
 
@@ -244,26 +245,21 @@ export default function SmallRecordPage() {
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <AnimatedSection blur>
-              <div className="mb-10 flex items-end justify-between md:mb-12">
-                <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                    Live
-                  </span>
-                  <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
-                    On the floor
-                  </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
-                    Where Small Records plays out loud
-                  </p>
-                </div>
-                <Link
-                  href="/events"
-                  className="group hidden items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta md:flex"
-                >
-                  All events
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </Link>
-              </div>
+              <SectionHeader
+                kicker="Live"
+                title="On the floor"
+                meta="Where Small Records plays out loud"
+                className="mb-10 flex items-end justify-between md:mb-12"
+                aside={
+                  <Link
+                    href="/events"
+                    className="group hidden items-center gap-2 font-condensed text-[0.6rem] uppercase tracking-[0.3em] text-blanc/55 transition-colors hover:text-terracotta md:flex"
+                  >
+                    All events
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                }
+              />
             </AnimatedSection>
 
             {/* Three compact past-event cards (most recent first) */}
@@ -376,22 +372,14 @@ export default function SmallRecordPage() {
         <section className="px-5 py-20 md:px-8 md:py-24">
           <AnimatedSection scale>
             <div className="mx-auto max-w-5xl">
-              <div className="mb-8 flex items-end justify-between">
-                <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                    Featured Mix
-                  </span>
-                  <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
-                    House Mix · Pool Party
-                  </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
-                    Summer DJ Set · South of France
-                  </p>
-                </div>
-                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
-                  005
-                </span>
-              </div>
+              <SectionHeader
+                kicker="Featured Mix"
+                title="House Mix · Pool Party"
+                meta="Summer DJ Set · South of France"
+                folio="005"
+                className="mb-8 flex items-end justify-between"
+                titleClassName="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold"
+              />
               <YouTubeEmbed videoId="X9rpsIVIVgk" />
             </div>
           </AnimatedSection>

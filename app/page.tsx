@@ -6,6 +6,7 @@ import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { YouTubeEmbed } from '@/components/magazine/YouTubeEmbed'
+import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
 import { FlipImage } from '@/components/magazine/FlipImage'
@@ -150,19 +151,13 @@ export default function HomePage() {
 
         <section className="px-5 py-16 md:px-8 md:py-24">
           <AnimatedSection blur>
-            <div className="mb-10 flex items-end justify-between md:mb-16">
-              <div>
-                <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                  The Artists
-                </span>
-                <h2 className="mt-2 font-display text-section font-bold">
-                  Meet the crew
-                </h2>
-              </div>
-              <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
-                003
-              </span>
-            </div>
+            <SectionHeader
+              kicker="The Artists"
+              title="Meet the crew"
+              folio="003"
+              className="mb-10 flex items-end justify-between md:mb-16"
+              titleClassName="mt-2 font-display text-section font-bold"
+            />
           </AnimatedSection>
 
           {/* Asymmetric grid - Casae big left, Letche tall right */}
@@ -224,19 +219,12 @@ export default function HomePage() {
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <AnimatedSection blur>
-              <div className="mb-10 flex items-end justify-between md:mb-12">
-                <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                    Latest · Live
-                  </span>
-                  <h2 className="mt-2 font-display text-[clamp(1.8rem,4vw,3rem)] font-bold leading-[1.05]">
-                    Small Party @ Panic Room
-                  </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
-                    Paris 11 · September 11, 2026
-                  </p>
-                </div>
-              </div>
+              <SectionHeader
+                kicker="Latest · Live"
+                title="Small Party @ Panic Room"
+                meta="Paris 11 · September 11, 2026"
+                className="mb-10 flex items-end justify-between md:mb-12"
+              />
             </AnimatedSection>
             {/* photo: NOT wrapped in AnimatedSection */}
             <div className="relative -mx-5 aspect-square overflow-hidden md:mx-0 md:aspect-[3/2]">
@@ -314,22 +302,14 @@ export default function HomePage() {
         <section className="px-5 py-16 md:px-8 md:py-24">
           <AnimatedSection scale>
             <div className="mx-auto max-w-5xl">
-              <div className="mb-8 flex items-end justify-between">
-                <div>
-                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-terracotta-light">
-                    Featured Mix
-                  </span>
-                  <h2 className="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold">
-                    House Mix · Pool Party
-                  </h2>
-                  <p className="mt-2 font-body text-[0.95rem] text-blanc/55">
-                    Summer DJ Set · South of France
-                  </p>
-                </div>
-                <span aria-hidden="true" className="hidden font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-blanc/55 md:block">
-                  004
-                </span>
-              </div>
+              <SectionHeader
+                kicker="Featured Mix"
+                title="House Mix · Pool Party"
+                meta="Summer DJ Set · South of France"
+                folio="004"
+                className="mb-8 flex items-end justify-between"
+                titleClassName="mt-2 font-display text-[clamp(1.5rem,3vw,2.5rem)] font-bold"
+              />
               <YouTubeEmbed videoId="X9rpsIVIVgk" />
             </div>
           </AnimatedSection>
