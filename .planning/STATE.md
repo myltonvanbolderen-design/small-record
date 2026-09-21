@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-21 - Completed quick task 260921-ga2: Add Small Party Panic Room recap to events and small-record
+Last activity: 2026-09-21 - Completed quick task 260921-odr: Audit lot A perf & sécu
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -43,6 +43,7 @@ None yet.
 | fast | Mobile layout for Panic Room section | 2026-09-21 | d9c8a1d | — |
 | fast | Panic Room by-the-numbers band + 22h–5h fix | 2026-09-21 | 2d76229 | — |
 | fast | Move numbers band below photos | 2026-09-21 | 753452b | — |
+| 260921-odr | Audit lot A: perf & sécu (lazy videos, re-encode, next 15.5.25) | 2026-09-21 | 9549c6b | [260921-odr-audit-lot-a-perf-and-security](./quick/260921-odr-audit-lot-a-perf-and-security/) |
 
 ## Session Continuity
 
