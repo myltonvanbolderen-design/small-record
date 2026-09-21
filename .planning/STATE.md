@@ -37,6 +37,7 @@ None yet.
 |---|-------------|------|--------|-----------|
 | 260921-ga2 | Add Small Party Panic Room recap to events and small-record | 2026-09-21 | 37ceba0 | [260921-ga2-add-small-party-panic-room-recap-to-even](./quick/260921-ga2-add-small-party-panic-room-recap-to-even/) |
 | fast | Add Casæ vertical video to Panic Room strip | 2026-09-21 | 6690c76 | — |
+| fast | Panic Room hero: photo instead of crowd video | 2026-09-21 | 88702c6 | — |
 
 ## Session Continuity
 
