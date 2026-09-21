@@ -412,8 +412,8 @@ export default function EventsPage() {
             </div>
 
             {/* Set-order strip — poster + loops */}
-            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
-              <div className="relative aspect-[9/16] w-full overflow-hidden">
+            <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-5">
+              <div className="relative col-span-2 aspect-[9/16] w-full overflow-hidden md:col-span-1">
                 <Image
                   src="/images/panic-room/affiche.jpg"
                   alt="Small Party × Panic Room poster, September 11, 2026"
@@ -431,6 +431,18 @@ export default function EventsPage() {
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
                   <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
                     Lessovik
+                  </span>
+                </div>
+              </div>
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-placeholder">
+                <VideoLoop
+                  src="/videos/panic-casae.mp4"
+                  poster="/images/panic-room/poster-panic-casae.jpg"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-noir/90 to-transparent p-4">
+                  <span className="font-condensed text-[0.55rem] uppercase tracking-[0.3em] text-terracotta">
+                    Casæ
                   </span>
                 </div>
               </div>
