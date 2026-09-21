@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { AnimatedSection } from '@/components/animation/AnimatedSection'
-import { ParallaxImage } from '@/components/animation/ParallaxImage'
 import { HorizontalRule } from '@/components/animation/HorizontalRule'
 import { PageTransition } from '@/components/animation/PageTransition'
 import { PhotoSlider } from '@/components/magazine/PhotoSlider'
@@ -72,12 +71,6 @@ export default function CasaePage() {
 
         {/* ═══════ BIO - Over photo background ═══════ */}
         <section className="relative overflow-hidden py-20 md:py-28">
-          <ParallaxImage
-            src="/images/casae/img_5694.jpg"
-            alt="Casae portrait"
-            className="absolute inset-0"
-            speed={0.1}
-          />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection>

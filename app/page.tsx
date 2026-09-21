@@ -97,12 +97,6 @@ export default function HomePage() {
 
         {/* ═══════ MANIFESTO - Text overlaid on photo ═══════ */}
         <section className="relative min-h-[80svh] overflow-hidden">
-          <ParallaxImage
-            src="/images/duo/img_3148.jpg"
-            alt="Small Records crew"
-            className="absolute inset-0"
-            speed={0.1}
-          />
           <div className="relative z-10 flex min-h-[80svh] flex-col justify-center px-5 py-20 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>

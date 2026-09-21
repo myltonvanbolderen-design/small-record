@@ -328,12 +328,6 @@ export default function SmallRecordPage() {
 
         {/* ═══════ MANIFESTO - Full width over photo ═══════ */}
         <section className="relative overflow-hidden py-24 md:py-32">
-          <ParallaxImage
-            src="/images/duo/img_5597.jpg"
-            alt=""
-            className="absolute inset-0"
-            speed={0.1}
-          />
           <div className="relative z-10 px-5 md:px-8">
             <div className="mx-auto max-w-5xl">
               <AnimatedSection blur>
