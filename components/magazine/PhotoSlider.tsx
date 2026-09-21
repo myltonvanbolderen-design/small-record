@@ -15,7 +15,7 @@ export function PhotoSlider({ photos, className }: PhotoSliderProps) {
   return (
     <div
       ref={containerRef}
-      className={`-mx-5 overflow-x-auto scrollbar-hide md:-mx-8 ${className ?? ''}`}
+      className={`overflow-x-auto scrollbar-hide ${className ?? ''}`}
     >
       <motion.div
         className="flex gap-3 px-5 md:px-8"
