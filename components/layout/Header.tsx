@@ -56,6 +56,7 @@ export function Header() {
         <div className="flex items-center justify-between px-5 py-4 md:px-8">
           {/* Logo */}
           <Link href="/" className="relative z-50 block h-8 w-8 shrink-0 md:h-10 md:w-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/logo/logo-white-96.png"
               alt="Small Records"
