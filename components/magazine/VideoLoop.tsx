@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { useReducedMotion } from 'motion/react'
 
 interface VideoLoopProps {
   src: string
@@ -10,12 +11,18 @@ interface VideoLoopProps {
 
 export function VideoLoop({ src, poster, className }: VideoLoopProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const reduce = useReducedMotion()
 
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
 
     video.muted = true
+
+    if (reduce) {
+      video.pause()
+      return
+    }
 
     if (typeof IntersectionObserver === 'undefined') {
       video.src = src
@@ -44,7 +51,7 @@ export function VideoLoop({ src, poster, className }: VideoLoopProps) {
     return () => {
       observer.disconnect()
     }
-  }, [src])
+  }, [src, reduce])
 
   return (
     <video

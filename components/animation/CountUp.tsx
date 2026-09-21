@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
-import { animate, useInView } from 'motion/react'
+import { animate, useInView, useReducedMotion } from 'motion/react'
 
 interface CountUpProps {
   /** Final value, e.g. "711" or "7h" — the leading number counts up, the rest stays */
@@ -14,6 +14,7 @@ interface CountUpProps {
 export function CountUp({ value, className, delay = 0, duration = 1.6 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref, { once: true, amount: 0.5 })
+  const reduce = useReducedMotion()
   const match = value.match(/^(\D*)(\d+)(.*)$/)
   const [prefix, digits, suffix] = match ? [match[1], match[2], match[3]] : ['', '', '']
   const target = Number(digits)
@@ -23,6 +24,10 @@ export function CountUp({ value, className, delay = 0, duration = 1.6 }: CountUp
 
   useEffect(() => {
     if (!counts) return
+    if (reduce) {
+      setCurrent(target)
+      return
+    }
     if (!isInView) {
       setCurrent(0)
       return
@@ -34,15 +39,18 @@ export function CountUp({ value, className, delay = 0, duration = 1.6 }: CountUp
       onUpdate: (v) => setCurrent(Math.round(v)),
     })
     return () => controls.stop()
-  }, [isInView, target, delay, duration, counts])
+  }, [isInView, target, delay, duration, counts, reduce])
 
   if (!counts) return <span className={className}>{value}</span>
 
   return (
     <span ref={ref} className={className} style={{ fontVariantNumeric: 'tabular-nums' }}>
-      {prefix}
-      {current}
-      {suffix}
+      <span className="sr-only">{value}</span>
+      <span aria-hidden="true">
+        {prefix}
+        {current}
+        {suffix}
+      </span>
     </span>
   )
 }

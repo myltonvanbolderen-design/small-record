@@ -3,6 +3,7 @@ import { playfair, bebas, dmSans } from '@/lib/fonts'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ScrollToTop } from '@/components/layout/ScrollToTop'
+import { Providers } from './providers'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -86,12 +87,14 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <ScrollToTop />
-        <Header />
-        <div id="main">
-          {children}
-          <Footer />
-        </div>
+        <Providers>
+          <ScrollToTop />
+          <Header />
+          <div id="main">
+            {children}
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   )
