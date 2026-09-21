@@ -6,12 +6,12 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 
 ## Phases
 
-- [ ] **Phase 1: Panic Room recap** — Ajouter la Small Party du 11.09.26 sur `/events` et `/small-record`
+- [x] **Phase 1: Panic Room recap** — Ajouter la Small Party du 11.09.26 sur `/events` et `/small-record`
 - [ ] **Phase 2: Coming soon** — Remplacer les placeholders par les vraies prochaines dates
 - [ ] **Phase 3: Infra & QA** — Redirections email du domaine et test sur vrai device
-- [ ] **Phase 4: Perf & sécu (audit lot A)** — /events léger sur mobile, Next patché
-- [ ] **Phase 5: SEO & partage (audit lot B)** — Aperçus de partage par page, sitemap, liens, emails cliquables
-- [ ] **Phase 6: Events & home (audit lot C)** — Events du plus récent au plus ancien, mobile, home qui montre le live
+- [x] **Phase 4: Perf & sécu (audit lot A)** — /events léger sur mobile, Next patché
+- [x] **Phase 5: SEO & partage (audit lot B)** — Aperçus de partage par page, sitemap, liens, emails cliquables
+- [x] **Phase 6: Events & home (audit lot C)** — Events du plus récent au plus ancien, mobile, home qui montre le live
 
 ## Phase Details
 
@@ -74,9 +74,9 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Panic Room recap | 0/1 | Not started | - |
+| 1. Panic Room recap | quick 260921-ga2 | Complete | 2026-09-21 |
 | 2. Coming soon | 0/1 | Not started | - |
 | 3. Infra & QA | 0/1 | Not started | - |
-| 4. Perf & sécu | 0/1 | Not started | - |
-| 5. SEO & partage | 0/1 | Not started | - |
-| 6. Events & home | 0/1 | Not started | - |
+| 4. Perf & sécu | quick 260921-odr | Complete | 2026-09-21 |
+| 5. SEO & partage | quick 260921-on4 | Complete | 2026-09-21 |
+| 6. Events & home | quick 260921-oti | Complete | 2026-09-21 |
