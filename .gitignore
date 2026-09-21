@@ -5,4 +5,5 @@ out/
 *.tsbuildinfo
 .DS_Store
 public/asset/
+public/images/_w/
 .vercel

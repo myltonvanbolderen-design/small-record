@@ -11,6 +11,9 @@ out
 # Raw source media — NOT for public (originals, ~180MB)
 public/asset
 
+# Generated WebP variants — regenerated at build time via prebuild
+public/images/_w
+
 # Tooling / planning — not part of the site
 .planning
 .claude

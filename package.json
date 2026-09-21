@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "images": "node tools/image-variants.mjs",
+    "prebuild": "node tools/image-variants.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
