@@ -487,8 +487,8 @@ export default function EventsPage() {
               </div>
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
-                  src="/images/panic-room/letche-casae.jpg"
-                  alt="Letché and Casæ behind the decks"
+                  src="/images/panic-room/letche-decks.jpg"
+                  alt="Letché at the decks, the crowd leaning in"
                   fill
                   className="object-cover"
                   unoptimized
@@ -505,8 +505,8 @@ export default function EventsPage() {
               </div>
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
-                  src="/images/panic-room/faces.jpg"
-                  alt="Friends in the crowd at Panic Room"
+                  src="/images/panic-room/dream-crowd.jpg"
+                  alt="A crew of friends on the Panic Room floor"
                   fill
                   className="object-cover"
                   unoptimized
