@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-21 - Fast task: parallax audit & fix
+Last activity: 2026-09-21 - Fast tasks: home title timing, artist On stage sections
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -50,6 +50,8 @@ None yet.
 | 260921-rwt | Audit lot E1: WebP responsive (loader + variants au build), cache long, gnome 96px | 2026-09-21 | cfa94c2 | [260921-rwt-audit-lot-e1-responsive-images-and-cache](./quick/260921-rwt-audit-lot-e1-responsive-images-and-cache/) |
 | 260921-sqn | Audit lot E2: SectionHeader/MediaTile/EventFacts, code mort, ESLint | 2026-09-21 | 441fd59 | [260921-sqn-audit-lot-e2-shared-components-dead-code](./quick/260921-sqn-audit-lot-e2-shared-components-dead-code/) |
 | fast | Parallax fix: photos invisibles (0px), trous aux bords, titre home sous le header | 2026-09-21 | cc6775a | — |
+| fast | Titre home visible plus longtemps (lag + tagline fade, 0 chevauchement) | 2026-09-21 | 1dc3847 | — |
+| fast | Section On stage Panic Room sur pages Casae & Letche (ArtistLive) | 2026-09-21 | 9091fd8 | — |
 
 ## Session Continuity
 
