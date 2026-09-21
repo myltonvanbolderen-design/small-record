@@ -42,6 +42,7 @@ None yet.
 | fast | Swap two Panic Room grid photos | 2026-09-21 | ea6f718 | — |
 | fast | Mobile layout for Panic Room section | 2026-09-21 | d9c8a1d | — |
 | fast | Panic Room by-the-numbers band + 22h–5h fix | 2026-09-21 | 2d76229 | — |
+| fast | Move numbers band below photos | 2026-09-21 | 753452b | — |
 
 ## Session Continuity
 
