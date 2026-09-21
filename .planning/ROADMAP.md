@@ -101,4 +101,4 @@ Le site est en ligne. Ce milestone le remet à jour avec la saison : d'abord le 
 | 5. SEO & partage | quick 260921-on4 | Complete | 2026-09-21 |
 | 6. Events & home | quick 260921-oti | Complete | 2026-09-21 |
 | 7. Accessibilité | quick 260921-qp5 | Complete | 2026-09-21 |
-| 8. Images, cache & code | 0/2 | Not started | - |
+| 8. Images, cache & code | 1/2 (quick 260921-rwt) | In progress | - |
