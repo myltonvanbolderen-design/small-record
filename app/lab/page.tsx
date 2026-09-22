@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { SectionHeader } from '@/components/magazine/SectionHeader'
+import { ContactSheet } from '@/components/lab/ContactSheet'
+import { FILM_FRAMES } from '@/components/lab/frames'
 
 export const metadata: Metadata = {
   title: 'Lab',
@@ -30,6 +32,7 @@ export default function LabPage() {
           title="Planche contact"
           meta="Tap a frame to enlarge. Picks circled in red."
         />
+        <ContactSheet frames={FILM_FRAMES} />
       </section>
 
       <section id="develop" className="mt-32 pb-[50vh]">
