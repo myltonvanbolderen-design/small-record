@@ -53,6 +53,7 @@ None yet.
 | fast | Titre home visible plus longtemps (lag + tagline fade, 0 chevauchement) | 2026-09-21 | 1dc3847 | — |
 | fast | Section On stage Panic Room sur pages Casae & Letche (ArtistLive) | 2026-09-21 | 9091fd8 | — |
 | 260922-ejk | Section Presence (tous les events joués, photos identifiées) sur Casae & Letche + ancres /events + fix ScrollToTop | 2026-09-22 | 1cce319 | [260922-ejk-artist-presence-section-on-casae-and-let](./quick/260922-ejk-artist-presence-section-on-casae-and-let/) |
+| fast | Photo Gambetta de Casae dans Presence (portrait t-shirt Small Records) | 2026-09-22 | 3c2436a | — |
 
 ## Session Continuity
 
