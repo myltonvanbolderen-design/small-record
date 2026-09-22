@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Small Records
 
-## Getting Started
+Site du crew **Small Records** — DJ Casæ & DJ Letché, Paris. Un magazine digital : vitrine pour les bookers, et trace de chaque soirée jouée.
 
-First, run the development server:
+**En ligne : https://small-records.com**
+
+House · Techno · Baile Funk · Afrohouse · Disco · Ambient
+
+## Pages
+
+| Route | Contenu |
+|---|---|
+| `/` | Cover magazine, manifesto, artistes, dernier live (Small Party @ Panic Room) |
+| `/small-record/` | The Label — histoire, manifesto, events |
+| `/casae/`, `/letche/` | Pages artistes — bio, photos, **Presence** (tous les events joués), mixes SoundCloud, booking |
+| `/events/` | Tous les lives, du plus récent au plus ancien : Panic Room, Gambetta Club, mix YouTube, Fête de la Musique |
+
+## Stack
+
+- Next.js 15 (App Router) en export statique (`output: 'export'`), déployé sur Vercel
+- Tailwind CSS v4, `motion` pour les animations
+- Images : JPEG sources dans `public/images/`, variantes WebP générées au build (`tools/image-variants.mjs`) et servies via un loader custom (`lib/image-loader.ts`)
+
+## Développer
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run images     # génère les variantes WebP (aussi lancé automatiquement avant chaque build)
+npx next dev --turbopack --port 3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Avant de déployer
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint       # 0 erreur requise (ESLint tourne aussi pendant le build)
+npx tsc --noEmit
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Déployer
 
-## Learn More
+```bash
+vercel --prod
+```
 
-To learn more about Next.js, take a look at the following resources:
+Le push sur GitHub ne déclenche pas de déploiement : la prod passe par le CLI Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Ajouter un event
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Photos optimisées dans `public/images/<event>/`, vidéos (H.264, sans audio) dans `public/videos/`
+2. Nouvelle section en haut de `app/events/page.tsx` (avec un `id` d'ancre), renuméroter les folios
+3. Une ligne par artiste présent dans `lib/presence.ts` → la carte apparaît dans « Presence » sur sa page
+4. Données Google : `lib/events-jsonld.ts`
 
-## Deploy on Vercel
+## Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+app/            pages (home, small-record, casae, letche, events), sitemap, robots
+components/
+  animation/    AnimatedSection, ParallaxImage, ParallaxTitle, ParallaxLayer, ScrollFadeOut, CountUp…
+  layout/       Header (menu), Footer (nav), ScrollToTop
+  magazine/     SectionHeader, MediaTile, EventFacts, ArtistPresence, VideoLoop, Marquee…
+lib/            seo, presence, events-jsonld, image-loader, fonts
+tools/          image-variants.mjs
+public/         images, videos, og, fonts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Les routes `/v2` et `/carousel` sont des outils internes, exclus du déploiement (`.vercelignore`).
