@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { ContactSheet } from '@/components/lab/ContactSheet'
-import { FILM_FRAMES } from '@/components/lab/frames'
+import { DevelopingPhoto } from '@/components/lab/DevelopingPhoto'
+import { FILM_FRAMES, FILM_PICKS } from '@/components/lab/frames'
 
 export const metadata: Metadata = {
   title: 'Lab',
@@ -41,6 +42,11 @@ export default function LabPage() {
           title="Développement"
           meta="The picks, developing as you scroll."
         />
+        <div className="space-y-[30vh] md:space-y-[35vh]">
+          {FILM_PICKS.map((f) => (
+            <DevelopingPhoto key={f.num} frame={f} />
+          ))}
+        </div>
       </section>
     </div>
   )
