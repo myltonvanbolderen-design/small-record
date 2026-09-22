@@ -52,9 +52,9 @@ export const PRESENCE: Record<'casae' | 'letche', PresenceEntry[]> = {
     {
       eventId: 'gambetta-club',
       photo: {
-        src: '/images/early-reflection/mixing.jpg',
-        alt: 'Casæ mixing at Gambetta Club',
-        position: 'object-center',
+        src: '/images/early-reflection/casae-gambetta.jpg',
+        alt: 'Casæ in a Small Records tee at Gambetta Club',
+        position: 'object-[50%_30%]',
       },
     },
     {
