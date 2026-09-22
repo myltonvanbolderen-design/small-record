@@ -146,7 +146,7 @@ export default function EventsPage() {
         />
 
         {/* ═══════ 001 · SMALL PARTY × PANIC ROOM ═══════ */}
-        <section className="px-5 py-20 md:px-8 md:py-28">
+        <section id="panic-room" className="scroll-mt-20 px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <AnimatedSection blur>
               <SectionHeader
@@ -287,7 +287,7 @@ export default function EventsPage() {
 
         {/* ═══════ 002 · EARLY REFLECTION × GAMBETTA ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
-        <section className="px-5 py-20 md:px-8 md:py-28">
+        <section id="gambetta-club" className="scroll-mt-20 px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <AnimatedSection blur>
               <SectionHeader
@@ -405,7 +405,7 @@ export default function EventsPage() {
 
         {/* ═══════ 004 · FÊTE DE LA MUSIQUE ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
-        <section className="px-5 py-20 md:px-8 md:py-28">
+        <section id="fete-de-la-musique" className="scroll-mt-20 px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <AnimatedSection blur>
               <SectionHeader

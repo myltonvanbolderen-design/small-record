@@ -6,7 +6,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { Marquee } from '@/components/magazine/Marquee'
 import { SoundCloudEmbed } from '@/components/magazine/SoundCloudEmbed'
 import { SectionHeader } from '@/components/magazine/SectionHeader'
-import { ArtistLive } from '@/components/magazine/ArtistLive'
+import { ArtistPresence } from '@/components/magazine/ArtistPresence'
 import { pageMetadata } from '@/lib/seo'
 
 export const metadata = pageMetadata({
@@ -129,17 +129,9 @@ export default function LetchePage() {
           </div>
         </section>
 
-        {/* ═══════ ON STAGE - Panic Room ═══════ */}
+        {/* ═══════ PRESENCE ═══════ */}
         <HorizontalRule color="bg-blanc/10" />
-        <ArtistLive
-          title="Small Party @ Panic Room"
-          meta="Paris 11 · September 11, 2026"
-          hero={{ src: '/images/panic-room/letche-decks.jpg', alt: 'Letché at the decks, the crowd leaning in' }}
-          video={{ src: '/videos/panic-letche.mp4', poster: '/images/panic-room/poster-panic-letche.jpg', caption: 'Letché · live' }}
-          photos={[
-            { src: '/images/panic-room/letche-lessovik.jpg', alt: 'Letché and Lessovik behind the decks', mobilePosition: 'object-[63%_center]' },
-          ]}
-        />
+        <ArtistPresence artist="letche" name="Letché" />
 
         {/* ═══════ PULL QUOTE over photo ═══════ */}
         <section className="relative h-[50svh] overflow-hidden md:h-[60vh]">
