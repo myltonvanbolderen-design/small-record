@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-21 - Fast tasks: home title timing, artist On stage sections
+Last activity: 2026-09-22 - Completed quick task 260922-ejk: artist Presence section
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -52,6 +52,7 @@ None yet.
 | fast | Parallax fix: photos invisibles (0px), trous aux bords, titre home sous le header | 2026-09-21 | cc6775a | — |
 | fast | Titre home visible plus longtemps (lag + tagline fade, 0 chevauchement) | 2026-09-21 | 1dc3847 | — |
 | fast | Section On stage Panic Room sur pages Casae & Letche (ArtistLive) | 2026-09-21 | 9091fd8 | — |
+| 260922-ejk | Section Presence (tous les events joués, photos identifiées) sur Casae & Letche + ancres /events + fix ScrollToTop | 2026-09-22 | 1cce319 | [260922-ejk-artist-presence-section-on-casae-and-let](./quick/260922-ejk-artist-presence-section-on-casae-and-let/) |
 
 ## Session Continuity
 
