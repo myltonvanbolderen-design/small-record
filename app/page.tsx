@@ -10,6 +10,7 @@ import { SectionHeader } from '@/components/magazine/SectionHeader'
 import { ScrollRevealText } from '@/components/animation/ScrollRevealText'
 import { ParallaxTitle } from '@/components/animation/ParallaxTitle'
 import { ScrollFadeOut } from '@/components/animation/ScrollFadeOut'
+import { ParallaxLayer } from '@/components/animation/ParallaxLayer'
 import { FlipImage } from '@/components/magazine/FlipImage'
 import { CountUp } from '@/components/animation/CountUp'
 import { cn } from '@/lib/utils'
@@ -29,7 +30,9 @@ export const metadata = pageMetadata({
   },
 })
 
-const COVER_TAGLINE = { id: 'cover-tagline', fadeDistance: 120 }
+// Cover photo and title lag the page together (depth effect) so the title stays put on the photo
+const COVER_LAG = 0.45
+const COVER_TITLE_CLEARANCE = { id: 'cover-title', lag: COVER_LAG }
 
 export default function HomePage() {
   return (
@@ -37,7 +40,7 @@ export default function HomePage() {
       <main id="main-content" tabIndex={-1} className="min-h-screen bg-noir text-blanc outline-none">
         {/* ═══════ COVER ═══════ */}
         <section className="relative min-h-[100svh] overflow-hidden">
-          <div className="absolute inset-0">
+          <ParallaxLayer lag={COVER_LAG} className="absolute inset-0">
             <Image
               src="/images/duo/img_5717.jpg"
               alt="Casae & Letche"
@@ -46,10 +49,10 @@ export default function HomePage() {
               priority
               sizes="100vw"
             />
-          </div>
+          </ParallaxLayer>
 
-          {/* Issue info - top */}
-          <div className="absolute top-20 left-5 right-5 z-10 md:left-8 md:right-8">
+          {/* Issue info - top (fades out before it slides under the fixed header) */}
+          <ScrollFadeOut distance={30} className="absolute top-20 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.3} direction="none" blur>
               <div className="flex items-start justify-between">
                 <p className="font-condensed text-[0.55rem] uppercase tracking-[0.5em] text-blanc/55">
@@ -60,11 +63,11 @@ export default function HomePage() {
                 </p>
               </div>
             </AnimatedSection>
-          </div>
+          </ScrollFadeOut>
 
           {/* Title - centered, parallax, independent of flow */}
           <div className="absolute inset-0 z-10 flex items-center px-5 md:px-8">
-            <ParallaxTitle avoid={COVER_TAGLINE}>
+            <ParallaxTitle id={COVER_TITLE_CLEARANCE.id} lag={COVER_LAG}>
               <h1 className="pointer-events-none select-none font-display text-[clamp(4rem,min(18vw,28svh),16rem)] font-bold leading-[0.85] tracking-[-0.02em]" style={{ textShadow: '0 0 40px rgba(0,0,0,0.5), 0 0 80px rgba(0,0,0,0.3)' }}>
                 <span className="block">Small</span>
                 <span className="block">
@@ -75,7 +78,7 @@ export default function HomePage() {
           </div>
 
           {/* Tagline - bottom (fades out early: the lagging title drifts toward it) */}
-          <ScrollFadeOut id={COVER_TAGLINE.id} distance={COVER_TAGLINE.fadeDistance} className="absolute bottom-8 left-5 right-5 z-10 md:left-8 md:right-8">
+          <ScrollFadeOut clearOf={COVER_TITLE_CLEARANCE} className="absolute bottom-8 left-5 right-5 z-10 md:left-8 md:right-8">
             <AnimatedSection delay={0.4} blur>
               <p className="font-display text-[clamp(1.1rem,2.5vw,1.6rem)] font-bold leading-[1.4] text-blanc/70">
                 We are diggers. We search.
