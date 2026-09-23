@@ -23,7 +23,7 @@ export function ArtistPresence({ artist, name }: ArtistPresenceProps) {
         <AnimatedSection blur>
           <SectionHeader
             kicker="Presence"
-            title={`Where ${name} played`}
+            title={`Where ${name} played with Small Records`}
             className="mb-6 md:mb-8"
             titleClassName="mt-2 font-display text-[clamp(1.4rem,3vw,2rem)] font-bold leading-[1.05]"
           />
