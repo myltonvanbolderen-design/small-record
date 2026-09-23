@@ -22,5 +22,4 @@ scripts
 # Experimental / internal routes — kept local, not shipped to prod
 app/v2
 app/carousel
-app/lab
 public/carousel-export
