@@ -57,6 +57,7 @@ None yet.
 | fast | Hero home desktop: photo en parallaxe avec le titre, ligne Issue en fondu | 2026-09-22 | ac6ac59 | — |
 | 260922-naw | Page test /lab (local) : planche contact argentique + photos qui se développent | 2026-09-22 | ebfa58f | [260922-naw-lab-test-page-film-contact-sheet-and-dev](./quick/260922-naw-lab-test-page-film-contact-sheet-and-dev/) |
 | fast | Page test /lab supprimée (direction refusée) + titre Presence « played with Small Records » | 2026-09-23 | 79c9ed4 | — |
+| fast | Titre Presence sur deux niveaux (option A) | 2026-09-23 | cdf6974 | — |
 
 ## Session Continuity
 
