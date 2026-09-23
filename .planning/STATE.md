@@ -58,6 +58,7 @@ None yet.
 | 260922-naw | Page test /lab (local) : planche contact argentique + photos qui se développent | 2026-09-22 | ebfa58f | [260922-naw-lab-test-page-film-contact-sheet-and-dev](./quick/260922-naw-lab-test-page-film-contact-sheet-and-dev/) |
 | fast | Page test /lab supprimée (direction refusée) + titre Presence « played with Small Records » | 2026-09-23 | 79c9ed4 | — |
 | fast | Titre Presence sur deux niveaux (option A) | 2026-09-23 | cdf6974 | — |
+| fast | Titre Presence variante C (mention dans le kicker) | 2026-09-23 | 2383260 | — |
 
 ## Session Continuity
 
