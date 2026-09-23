@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-22 - Completed quick task 260922-naw: /lab film test page
+Last activity: 2026-09-23 - Lab test page removed; Presence title updated
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -56,6 +56,7 @@ None yet.
 | fast | Photo Gambetta de Casae dans Presence (portrait t-shirt Small Records) | 2026-09-22 | 3c2436a | — |
 | fast | Hero home desktop: photo en parallaxe avec le titre, ligne Issue en fondu | 2026-09-22 | ac6ac59 | — |
 | 260922-naw | Page test /lab (local) : planche contact argentique + photos qui se développent | 2026-09-22 | ebfa58f | [260922-naw-lab-test-page-film-contact-sheet-and-dev](./quick/260922-naw-lab-test-page-film-contact-sheet-and-dev/) |
+| fast | Page test /lab supprimée (direction refusée) + titre Presence « played with Small Records » | 2026-09-23 | 79c9ed4 | — |
 
 ## Session Continuity
 
