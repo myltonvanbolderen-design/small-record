@@ -23,7 +23,12 @@ export function ArtistPresence({ artist, name }: ArtistPresenceProps) {
         <AnimatedSection blur>
           <SectionHeader
             kicker="Presence"
-            title={`Where ${name} played with Small Records`}
+            title={`Where ${name} played`}
+            meta={
+              <span className="font-condensed text-[0.7rem] uppercase tracking-[0.35em] text-terracotta-light">
+                with Small Records
+              </span>
+            }
             className="mb-6 md:mb-8"
             titleClassName="mt-2 font-display text-[clamp(1.4rem,3vw,2rem)] font-bold leading-[1.05]"
           />
