@@ -62,6 +62,7 @@ None yet.
 | 260928-mqu | Page /links (link-in-bio maison) : liens essentiels, recap Panic Room, mix YouTube | 2026-09-28 | 137d0c2 | [260928-mqu-page-links-maison-pour-remplacer-linktre](./quick/260928-mqu-page-links-maison-pour-remplacer-linktre/) |
 | 260928-nll | /links compacte : tout visible sans scroll sur mobile, sans header/footer | 2026-09-28 | 6f6ce95 | [260928-nll-page-links-compacte-tout-visible-sans-sc](./quick/260928-nll-page-links-compacte-tout-visible-sans-sc/) |
 | 260928-pzz | Deeplinks apps sur /links (schémas iOS + intent Android dans les navigateurs in-app) | 2026-09-28 | 27d1d03 | [260928-pzz-deeplinks-vers-les-apps-sur-la-page-link](./quick/260928-pzz-deeplinks-vers-les-apps-sur-la-page-link/) |
+| fast | SoundCloud deeplink iOS activé (format users:<id> validé sur iPhone) | 2026-09-28 | 02eff5d | — |
 
 ## Session Continuity
 
