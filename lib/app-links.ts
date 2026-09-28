@@ -27,14 +27,10 @@ function intent(path: string, scheme: string, pkg: string, fallback: string): st
 /**
  * Keyed by the exact https href rendered on /links/.
  *
- * SoundCloud iOS note (locked): `soundcloud://users:363945971` / `soundcloud://users:91857449`
- * cannot be navigated to from a web page — for a non-special scheme, `//users:363945971` parses
- * `users` as host and `363945971` as port, and a port > 65535 is a parse error, so assigning it to
- * `location.href` throws synchronously. No substitute scheme form is verified to be routed by the
- * SoundCloud iOS app, and a guessed form that the app registers but does not route would dump the
- * user on the app's home screen — strictly worse than the current behaviour (webview showing the
- * right profile). So `ios: null` for both SoundCloud rows: on iOS in-app they keep the plain https
- * navigation, on Android they get the intent (which is safe because the OS itself falls back).
+ * SoundCloud iOS: `soundcloud://users:<id>` is the format the app routes (verified on a real
+ * iPhone — it opens the profile). It cannot be assigned to `location.href` (the id parses as a
+ * port number and throws), so AppLink navigates schemes through an <a> click, which keeps the
+ * raw string. Ids resolved via SoundCloud oEmbed: Casæ 363945971, Letché 91857449.
  */
 export const APP_LINKS: Record<string, AppTarget> = {
   'https://www.instagram.com/smallmusics': {
@@ -47,7 +43,7 @@ export const APP_LINKS: Record<string, AppTarget> = {
     ),
   },
   'https://soundcloud.com/casae': {
-    ios: null,
+    ios: 'soundcloud://users:363945971',
     android: intent(
       'soundcloud.com/casae',
       'https',
@@ -56,7 +52,7 @@ export const APP_LINKS: Record<string, AppTarget> = {
     ),
   },
   'https://soundcloud.com/letchetony': {
-    ios: null,
+    ios: 'soundcloud://users:91857449',
     android: intent(
       'soundcloud.com/letchetony',
       'https',

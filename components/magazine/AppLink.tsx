@@ -5,6 +5,34 @@ import { getInAppPlatform, type AppTarget } from '@/lib/app-links'
 
 const FALLBACK_DELAY_MS = 900
 
+/**
+ * Navigate to a custom scheme.
+ * Prefer `location.href`: the page stays put, so the fallback timer can still fire when no app
+ * answers. Some official schemes can't be assigned though — SoundCloud's `soundcloud://users:<id>`
+ * throws because the id parses as a port number — so those go through an <a> click, which keeps
+ * the raw string. Trade-off: an anchor click hands off to the OS and gives up the timer.
+ */
+function navigateToScheme(url: string): boolean {
+  try {
+    new URL(url)
+    window.location.href = url
+    return true
+  } catch {
+    // unparseable scheme (SoundCloud): anchor click keeps the string intact
+  }
+  try {
+    const a = document.createElement('a')
+    a.href = url
+    a.style.display = 'none'
+    document.body.appendChild(a)
+    a.click()
+    a.remove()
+    return true
+  } catch {
+    return false
+  }
+}
+
 export function AppLink({
   href,
   app,
@@ -35,11 +63,7 @@ export function AppLink({
     e.preventDefault()
 
     if (platform === 'android') {
-      try {
-        window.location.href = target
-      } catch {
-        window.location.href = href
-      }
+      if (!navigateToScheme(target)) window.location.href = href
       return
     }
 
@@ -76,9 +100,7 @@ export function AppLink({
     window.addEventListener('pagehide', cancel)
     window.addEventListener('blur', cancel)
 
-    try {
-      window.location.href = target
-    } catch {
+    if (!navigateToScheme(target)) {
       cleanup()
       window.location.href = href
     }
