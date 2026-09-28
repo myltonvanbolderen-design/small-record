@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { cn } from '@/lib/utils'
 
-export function CopyLinkButton() {
+export function CopyLinkButton({ className }: { className?: string }) {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -25,7 +26,10 @@ export function CopyLinkButton() {
       type="button"
       onClick={handleCopy}
       aria-label="Copy the link to this page"
-      className="inline-flex min-h-11 items-center justify-center px-3 py-2 font-condensed text-[0.65rem] uppercase tracking-[0.25em] text-blanc/55 transition-colors hover:text-terracotta"
+      className={cn(
+        'inline-flex min-h-11 items-center justify-center px-3 py-2 font-condensed text-[0.65rem] uppercase tracking-[0.25em] text-blanc/55 transition-colors hover:text-terracotta',
+        className
+      )}
     >
       {copied ? 'Copied' : 'Copy link'}
       <span aria-live="polite" className="sr-only">
