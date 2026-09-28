@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'motion/react'
-import { cn } from '@/lib/utils'
+import { cn, isChromelessRoute } from '@/lib/utils'
 
 const navItems = [
   { href: '/', label: 'Home', num: '01' },
@@ -48,6 +48,8 @@ export function Header() {
       if (main) main.inert = false
     }
   }, [menuOpen])
+
+  if (isChromelessRoute(pathname)) return null
 
   return (
     <>

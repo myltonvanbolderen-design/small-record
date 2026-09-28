@@ -1,7 +1,14 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { HorizontalRule } from '@/components/animation/HorizontalRule'
+import { isChromelessRoute } from '@/lib/utils'
 
 export function Footer() {
+  const pathname = usePathname()
+  if (isChromelessRoute(pathname)) return null
+
   return (
     <>
       <HorizontalRule color="bg-blanc/10" />
