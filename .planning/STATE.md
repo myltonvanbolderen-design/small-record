@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-28 - Page /links (link-in-bio) compacte, une seule page-écran sur mobile
+Last activity: 2026-09-28 - Deeplinks apps sur la page /links
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -61,6 +61,7 @@ None yet.
 | fast | Titre Presence variante C (mention dans le kicker) | 2026-09-23 | 2383260 | — |
 | 260928-mqu | Page /links (link-in-bio maison) : liens essentiels, recap Panic Room, mix YouTube | 2026-09-28 | 137d0c2 | [260928-mqu-page-links-maison-pour-remplacer-linktre](./quick/260928-mqu-page-links-maison-pour-remplacer-linktre/) |
 | 260928-nll | /links compacte : tout visible sans scroll sur mobile, sans header/footer | 2026-09-28 | 6f6ce95 | [260928-nll-page-links-compacte-tout-visible-sans-sc](./quick/260928-nll-page-links-compacte-tout-visible-sans-sc/) |
+| 260928-pzz | Deeplinks apps sur /links (schémas iOS + intent Android dans les navigateurs in-app) | 2026-09-28 | 27d1d03 | [260928-pzz-deeplinks-vers-les-apps-sur-la-page-link](./quick/260928-pzz-deeplinks-vers-les-apps-sur-la-page-link/) |
 
 ## Session Continuity
 
