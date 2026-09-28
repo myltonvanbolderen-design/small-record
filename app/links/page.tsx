@@ -4,6 +4,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { LinkRow } from '@/components/magazine/LinkRow'
 import { CopyLinkButton } from '@/components/magazine/CopyLinkButton'
 import { pageMetadata } from '@/lib/seo'
+import { APP_LINKS } from '@/lib/app-links'
 
 export const metadata = pageMetadata({
   title: 'Links',
@@ -124,6 +125,7 @@ export default function LinksPage() {
                 label={link.label}
                 sublabel={link.sublabel}
                 kind={link.kind}
+                app={APP_LINKS[link.href]}
               />
             ))}
             <LinkRow
@@ -136,6 +138,7 @@ export default function LinksPage() {
                 src: '/images/mix-pool-party.jpg',
                 alt: 'House mix, pool party set in the South of France',
               }}
+              app={APP_LINKS['https://youtu.be/X9rpsIVIVgk']}
             />
           </nav>
         </div>

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { AppLink } from '@/components/magazine/AppLink'
+import type { AppTarget } from '@/lib/app-links'
 
 interface LinkRowProps {
   href: string
@@ -8,6 +10,7 @@ interface LinkRowProps {
   kind?: 'internal' | 'external' | 'mail'
   thumb?: { src: string; alt: string }
   glyph?: string
+  app?: AppTarget
 }
 
 const rowClass =
@@ -49,8 +52,23 @@ function RowContent({
   )
 }
 
-export function LinkRow({ href, label, sublabel, kind = 'internal', thumb, glyph }: LinkRowProps) {
+export function LinkRow({
+  href,
+  label,
+  sublabel,
+  kind = 'internal',
+  thumb,
+  glyph,
+  app,
+}: LinkRowProps) {
   if (kind === 'external') {
+    if (app) {
+      return (
+        <AppLink href={href} app={app} className={rowClass}>
+          <RowContent label={label} sublabel={sublabel} thumb={thumb} glyph={glyph} />
+        </AppLink>
+      )
+    }
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={rowClass}>
         <RowContent label={label} sublabel={sublabel} thumb={thumb} glyph={glyph} />
