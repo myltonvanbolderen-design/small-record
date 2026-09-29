@@ -17,7 +17,7 @@ House · Techno · Baile Funk · Afrohouse · Disco · Ambient
 
 ## Stack
 
-- Next.js 15 (App Router) en export statique (`output: 'export'`), déployé sur Vercel
+- Next.js 15 (App Router), déployé sur Vercel — plus de `output: 'export'` depuis le back-office `/links` ; pages statiquement prérendues, `/links` en ISR revalidée par `revalidateTag('links')`
 - Tailwind CSS v4, `motion` pour les animations
 - Images : JPEG sources dans `public/images/`, variantes WebP générées au build (`tools/image-variants.mjs`) et servies via un loader custom (`lib/image-loader.ts`)
 

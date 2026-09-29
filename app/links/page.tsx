@@ -5,6 +5,8 @@ import { LinkRow } from '@/components/magazine/LinkRow'
 import { CopyLinkButton } from '@/components/magazine/CopyLinkButton'
 import { pageMetadata } from '@/lib/seo'
 import { APP_LINKS } from '@/lib/app-links'
+import { getPublishedLinks } from '@/lib/links-store'
+import { FEATURED_MIX } from '@/lib/links-seed'
 
 export const metadata = pageMetadata({
   title: 'Links',
@@ -20,52 +22,12 @@ export const metadata = pageMetadata({
   },
 })
 
-const LINKS: {
-  label: string
-  sublabel?: string
-  href: string
-  kind: 'internal' | 'external' | 'mail'
-}[] = [
-  {
-    label: 'Instagram',
-    sublabel: '@smallmusics',
-    href: 'https://www.instagram.com/smallmusics',
-    kind: 'external',
-  },
-  {
-    label: 'SoundCloud — Casæ',
-    href: 'https://soundcloud.com/casae',
-    kind: 'external',
-  },
-  {
-    label: 'SoundCloud — Letché',
-    href: 'https://soundcloud.com/letchetony',
-    kind: 'external',
-  },
-  {
-    label: 'YouTube',
-    href: 'https://www.youtube.com/@SmallRecords_Music',
-    kind: 'external',
-  },
-  {
-    label: 'Events & recaps',
-    href: '/events/',
-    kind: 'internal',
-  },
-  {
-    label: 'The Label',
-    href: '/small-record/',
-    kind: 'internal',
-  },
-  {
-    label: 'Booking',
-    sublabel: 'contact@small-records.com',
-    href: 'mailto:contact@small-records.com',
-    kind: 'mail',
-  },
-]
+// ISR safety net; the real invalidation is revalidateTag('links') from publishDraft().
+export const revalidate = 3600
 
-export default function LinksPage() {
+export default async function LinksPage() {
+  const { items } = await getPublishedLinks()
+  const links = items.filter((i) => i.active).sort((a, b) => a.order - b.order)
   return (
     <PageTransition>
       <main id="main-content" tabIndex={-1} className="bg-noir text-blanc outline-none">
@@ -118,9 +80,9 @@ export default function LinksPage() {
           </Link>
 
           <nav aria-label="Small Records links" className="mt-3 flex flex-col gap-1.5 md:gap-2">
-            {LINKS.map((link) => (
+            {links.map((link) => (
               <LinkRow
-                key={link.label}
+                key={link.id}
                 href={link.href}
                 label={link.label}
                 sublabel={link.sublabel}
@@ -129,16 +91,13 @@ export default function LinksPage() {
               />
             ))}
             <LinkRow
-              href="https://youtu.be/X9rpsIVIVgk"
+              href={FEATURED_MIX.href}
               kind="external"
-              label="House Mix · Pool Party"
-              sublabel="Summer set"
-              glyph="▶"
-              thumb={{
-                src: '/images/mix-pool-party.jpg',
-                alt: 'House mix, pool party set in the South of France',
-              }}
-              app={APP_LINKS['https://youtu.be/X9rpsIVIVgk']}
+              label={FEATURED_MIX.label}
+              sublabel={FEATURED_MIX.sublabel}
+              glyph={FEATURED_MIX.glyph}
+              thumb={FEATURED_MIX.thumb}
+              app={APP_LINKS[FEATURED_MIX.href]}
             />
           </nav>
         </div>
