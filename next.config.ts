@@ -1,7 +1,6 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  output: 'export',
   trailingSlash: true,
   images: {
     // keep in sync with tools/image-variants.mjs WIDTHS and lib/image-loader.ts IMAGE_WIDTHS

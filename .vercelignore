@@ -7,6 +7,7 @@ out
 # Secrets / local
 .env*
 .DS_Store
+.links-store
 
 # Raw source media — NOT for public (originals, ~180MB)
 public/asset
