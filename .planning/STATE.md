@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-09-21)
 Phase: 1 of 3 (Panic Room recap)
 Plan: 0 of 1
 Status: Ready to plan
-Last activity: 2026-09-28 - Deeplinks apps sur la page /links
+Last activity: 2026-09-29 - Back-office /links : /admin protégé par mot de passe, brouillon/publication, deeplinks auto
 
 Progress: ░░░░░░░░░░ 0%
 
@@ -63,6 +63,8 @@ None yet.
 | 260928-nll | /links compacte : tout visible sans scroll sur mobile, sans header/footer | 2026-09-28 | 6f6ce95 | [260928-nll-page-links-compacte-tout-visible-sans-sc](./quick/260928-nll-page-links-compacte-tout-visible-sans-sc/) |
 | 260928-pzz | Deeplinks apps sur /links (schémas iOS + intent Android dans les navigateurs in-app) | 2026-09-28 | 27d1d03 | [260928-pzz-deeplinks-vers-les-apps-sur-la-page-link](./quick/260928-pzz-deeplinks-vers-les-apps-sur-la-page-link/) |
 | fast | SoundCloud deeplink iOS activé (format users:<id> validé sur iPhone) | 2026-09-28 | 02eff5d | — |
+| 260929-hle | Back-office /links 1/2 : sortie de l'export statique + store Blob brouillon/en ligne | 2026-09-29 | c0011cf | [260929-hle-backoffice-links-partie-1-conversion-et-](./quick/260929-hle-backoffice-links-partie-1-conversion-et-/) |
+| 260929-i2m | Back-office /links 2/2 : page /admin (mot de passe, éditeur, publier, deeplinks auto) | 2026-09-29 | 8714304 | [260929-i2m-backoffice-links-partie-2-page-admin](./quick/260929-i2m-backoffice-links-partie-2-page-admin/) |
 
 ## Session Continuity
 
