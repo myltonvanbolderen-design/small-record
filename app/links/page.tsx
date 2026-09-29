@@ -4,7 +4,7 @@ import { PageTransition } from '@/components/animation/PageTransition'
 import { LinkRow } from '@/components/magazine/LinkRow'
 import { CopyLinkButton } from '@/components/magazine/CopyLinkButton'
 import { pageMetadata } from '@/lib/seo'
-import { APP_LINKS } from '@/lib/app-links'
+import { APP_LINKS, appTargetFor } from '@/lib/app-links'
 import { getPublishedLinks } from '@/lib/links-store'
 import { FEATURED_MIX } from '@/lib/links-seed'
 
@@ -87,7 +87,7 @@ export default async function LinksPage() {
                 label={link.label}
                 sublabel={link.sublabel}
                 kind={link.kind}
-                app={APP_LINKS[link.href]}
+                app={appTargetFor(link)}
               />
             ))}
             <LinkRow

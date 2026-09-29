@@ -9,6 +9,10 @@ export interface LinkItem {
   kind: LinkKind
   active: boolean
   order: number
+  /** undefined = never derived (legacy row, fall back to the static APP_LINKS table). null = derived and deliberately none. */
+  appIos?: string | null
+  /** undefined = never derived (legacy row, fall back to the static APP_LINKS table). null = derived and deliberately none. */
+  appAndroid?: string | null
 }
 
 export interface LinksDoc {
@@ -30,6 +34,18 @@ function parseLinkItem(raw: unknown): LinkItem | null {
   if (typeof item.active !== 'boolean') return null
   if (typeof item.order !== 'number' || !Number.isFinite(item.order)) return null
   if (item.sublabel !== undefined && typeof item.sublabel !== 'string') return null
+  if (
+    item.appIos !== undefined &&
+    item.appIos !== null &&
+    typeof item.appIos !== 'string'
+  )
+    return null
+  if (
+    item.appAndroid !== undefined &&
+    item.appAndroid !== null &&
+    typeof item.appAndroid !== 'string'
+  )
+    return null
 
   const parsed: LinkItem = {
     id: item.id,
@@ -40,6 +56,8 @@ function parseLinkItem(raw: unknown): LinkItem | null {
     order: item.order,
   }
   if (typeof item.sublabel === 'string') parsed.sublabel = item.sublabel
+  if (item.appIos !== undefined) parsed.appIos = item.appIos as string | null
+  if (item.appAndroid !== undefined) parsed.appAndroid = item.appAndroid as string | null
   return parsed
 }
 

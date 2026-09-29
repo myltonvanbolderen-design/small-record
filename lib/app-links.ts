@@ -1,3 +1,5 @@
+import type { LinkItem } from '@/lib/links-schema'
+
 export interface AppTarget {
   /** Custom scheme for iOS in-app browsers. null = no verified scheme, keep https. */
   ios: string | null
@@ -20,7 +22,7 @@ export function getInAppPlatform(ua: string | null | undefined): 'ios' | 'androi
   return null
 }
 
-function intent(path: string, scheme: string, pkg: string, fallback: string): string {
+export function buildIntent(path: string, scheme: string, pkg: string, fallback: string): string {
   return `intent://${path}#Intent;scheme=${scheme};package=${pkg};S.browser_fallback_url=${encodeURIComponent(fallback)};end`
 }
 
@@ -35,7 +37,7 @@ function intent(path: string, scheme: string, pkg: string, fallback: string): st
 export const APP_LINKS: Record<string, AppTarget> = {
   'https://www.instagram.com/smallmusics': {
     ios: 'instagram://user?username=smallmusics',
-    android: intent(
+    android: buildIntent(
       'user?username=smallmusics',
       'instagram',
       'com.instagram.android',
@@ -44,7 +46,7 @@ export const APP_LINKS: Record<string, AppTarget> = {
   },
   'https://soundcloud.com/casae': {
     ios: 'soundcloud://users:363945971',
-    android: intent(
+    android: buildIntent(
       'soundcloud.com/casae',
       'https',
       'com.soundcloud.android',
@@ -53,7 +55,7 @@ export const APP_LINKS: Record<string, AppTarget> = {
   },
   'https://soundcloud.com/letchetony': {
     ios: 'soundcloud://users:91857449',
-    android: intent(
+    android: buildIntent(
       'soundcloud.com/letchetony',
       'https',
       'com.soundcloud.android',
@@ -62,7 +64,7 @@ export const APP_LINKS: Record<string, AppTarget> = {
   },
   'https://www.youtube.com/@SmallRecords_Music': {
     ios: 'youtube://www.youtube.com/@SmallRecords_Music',
-    android: intent(
+    android: buildIntent(
       'www.youtube.com/@SmallRecords_Music',
       'https',
       'com.google.android.youtube',
@@ -71,11 +73,26 @@ export const APP_LINKS: Record<string, AppTarget> = {
   },
   'https://youtu.be/X9rpsIVIVgk': {
     ios: 'youtube://X9rpsIVIVgk',
-    android: intent(
+    android: buildIntent(
       'www.youtube.com/watch?v=X9rpsIVIVgk',
       'https',
       'com.google.android.youtube',
       'https://youtu.be/X9rpsIVIVgk'
     ),
   },
+}
+
+/**
+ * Resolution order for the app deeplink of a stored link row:
+ * 1. `appAndroid` present (row was derived, has a real target) -> use the stored fields.
+ * 2. Both `appIos`/`appAndroid` are `undefined` (legacy row, never derived) -> fall back to the
+ *    static APP_LINKS table (today's 5 shipped entries).
+ * 3. Otherwise (derived, deliberately no target) -> undefined (plain link, no data-app-link).
+ */
+export function appTargetFor(
+  item: Pick<LinkItem, 'href' | 'appIos' | 'appAndroid'>
+): AppTarget | undefined {
+  if (item.appAndroid) return { ios: item.appIos ?? null, android: item.appAndroid }
+  if (item.appIos === undefined && item.appAndroid === undefined) return APP_LINKS[item.href]
+  return undefined
 }
