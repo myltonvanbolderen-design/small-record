@@ -14,6 +14,22 @@ House · Techno · Baile Funk · Afrohouse · Disco · Ambient
 | `/small-record/` | The Label — histoire, manifesto, events |
 | `/casae/`, `/letche/` | Pages artistes — bio, photos, **Presence** (tous les events joués), mixes SoundCloud, booking |
 | `/events/` | Tous les lives, du plus récent au plus ancien : Panic Room, Gambetta Club, mix YouTube, Fête de la Musique |
+| `/admin/` | Back-office /links (password), `noindex` + `Disallow: /admin` |
+
+## Back-office
+
+`/admin/` est un mini éditeur mobile-first pour les liens de `/links/` (Casæ édite depuis son
+téléphone). Protégé par mot de passe, session signée, `noindex`/`Disallow`.
+
+- **`ADMIN_PASSWORD`** (obligatoire) : sans elle, le back-office reste fermé — pas de mode "mot de
+  passe vide".
+- **`ADMIN_SESSION_SECRET`** (optionnel) : sans elle, le secret de session dérive de
+  `ADMIN_PASSWORD`. Conséquence assumée : changer `ADMIN_PASSWORD` déconnecte toutes les sessions
+  en cours.
+- Session cookie `sr_admin`, 30 jours, `httpOnly`, `path=/admin`.
+- Limite de connexion : 10 tentatives / 15 min par IP, en mémoire par instance — réinitialisée à
+  chaque redeploy (acceptable : outil mono-utilisateur, le mot de passe est le vrai contrôle).
+- Travailler en local avec les vraies variables : `vercel env pull .env.local`.
 
 ## Stack
 

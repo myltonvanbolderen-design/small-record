@@ -3,6 +3,7 @@ import { SITE_URL } from '@/lib/seo'
 
 export const dynamic = 'force-static'
 
+// /admin is intentionally absent — back-office, noindex + Disallow in robots.ts
 const ROUTES: { path: string; priority: number }[] = [
   { path: '/', priority: 1 },
   { path: '/small-record/', priority: 0.8 },
